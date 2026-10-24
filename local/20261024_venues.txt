@@ -1,0 +1,4 @@
+# Venues to collect on this machine instead of GitHub's servers, one slug per
+# line (see `python -m listings list-venues`). Add a venue here when status.json
+# shows it failing on GitHub but `python -m listings collect --venue <slug>`
+# works locally.

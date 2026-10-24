@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "london-cinema-listings"
+version = "0.1.0"
+description = "Collects upcoming cinema listings from London venues into listings.json"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+    "jsonschema>=4.20",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["network: test makes real HTTP requests"]
+
+[tool.setuptools.packages.find]
+include = ["listings*"]

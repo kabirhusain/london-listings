@@ -1,0 +1,24 @@
+{
+  "venue": "The Slaughtered Lamb",
+  "venue_slug": "slaughtered-lamb",
+  "category": "music",
+  "showings": [
+    {
+      "title": "Example Artist + Support Act",
+      "start": "2026-11-20T20:00",
+      "doors": "19:30",
+      "lineup": ["Example Artist", "Support Act"],
+      "genre": "Folk",
+      "price": "£12",
+      "booking_url": "https://www.seetickets.com/event/example",
+      "image_url": null,
+      "tags": []
+    },
+    {
+      "title": "A film, if the venue shows one",
+      "category": "film",
+      "start": "2026-11-27T19:00:00+00:00",
+      "runtime_minutes": 95
+    }
+  ]
+}

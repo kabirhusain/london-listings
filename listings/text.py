@@ -1,0 +1,172 @@
+"""Text helpers shared by venue scrapers."""
+
+from __future__ import annotations
+
+import html
+import re
+
+_MONTH = r"(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*"
+_SEASON = r"(?:spring|summer|autumn|winter)"
+# Box-office housekeeping suffixes, e.g. "Elanor Moss 2026", "Morris Dancing Autumn 2026",
+# "Queer Ceilidh Dance Party Nov 2026".
+_YEAR_SUFFIX = re.compile(rf"\s+(?:(?:{_MONTH}|{_SEASON})\s+)?20\d\d$", re.I)
+
+
+def tidy_title(title: str) -> str:
+    """Unescape HTML entities, collapse whitespace, drop box-office year suffixes
+    ("Elanor Moss 2026") - but only for years near now, so "Disco 2000" survives."""
+    from datetime import date
+
+    t = re.sub(r"\s+", " ", html.unescape(title)).strip()
+    m = _YEAR_SUFFIX.search(t)
+    if m and abs(int(m.group(0)[-4:]) - date.today().year) <= 1:
+        t = t[: m.start()].strip() or t
+    return t
+
+
+# Separators between acts in a gig title: "A + B", "A / B", "A, B & C", "A with B".
+_ACT_SPLIT = re.compile(r"\s+\+\s+|\s+/\s+|\s*,\s+|\s+&\s+(?=[A-Z])|\s+(?:with|w/|ft\.?|feat\.?|featuring|support from|special guests?:?)\s+", re.I)
+_SERIES = r"night|presents|club|session|series|festival|showcase|residency|launch"
+# Things after a colon or dash that describe the show rather than name an act.
+_SUBTITLE = re.compile(r"\s*(?::|\s[-–—]\s|\(|\s+live (?:at|in|from)\b).*$", re.I)
+
+
+def guess_lineup(title: str) -> list[str]:
+    """Best-effort lineup from a gig title when the source has no structured
+    lineup. "Hugh Cornwell: Never Say Goodbye" -> ["Hugh Cornwell"];
+    "Moor Mother + Guest" -> ["Moor Mother", "Guest"]. Headliner first."""
+    t = tidy_title(title)
+    # "Trad Night: Macdara Yeates" - the series name comes first, the act second.
+    series = re.match(rf"^[^:]*\b(?:{_SERIES})\b[^:]*:\s*(.+)$", t, re.I)
+    if series:
+        t = series.group(1)
+    # "A Homemade Evening with Nara Smith", "An Evening With X" -> X
+    t = re.sub(r"^.*?\b(?:evening|afternoon|night|morning)\s+with\s+", "", t, flags=re.I)
+    head = _SUBTITLE.sub("", t).strip() or t
+    acts = [a.strip(" -–—|") for a in _ACT_SPLIT.split(head)]
+    acts = [re.sub(r"^(?:very\s+)?special\s+guests?:?\s+", "", a, flags=re.I) for a in acts]
+    acts = [a for a in acts if not re.fullmatch(r"(?:his|her|their|the)?\s*(?:band|orchestra|friends)", a, re.I)]
+    return list(dict.fromkeys(a for a in acts if a and len(a) > 1))
+
+
+_DAY_MONTH = re.compile(
+    r"^(?:(?P<weekday>[A-Za-z]+),?\s+)?(?P<day>\d{1,2})(?:st|nd|rd|th)?\s+(?P<month>[A-Za-z]+)\.?(?:\s+(?P<year>\d{4}))?$"
+)
+
+
+def date_without_year(text: str, today):
+    """'Saturday 24th October' / 'Sat 24 Oct' -> a date. When there's no year,
+    take the first of this year / next year (or last year, around New Year) where
+    the date isn't in the past and, if a weekday is given, falls on it."""
+    from datetime import datetime, timedelta
+
+    m = _DAY_MONTH.match(text.strip())
+    if not m:
+        return None
+    years = [int(m.group("year"))] if m.group("year") else [today.year, today.year + 1, today.year - 1]
+    for year in years:
+        for fmt in ("%d %B %Y", "%d %b %Y"):
+            try:
+                d = datetime.strptime(f"{m.group('day')} {m.group('month')[:3] if fmt.endswith('%b %Y') else m.group('month')} {year}", fmt).date()
+                break
+            except ValueError:
+                d = None
+        if d is None:
+            continue
+        weekday = m.group("weekday")
+        if weekday and not d.strftime("%A").lower().startswith(weekday.lower()[:3]):
+            continue
+        if m.group("year") or d >= today - timedelta(days=1):
+            return d
+    return None
+
+
+_CLOCK = r"(\d{1,2}(?:[:.]\d{2})?\s*(?:am|pm)|\d{1,2}[:.]\d{2})"
+_DOORS = re.compile(rf"\bdoors?(?:\s+open)?(?:\s+at)?\s*[:\-–]?\s*{_CLOCK}", re.I)
+_START = re.compile(
+    rf"\b(?:starts?|start time|show(?:time)?|music|performance|concert|stage|gig|event|onstage|on stage|headliner)"
+    rf"(?:\s+(?:starts?|from|at|time))?\s*[:\-–]?\s*{_CLOCK}",
+    re.I,
+)
+
+
+def parse_clock(s: str):
+    """'7.30pm' / '7pm' / '19:30' -> datetime.time (None if unparseable)."""
+    from datetime import time as dtime
+
+    m = re.match(r"^(\d{1,2})(?:[:.](\d{2}))?\s*(am|pm)?$", s.strip(), re.I)
+    if not m:
+        return None
+    hour, minute, ampm = int(m.group(1)), int(m.group(2) or 0), (m.group(3) or "").lower()
+    if ampm == "pm" and hour < 12:
+        hour += 12
+    elif ampm == "am" and hour == 12:
+        hour = 0
+    elif not ampm and m.group(2) and 1 <= hour <= 10:
+        hour += 12  # a bare "7.30" in a gig listing means the evening
+    if hour > 23 or minute > 59:
+        return None
+    return dtime(hour, minute)
+
+
+def find_doors_and_start(text: str):
+    """Doors and start times mentioned in free text, as datetime.time (either may be None)."""
+    d = _DOORS.search(text)
+    s = _START.search(text)
+    return (parse_clock(d.group(1)) if d else None, parse_clock(s.group(1)) if s else None)
+
+
+# --- matching the same film/show across venues -------------------------------
+
+# A "Series: Title" prefix is dropped only if the series part looks like a
+# programme strand, not part of the title ("Dune: Part Two" keeps its colon).
+_SERIES_PREFIX = re.compile(
+    r"^(?P<series>[^:]{1,60}?)\s*:\s+(?=\S)",
+)
+_SERIES_WORDS = re.compile(
+    r"screening|preview|club|festival|\bfest\b|\bff[a-z]?\b|season|presents|\bcinema\b|week(?:ender)?|"
+    r"spotlight|off-circuit|doc ?day|classroom|on screen|members|relaxed|parent|baby|senior|family|"
+    r"classics|nt live|met opera|\brbo\b|royal ballet|lpff|ukjff|liaf|lkff|in-edit|nfts|film50|"
+    r"doc'?n'?roll|dochouse|kids|toddler|matin[ée]e|special|event|strand|focus|retrospective|"
+    r"[a-z].*\b20[1-3]\d\b",  # "LPFF 2026", but not "2001: A Space Odyssey"
+    re.I,
+)
+# Extras and versions appended to a title: "+ Q&A", "- 25th Anniversary", "(4K Restoration)", "(1978)".
+_EXTRA_SUFFIX = re.compile(r"\s+\+\s+.*$")
+_ANNIVERSARY = re.compile(r"\s*[-–:(\[]?\s*\d{1,3}(?:st|nd|rd|th)\s+anniversary(?:\s+[a-z ]+)?[)\]]?\s*$", re.I)
+_FORMAT_WORDS = (
+    r"2d|3d|4k|imax|35 ?mm|16 ?mm|70 ?mm|restor(?:ed|ation)|remaster(?:ed)?|re-?release|dubbed|subtitled|"
+    r"uk version|(?:uk|world|london|european) premiere|digital|dcp|sing-?a-?long|hoh|ad|bsl|relaxed"
+)
+_FORMAT_SUFFIX = re.compile(rf"\s*(?:[-–]\s*|on\s+|in\s+)?[(\[]?\s*(?:{_FORMAT_WORDS})(?:\s+(?:{_FORMAT_WORDS}))*\s*[)\]]?\s*$", re.I)
+_BRACKETED = re.compile(r"\s*\[[^\]]*\]|\s*\((?:19|20)\d\d\)|\s*\((?:u|pg|12a?|15|18)\*?\)", re.I)
+
+
+def match_key(title: str) -> str:
+    """A normalised key so the same film (or show) lines up across venues.
+
+    "Your Name [Kimi no Na wa.]", "YOUR NAME (4K Restoration)" and
+    "Preview: Your Name + Q&A" all give "your name". Director's / extended
+    cuts are kept distinct on purpose.
+    """
+    import unicodedata
+
+    t = tidy_title(title)
+    for _ in range(2):  # "LPFF 2026: Preview: X"
+        m = _SERIES_PREFIX.match(t)
+        if m and _SERIES_WORDS.search(m.group("series")):
+            t = t[m.end():]
+    t = _EXTRA_SUFFIX.sub("", t)
+    for _ in range(3):  # suffixes can stack: "X (1978) - 40th Anniversary (4K)"
+        before = t
+        t = _BRACKETED.sub("", t)
+        t = _ANNIVERSARY.sub("", t)
+        t = _FORMAT_SUFFIX.sub("", t)
+        if t == before:
+            break
+    t = unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode()
+    t = t.lower().replace("&", " and ")
+    t = re.sub(r"['’`]", "", t)
+    t = re.sub(r"[^a-z0-9]+", " ", t).strip()
+    t = re.sub(r"^(?:the|a|an)\s+", "", t)
+    return t or tidy_title(title).lower()

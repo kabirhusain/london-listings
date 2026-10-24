@@ -1,0 +1,32 @@
+# Generated output (published to GitHub Pages by the workflow, not committed)
+/listings.json
+/status.json
+/site/
+*.tmp
+
+# Debug output
+debug/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.conda/
+
+# Caches
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
