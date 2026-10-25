@@ -37,7 +37,7 @@ def test_every_field_is_present_in_output_order():
 
 
 @pytest.mark.parametrize("field, value", [
-    ("category", "theatre"),        # only film or music
+    ("category", "opera"),          # only film/music/theatre/comedy/dance
     ("lineup", "Headliner"),         # must be a list
     ("lineup", [""]),                # no empty names
     ("doors", "19:00"),              # full ISO datetime, like start
@@ -97,3 +97,8 @@ def test_match_key_groups_variants(a, b):
 def test_match_key_keeps_distinct_titles_apart(a, b):
     from listings.text import match_key
     assert match_key(a) != match_key(b)
+
+
+@pytest.mark.parametrize("category", ["theatre", "comedy", "dance"])
+def test_new_categories_are_valid(category):
+    validate_listings(_doc(dict(GIG, category=category)))

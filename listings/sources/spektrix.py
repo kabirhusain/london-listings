@@ -17,11 +17,20 @@ from datetime import date, datetime, timedelta, timezone
 
 from listings.http import PoliteClient
 from listings.model import LONDON, Showing, london_iso
-from listings.text import tidy_title
+from listings.text import guess_lineup, tidy_title
 from listings.venues.base import Venue
 
 # Spektrix test events that venues forget to hide, e.g. "Test Event - £0.01", "Georgia's Test Screen".
 _TEST_EVENT = re.compile(r"\btest\b", re.I)
+# Things sold through Spektrix that aren't performances.
+NOT_A_SHOW = re.compile(
+    r"touch tour|backstage tour|guided tour|architecture tour|ghost tour|\bbuilding tour|pre-?order|"
+    r"\bprogramme\b|bundle|captioning facilities|parking|wheelchair|voucher|membership|donation|"
+    r"workshop|masterclass|\bclass(?:es)?\b|\bcourse\b|seminar|\bzoom\b|writers'? card|"
+    r"^\s*\*\*|reporting|champagne|dinner|\bdrinks\b|kathi roll|yoga|cast album|"
+    r"grotto|soft play|secure my booking|name a seat|bootcamp|\bintensive\b|pre[- ]show talk",
+    re.I,
+)
 
 
 def fetch_spektrix(client: PoliteClient, api_base: str, start_from: date) -> tuple[dict[str, dict], list[dict]]:
@@ -70,6 +79,17 @@ class SpektrixVenue(Venue):
 
     #: e.g. "https://buy.ica.art/ica" (the part before /api/v3).
     api_base: str
+    #: Category for events no rule matches (None = leave them out).
+    default_category: str | None = None
+    #: Ordered (field, regex, category) rules; the first match decides, and a
+    #: category of None leaves the event out. `field` is an event attribute
+    #: ("attribute_Genre"), "name", or "instance.<attribute>" for performance attributes.
+    rules: tuple = ()
+    #: Set for venues that are sometimes between seasons with nothing on sale,
+    #: so an empty programme isn't reported as a failure.
+    allow_empty: bool = False
+    #: Ignore performances further ahead than this (placeholders such as 2099-12-31).
+    horizon_days: int = 730
 
     @property
     def source_description(self) -> str:
@@ -78,11 +98,28 @@ class SpektrixVenue(Venue):
     # -- hooks for subclasses ------------------------------------------------
 
     def category(self, event: dict, instance: dict) -> str | None:
-        """"film", "music", or None to leave the event out."""
-        raise NotImplementedError
+        """A category from listings.model.CATEGORIES, or None to leave the event out.
+
+        Default: apply `rules`, then `default_category`. Subclasses may override."""
+        if NOT_A_SHOW.search(event.get("name", "")):
+            return None
+        for field, pattern, category in self.rules:
+            if field == "name":
+                value = event.get("name", "")
+            elif field.startswith("instance."):
+                value = instance.get(field.removeprefix("instance."))
+            else:
+                value = event.get(field)
+            if value is not None and re.search(pattern, str(value), re.I):
+                return category
+        return self.default_category
 
     def details(self, event: dict, instance: dict, category: str) -> dict:
-        """Extra Showing fields (tags, genre, doors, lineup...). Override as needed."""
+        """Extra Showing fields (tags, genre, doors, lineup...). Override as needed.
+
+        Default: guess a lineup for music and comedy from the title."""
+        if category in ("music", "comedy"):
+            return {"lineup": guess_lineup(event["name"])}
         return {}
 
     def booking_url(self, instance: dict) -> str:
@@ -101,8 +138,10 @@ class SpektrixVenue(Venue):
             if category is None:
                 continue
             start = spektrix_utc(inst["startUtc"])
+            if start > datetime.now(timezone.utc) + timedelta(days=self.horizon_days):
+                continue
             fields = {
-                "runtime_minutes": (event.get("duration") or None) if category == "film" else None,
+                "runtime_minutes": (event.get("duration") or None) if category != "music" else None,
                 "image_url": event.get("imageUrl") or None,
                 "tags": [],
             }
@@ -116,6 +155,6 @@ class SpektrixVenue(Venue):
                 booking_url=self.booking_url(inst),
                 **fields,
             ))
-        if not showings:
-            raise ValueError("Spektrix returned no film or music performances")
+        if not showings and not self.allow_empty:
+            raise ValueError("Spektrix returned no performances in the categories we keep")
         return sorted(showings, key=lambda s: (s.start, s.title))

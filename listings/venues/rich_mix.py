@@ -38,8 +38,10 @@ class RichMix(SpektrixVenue):
             return "music"
         return None
 
-    # Rich Mix's music is mostly club nights named after the night, not the acts,
-    # so no lineup is guessed.
+    def details(self, event, instance, category):
+        # Rich Mix's music is mostly club nights named after the night, not the
+        # acts, so no lineup is guessed.
+        return {}
 
     def fetch(self, client: PoliteClient) -> list[Showing]:
         showings = self._films.fetch(client)

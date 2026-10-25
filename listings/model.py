@@ -13,21 +13,21 @@ from listings.text import match_key
 LONDON = ZoneInfo("Europe/London")
 
 
-CATEGORIES = ("film", "music")
+CATEGORIES = ("film", "music", "theatre", "comedy", "dance")
 
 
 @dataclass
 class Showing:
     id: str
     venue: str
-    category: str  # "film" or "music"
+    category: str  # one of CATEGORIES
     title: str
     start: str  # ISO 8601 with Europe/London offset, e.g. 2026-10-24T18:10:00+01:00
     runtime_minutes: int | None
     booking_url: str | None
     image_url: str | None
     tags: list[str] = field(default_factory=list)
-    lineup: list[str] = field(default_factory=list)  # headliner first; empty for films
+    lineup: list[str] = field(default_factory=list)  # performers, headliner first; empty for films
     doors: str | None = None  # same format as start
     price: str | None = None  # free text, e.g. "From £16"
     genre: str | None = None

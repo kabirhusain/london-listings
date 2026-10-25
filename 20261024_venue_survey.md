@@ -128,3 +128,19 @@ Final source per venue, with the showings returned on the first full run (3,940 
 
 Not used, on purpose: DICE partner API and Ciné Lumière's AEC API. Both need API keys embedded in
 the venues' pages, and reusing those keys was blocked by the permission system.
+
+
+## Theatres and more (added 2026-10-25)
+
+| Venue | Module | Source |
+|---|---|---|
+| Royal Court, Donmar Warehouse, Bush, Kiln (theatre + cinema), Arcola, Soho Theatre, Battersea Arts Centre, Orange Tree, Park, Gate, Unicorn, Lyric Hammersmith, Stratford East, Southwark Playhouse, The Yard | one file each | Spektrix API, per-venue attribute rules for category |
+| Hackney Empire | hackney_empire | Spektrix API; categories from the venue's own /whats-on/category/ pages |
+| Barbican Centre (theatre, dance, concerts) | barbican_centre | same Spektrix API as barbican_cinema (cached) |
+| Hampstead Theatre | hampstead_theatre | production pages on hampsteadtheatre.com (ticketing site is Incapsula-protected) |
+| Sadler's Wells (Angel + Lilian Baylis Studio) | sadlers_wells | show pages on sadlerswells.com (ticketing site is Incapsula-protected) |
+
+Not added:
+- Old Vic and Almeida: their websites only give run dates; performance times are on Incapsula-protected Tessitura sites.
+- National Theatre: CloudFront blocks our requests (403, even robots.txt); its ticketing site is behind Incapsula.
+- Young Vic: Cloudflare challenge on youngvic.org; tickets.youngvic.org is a Spektrix front end that isn't challenged (API address not yet found).

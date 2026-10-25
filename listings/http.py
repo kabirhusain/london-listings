@@ -182,6 +182,9 @@ class PoliteClient:
 def _looks_like_challenge(resp: requests.Response) -> bool:
     if resp.headers.get("cf-mitigated") == "challenge":
         return True
+    # Imperva Incapsula serves its block/challenge page with HTTP 200.
+    if "_Incapsula_Resource" in resp.text[:3000] or "Incapsula incident ID" in resp.text[:3000]:
+        return True
     if resp.status_code in (403, 429, 503):
         head = resp.text[:3000]
         return any(

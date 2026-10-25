@@ -25,12 +25,18 @@ MIN_SHOWINGS = {
     "ronnie-scotts": 20, "vortex-jazz-club": 20, "pizzaexpress-live-soho": 50, "606-club": 12, "cafe-oto": 15,
     "moth-club": 10, "the-lexington": 30, "bush-hall": 12, "st-pancras-old-church": 8,
     "folklore": 1, "slaughtered-lamb": 0,
+    # Theatres etc. (added 2026-10-25)
+    "royal-court": 100, "donmar-warehouse": 50, "bush-theatre": 60, "kiln-theatre": 50, "arcola-theatre": 40,
+    "soho-theatre": 150, "battersea-arts-centre": 20, "orange-tree-theatre": 60, "park-theatre": 150,
+    "hackney-empire": 30, "gate-theatre": 0, "unicorn-theatre": 100, "lyric-hammersmith": 60, "stratford-east": 20,
+    "southwark-playhouse": 100, "the-yard-theatre": 30, "barbican-centre": 100, "hampstead-theatre": 50,
+    "sadlers-wells": 10,
 }
 # Venues whose source gives film runtimes; a drop means a field moved.
 RUNTIME_EXPECTED = {
     "bfi-southbank", "barbican-cinema", "prince-charles-cinema", "regent-street-cinema", "ica", "rio-cinema",
     "the-lexi", "phoenix-cinema", "genesis-cinema", "the-nickel", "curzon-soho", "curzon-bloomsbury",
-    "close-up-film-centre", "bertha-dochouse", "cine-lumiere",
+    "close-up-film-centre", "bertha-dochouse", "cine-lumiere", "kiln-theatre",
 }
 
 
@@ -49,7 +55,7 @@ def test_venue_live_output_matches_schema(slug):
     if not showings:
         return
     assert all(s["id"].startswith(f"{slug}:") for s in showings)
-    assert {s["category"] for s in showings} <= {"film", "music"}
+    assert {s["category"] for s in showings} <= {"film", "music", "theatre", "comedy", "dance"}
 
     now = datetime.now(LONDON)
     starts = [datetime.fromisoformat(s["start"]) for s in showings]
