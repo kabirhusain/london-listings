@@ -1,0 +1,3756 @@
+{
+  "generated_at": "2026-10-25T08:52:51+00:00",
+  "sources": [
+    {
+      "venue": "garden-cinema",
+      "source": "Server-rendered homepage (https://www.thegardencinema.co.uk/)",
+      "status": "ok",
+      "fetched_at": "2026-10-25T08:52:51+00:00",
+      "showings": 159
+    },
+    {
+      "venue": "cinema-museum",
+      "source": "The Events Calendar REST API (https://cinemamuseum.org.uk/wp-json/tribe/events/v1/events)",
+      "status": "ok",
+      "fetched_at": "2026-10-25T08:52:51+00:00",
+      "showings": 47
+    }
+  ],
+  "showings": [
+    {
+      "id": "garden-cinema:6117560",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "London Breeze Film Festival presents Dreamland [Dubbed]",
+      "match_key": "london breeze film festival presents dreamland",
+      "start": "2026-10-25T11:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6117560.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6188314.jpg",
+      "tags": [
+        "cert:PG"
+      ]
+    },
+    {
+      "id": "garden-cinema:6439285",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "The Social Reckoning",
+      "match_key": "social reckoning",
+      "start": "2026-10-25T12:35:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6439285.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6411057.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6439376",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Naza",
+      "match_key": "naza",
+      "start": "2026-10-25T13:50:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6439376.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6325090.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6266309",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Fatherland",
+      "match_key": "fatherland",
+      "start": "2026-10-25T15:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6266309.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6266170.jpg",
+      "tags": [
+        "cert:12A",
+        "sold-out"
+      ]
+    },
+    {
+      "id": "garden-cinema:6271007",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Possible Love",
+      "match_key": "possible love",
+      "start": "2026-10-25T15:45:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6271007.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6270890.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6439287",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Sense and Sensibility",
+      "match_key": "sense and sensibility",
+      "start": "2026-10-25T16:50:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6439287.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6098266.jpg",
+      "tags": [
+        "cert:U"
+      ]
+    },
+    {
+      "id": "garden-cinema:6266311",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Fatherland",
+      "match_key": "fatherland",
+      "start": "2026-10-25T18:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6266311.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6266170.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6271883",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Raining in the Mountain",
+      "match_key": "raining in the mountain",
+      "start": "2026-10-25T19:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6271883.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6242209.jpg",
+      "tags": [
+        "cert:12",
+        "intro"
+      ]
+    },
+    {
+      "id": "garden-cinema:6439289",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Extra Geography",
+      "match_key": "extra geography",
+      "start": "2026-10-25T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6439289.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6157200.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6266313",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Fatherland",
+      "match_key": "fatherland",
+      "start": "2026-10-25T20:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6266313.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6266170.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6271009",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Possible Love",
+      "match_key": "possible love",
+      "start": "2026-10-26T15:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6271009.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6270890.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6439319",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Naza",
+      "match_key": "naza",
+      "start": "2026-10-26T15:45:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6439319.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6325090.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6439370",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Fatherland",
+      "match_key": "fatherland",
+      "start": "2026-10-26T16:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6439370.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6266170.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6266964",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "The Time to Live and the Time to Die",
+      "match_key": "time to live and the time to die",
+      "start": "2026-10-26T18:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6266964.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6267947.jpg",
+      "tags": [
+        "cert:PG",
+        "sold-out"
+      ]
+    },
+    {
+      "id": "garden-cinema:6223471",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "In-Edit Cine-Documental: El canto de las manos (Song of the Hands)",
+      "match_key": "el canto de las manos song of the hands",
+      "start": "2026-10-26T18:10:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6223471.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6223300.png",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6266326",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Fatherland",
+      "match_key": "fatherland",
+      "start": "2026-10-26T18:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6266326.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6266170.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6265982",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "The Exorcist III",
+      "match_key": "exorcist iii",
+      "start": "2026-10-26T20:10:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6265982.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6264983.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6439301",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Naza",
+      "match_key": "naza",
+      "start": "2026-10-26T20:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6439301.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6325090.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6266330",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Fatherland",
+      "match_key": "fatherland",
+      "start": "2026-10-26T20:45:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6266330.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6266170.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6266332",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Fatherland",
+      "match_key": "fatherland",
+      "start": "2026-10-27T15:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6266332.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6266170.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6266328",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "The Social Reckoning",
+      "match_key": "social reckoning",
+      "start": "2026-10-27T15:45:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6266328.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6411057.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6439330",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Naza",
+      "match_key": "naza",
+      "start": "2026-10-27T16:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6439330.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6325090.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6266334",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Fatherland",
+      "match_key": "fatherland",
+      "start": "2026-10-27T17:50:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6266334.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6266170.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6439321",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Naza",
+      "match_key": "naza",
+      "start": "2026-10-27T18:15:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6439321.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6325090.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6271011",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Possible Love",
+      "match_key": "possible love",
+      "start": "2026-10-27T19:45:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6271011.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6270890.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6401179",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "The Company of Wolves",
+      "match_key": "company of wolves",
+      "start": "2026-10-27T20:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6401179.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6265944.jpg",
+      "tags": [
+        "cert:18",
+        "intro"
+      ]
+    },
+    {
+      "id": "garden-cinema:6265984",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Fatherland",
+      "match_key": "fatherland",
+      "start": "2026-10-27T20:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6265984.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6266170.jpg",
+      "tags": [
+        "cert:12A",
+        "hard-of-hearing"
+      ]
+    },
+    {
+      "id": "garden-cinema:6117511",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Shaun the Sheep: The Beast of Mossy Bottom",
+      "match_key": "shaun the sheep the beast of mossy bottom",
+      "start": "2026-10-28T11:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6117511.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/5979672.jpg",
+      "tags": [
+        "cert:U"
+      ]
+    },
+    {
+      "id": "garden-cinema:6439372",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Possible Love",
+      "match_key": "possible love",
+      "start": "2026-10-28T12:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6439372.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6270890.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6439341",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "The Others - 25th anniversary",
+      "match_key": "others",
+      "start": "2026-10-28T13:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6439341.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6188463.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6439364",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Sense and Sensibility",
+      "match_key": "sense and sensibility",
+      "start": "2026-10-28T13:20:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6439364.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6098266.jpg",
+      "tags": [
+        "cert:U"
+      ]
+    },
+    {
+      "id": "garden-cinema:6439339",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Naza",
+      "match_key": "naza",
+      "start": "2026-10-28T15:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6439339.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6325090.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6439374",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Extra Geography",
+      "match_key": "extra geography",
+      "start": "2026-10-28T15:45:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6439374.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6157200.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6266338",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Fatherland",
+      "match_key": "fatherland",
+      "start": "2026-10-28T16:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6266338.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6266170.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6271052",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Possible Love",
+      "match_key": "possible love",
+      "start": "2026-10-28T17:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6271052.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6270890.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6265988",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Ravenous",
+      "match_key": "ravenous",
+      "start": "2026-10-28T18:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6265988.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6264980.jpg",
+      "tags": [
+        "cert:18"
+      ]
+    },
+    {
+      "id": "garden-cinema:6266340",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Fatherland",
+      "match_key": "fatherland",
+      "start": "2026-10-28T18:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6266340.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6266170.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6439352",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "The Social Reckoning",
+      "match_key": "social reckoning",
+      "start": "2026-10-28T20:15:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6439352.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6411057.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6439362",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Naza",
+      "match_key": "naza",
+      "start": "2026-10-28T20:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6439362.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6325090.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6266342",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Fatherland",
+      "match_key": "fatherland",
+      "start": "2026-10-28T20:45:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6266342.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6266170.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6439350",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Naza",
+      "match_key": "naza",
+      "start": "2026-10-29T15:15:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6439350.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6325090.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6270228",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Fatherland",
+      "match_key": "fatherland",
+      "start": "2026-10-29T15:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6270228.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6266170.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6439366",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Sense and Sensibility",
+      "match_key": "sense and sensibility",
+      "start": "2026-10-29T15:45:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6439366.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6098266.jpg",
+      "tags": [
+        "cert:U"
+      ]
+    },
+    {
+      "id": "garden-cinema:6439348",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Possible Love",
+      "match_key": "possible love",
+      "start": "2026-10-29T17:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6439348.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6270890.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6270230",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Fatherland",
+      "match_key": "fatherland",
+      "start": "2026-10-29T18:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6270230.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6266170.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6439368",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "The Others - 25th anniversary",
+      "match_key": "others",
+      "start": "2026-10-29T20:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6439368.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6188463.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6270232",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Fatherland",
+      "match_key": "fatherland",
+      "start": "2026-10-29T20:45:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6270232.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6266170.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6413817",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wicker",
+      "match_key": "wicker",
+      "start": "2026-10-30T11:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6413817.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6325690.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6325846",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wicker",
+      "match_key": "wicker",
+      "start": "2026-10-30T16:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6325846.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6325690.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6184231",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Donnie Darko - 25th Anniversary",
+      "match_key": "donnie darko",
+      "start": "2026-10-30T18:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6184231.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/3998110.jpg",
+      "tags": [
+        "cert:15",
+        "intro"
+      ]
+    },
+    {
+      "id": "garden-cinema:6266882",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Millennium Mambo",
+      "match_key": "millennium mambo",
+      "start": "2026-10-30T18:15:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6266882.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/2405357.jpg",
+      "tags": [
+        "cert:18",
+        "sold-out"
+      ]
+    },
+    {
+      "id": "cinema-museum:13041",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Exploding Cinema – 30th October",
+      "match_key": "exploding cinema 30th october",
+      "start": "2026-10-30T19:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£7.50",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/exploding-cinema-30th-october/",
+      "image_url": null,
+      "tags": [
+        "series:Exploding Cinema",
+        "live-music"
+      ]
+    },
+    {
+      "id": "garden-cinema:6325848",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wicker",
+      "match_key": "wicker",
+      "start": "2026-10-30T20:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6325848.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6325690.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:5981442",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Shaun the Sheep: The Beast of Mossy Bottom",
+      "match_key": "shaun the sheep the beast of mossy bottom",
+      "start": "2026-10-31T11:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5981442.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/5979672.jpg",
+      "tags": [
+        "cert:U"
+      ]
+    },
+    {
+      "id": "garden-cinema:6446475",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Making Marie Antoinette",
+      "match_key": "making marie antoinette",
+      "start": "2026-10-31T15:45:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446475.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446337.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6325852",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wicker",
+      "match_key": "wicker",
+      "start": "2026-10-31T16:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6325852.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6325690.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6265990",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Theatre of Blood",
+      "match_key": "theatre of blood",
+      "start": "2026-10-31T18:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6265990.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6265901.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6325850",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wicker",
+      "match_key": "wicker",
+      "start": "2026-10-31T18:15:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6325850.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6325690.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6263894",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Double Vision",
+      "match_key": "double vision",
+      "start": "2026-10-31T20:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6263894.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6242319.jpg",
+      "tags": [
+        "cert:18",
+        "intro"
+      ]
+    },
+    {
+      "id": "garden-cinema:5981446",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Shaun the Sheep: The Beast of Mossy Bottom",
+      "match_key": "shaun the sheep the beast of mossy bottom",
+      "start": "2026-11-01T11:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5981446.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/5979672.jpg",
+      "tags": [
+        "cert:U"
+      ]
+    },
+    {
+      "id": "cinema-museum:14459",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "First Scares",
+      "match_key": "first scares",
+      "start": "2026-11-01T14:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£22.50 – £40",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/first-scares/",
+      "image_url": null,
+      "tags": []
+    },
+    {
+      "id": "garden-cinema:6446477",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Making Marie Antoinette",
+      "match_key": "making marie antoinette",
+      "start": "2026-11-01T14:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446477.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446337.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6325854",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wicker",
+      "match_key": "wicker",
+      "start": "2026-11-01T15:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6325854.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6325690.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6265992",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Pan's Labyrinth - 20th anniversary",
+      "match_key": "pans labyrinth",
+      "start": "2026-11-01T16:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6265992.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6264966.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6325856",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wicker",
+      "match_key": "wicker",
+      "start": "2026-11-01T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6325856.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6325690.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6325858",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wicker",
+      "match_key": "wicker",
+      "start": "2026-11-02T15:15:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6325858.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6325690.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6223502",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "In-Edit Cine-Documental: Omega wants to dance",
+      "match_key": "omega wants to dance",
+      "start": "2026-11-02T18:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6223502.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6223350.png",
+      "tags": [
+        "cert:PG"
+      ]
+    },
+    {
+      "id": "cinema-museum:14409",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Mark Kermode is Horrified with Neil Brand",
+      "match_key": "mark kermode is horrified with neil brand",
+      "start": "2026-11-02T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£30",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/mark-kermode-is-horrified-with-neil-brand/",
+      "image_url": null,
+      "tags": []
+    },
+    {
+      "id": "garden-cinema:6325860",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wicker",
+      "match_key": "wicker",
+      "start": "2026-11-02T20:15:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6325860.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6325690.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6325862",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wicker",
+      "match_key": "wicker",
+      "start": "2026-11-03T15:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6325862.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6325690.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6446479",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Making Marie Antoinette",
+      "match_key": "making marie antoinette",
+      "start": "2026-11-03T18:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446479.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446337.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6325864",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wicker",
+      "match_key": "wicker",
+      "start": "2026-11-03T20:40:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6325864.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6325690.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6446481",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Making Marie Antoinette",
+      "match_key": "making marie antoinette",
+      "start": "2026-11-04T12:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446481.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446337.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6265994",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Pan's Labyrinth - 20th anniversary",
+      "match_key": "pans labyrinth",
+      "start": "2026-11-04T15:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6265994.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6264966.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6263844",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "What Time Is It There?",
+      "match_key": "what time is it there",
+      "start": "2026-11-04T18:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6263844.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6242626.jpg",
+      "tags": [
+        "cert:18",
+        "intro",
+        "sold-out"
+      ]
+    },
+    {
+      "id": "cinema-museum:11902",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Festen (1998) on 35mm",
+      "match_key": "festen",
+      "start": "2026-11-04T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/festen-1998/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/04/Festen-poster.jpg",
+      "tags": [
+        "35mm"
+      ]
+    },
+    {
+      "id": "garden-cinema:6411417",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wicker",
+      "match_key": "wicker",
+      "start": "2026-11-04T20:15:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6411417.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6325690.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6460510",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Making Marie Antoinette",
+      "match_key": "making marie antoinette",
+      "start": "2026-11-05T11:20:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6460510.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446337.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6325866",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wicker",
+      "match_key": "wicker",
+      "start": "2026-11-05T15:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6325866.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6325690.jpg",
+      "tags": [
+        "cert:15",
+        "hard-of-hearing"
+      ]
+    },
+    {
+      "id": "garden-cinema:6440581",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "All About the Money + Q&A",
+      "match_key": "all about the money",
+      "start": "2026-11-05T18:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6440581.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6439779.jpg",
+      "tags": [
+        "cert:18",
+        "q-and-a"
+      ]
+    },
+    {
+      "id": "garden-cinema:6314418",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "La Bola Negra",
+      "match_key": "la bola negra",
+      "start": "2026-11-06T14:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6314418.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6314379.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6307613",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wild Horse Nine",
+      "match_key": "wild horse nine",
+      "start": "2026-11-06T15:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307613.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6283189.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6314420",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "La Bola Negra",
+      "match_key": "la bola negra",
+      "start": "2026-11-06T17:35:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6314420.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6314379.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6307615",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wild Horse Nine",
+      "match_key": "wild horse nine",
+      "start": "2026-11-06T18:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307615.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6283189.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "cinema-museum:12841",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "A Tribute to Ray Harryhausen, including The Beast from 20,000 Fathoms (1953)",
+      "match_key": "tribute to ray harryhausen including the beast from 20 000 fathoms",
+      "start": "2026-11-06T19:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£8",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/a-tribute-to-ray-harryhausen-including-the-beast-from-20000-fathoms-1953/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/08/Ray-Harryhausen-2.jpg",
+      "tags": [
+        "series:The Gothique Film Society"
+      ]
+    },
+    {
+      "id": "garden-cinema:6307617",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "The Devils - director's cut",
+      "match_key": "devils directors cut",
+      "start": "2026-11-06T20:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307617.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6308768.jpg",
+      "tags": [
+        "cert:18"
+      ]
+    },
+    {
+      "id": "garden-cinema:5956450",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Maya, Give Me a Title",
+      "match_key": "maya give me a title",
+      "start": "2026-11-07T11:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5956450.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/5954921.jpg",
+      "tags": [
+        "cert:U"
+      ]
+    },
+    {
+      "id": "cinema-museum:12366",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "GEMMA & ROBERT ROSS – THE COMEDY SALON",
+      "match_key": "gemma and robert ross the comedy salon",
+      "start": "2026-11-07T12:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£40",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/gemma-robert-rosss-comedy-carnival-ix/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/05/Comedy-Salon-Poster.png",
+      "tags": [
+        "series:Robert Ross"
+      ]
+    },
+    {
+      "id": "garden-cinema:6314422",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "La Bola Negra",
+      "match_key": "la bola negra",
+      "start": "2026-11-07T12:25:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6314422.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6314379.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6270658",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Raise the Red Lantern",
+      "match_key": "raise the red lantern",
+      "start": "2026-11-07T15:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6270658.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6270568.jpg",
+      "tags": [
+        "cert:PG",
+        "sold-out"
+      ]
+    },
+    {
+      "id": "garden-cinema:6307619",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wild Horse Nine",
+      "match_key": "wild horse nine",
+      "start": "2026-11-07T15:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307619.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6283189.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6307623",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "The Devils - director's cut",
+      "match_key": "devils directors cut",
+      "start": "2026-11-07T17:35:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307623.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6308768.jpg",
+      "tags": [
+        "cert:18"
+      ]
+    },
+    {
+      "id": "garden-cinema:6267238",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Strawman",
+      "match_key": "strawman",
+      "start": "2026-11-07T18:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6267238.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6241810.jpg",
+      "tags": [
+        "cert:18"
+      ]
+    },
+    {
+      "id": "garden-cinema:6352293",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Stalker",
+      "match_key": "stalker",
+      "start": "2026-11-07T19:45:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6352293.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/3273010.jpg",
+      "tags": [
+        "cert:PG",
+        "intro",
+        "sold-out"
+      ]
+    },
+    {
+      "id": "garden-cinema:6314424",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "La Bola Negra",
+      "match_key": "la bola negra",
+      "start": "2026-11-07T20:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6314424.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6314379.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6307621",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wild Horse Nine",
+      "match_key": "wild horse nine",
+      "start": "2026-11-07T20:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307621.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6283189.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6019815",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Maya, Give Me a Title",
+      "match_key": "maya give me a title",
+      "start": "2026-11-08T11:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6019815.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/5954921.jpg",
+      "tags": [
+        "cert:U"
+      ]
+    },
+    {
+      "id": "garden-cinema:6314426",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "La Bola Negra",
+      "match_key": "la bola negra",
+      "start": "2026-11-08T12:45:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6314426.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6314379.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6352305",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Days of Eclipse",
+      "match_key": "days of eclipse",
+      "start": "2026-11-08T13:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6352305.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6355812.jpg",
+      "tags": [
+        "cert:18",
+        "intro"
+      ]
+    },
+    {
+      "id": "cinema-museum:11637",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "The Bill Reunion 18",
+      "match_key": "bill reunion 18",
+      "start": "2026-11-08T15:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£20",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/the-bill-reunion-18/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2025/11/1_The-Bill-logo-300x211.jpg",
+      "tags": [
+        "series:Misty Moon"
+      ]
+    },
+    {
+      "id": "garden-cinema:6314428",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "La Bola Negra",
+      "match_key": "la bola negra",
+      "start": "2026-11-08T15:55:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6314428.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6314379.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6307652",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wild Horse Nine",
+      "match_key": "wild horse nine",
+      "start": "2026-11-08T16:15:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307652.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6283189.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6263712",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Banana Paradise",
+      "match_key": "banana paradise",
+      "start": "2026-11-08T19:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6263712.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6266524.jpg",
+      "tags": [
+        "cert:18",
+        "intro"
+      ]
+    },
+    {
+      "id": "garden-cinema:5956455",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wild Horse Nine",
+      "match_key": "wild horse nine",
+      "start": "2026-11-08T19:15:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5956455.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6283189.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6307660",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wild Horse Nine",
+      "match_key": "wild horse nine",
+      "start": "2026-11-09T14:50:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307660.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6283189.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6402343",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Down by Law",
+      "match_key": "down by law",
+      "start": "2026-11-09T15:15:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6402343.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6402163.jpg",
+      "tags": [
+        "cert:U"
+      ]
+    },
+    {
+      "id": "garden-cinema:6307656",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "The Devils - director's cut",
+      "match_key": "devils directors cut",
+      "start": "2026-11-09T17:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307656.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6308768.jpg",
+      "tags": [
+        "cert:18"
+      ]
+    },
+    {
+      "id": "garden-cinema:6307658",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wild Horse Nine",
+      "match_key": "wild horse nine",
+      "start": "2026-11-09T17:15:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307658.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6283189.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6270660",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Raise the Red Lantern",
+      "match_key": "raise the red lantern",
+      "start": "2026-11-09T17:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6270660.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6270568.jpg",
+      "tags": [
+        "cert:PG"
+      ]
+    },
+    {
+      "id": "garden-cinema:6314430",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "La Bola Negra",
+      "match_key": "la bola negra",
+      "start": "2026-11-09T19:40:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6314430.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6314379.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6307722",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wild Horse Nine",
+      "match_key": "wild horse nine",
+      "start": "2026-11-10T15:20:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307722.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6283189.jpg",
+      "tags": [
+        "cert:15",
+        "hard-of-hearing"
+      ]
+    },
+    {
+      "id": "garden-cinema:6307726",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "The Devils - director's cut",
+      "match_key": "devils directors cut",
+      "start": "2026-11-10T15:45:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307726.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6308768.jpg",
+      "tags": [
+        "cert:18"
+      ]
+    },
+    {
+      "id": "garden-cinema:6223527",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "In-Edit Cine-Documental: La guitarra flamenca de Yerai Cortés (The Flamenco Guitar of Yerai Cortés)",
+      "match_key": "la guitarra flamenca de yerai cortes the flamenco guitar of yerai cortes",
+      "start": "2026-11-10T18:10:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6223527.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6223369.png",
+      "tags": [
+        "cert:PG"
+      ]
+    },
+    {
+      "id": "garden-cinema:6314432",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "La Bola Negra",
+      "match_key": "la bola negra",
+      "start": "2026-11-10T20:10:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6314432.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6314379.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6307724",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wild Horse Nine",
+      "match_key": "wild horse nine",
+      "start": "2026-11-10T20:40:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307724.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6283189.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6307729",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wild Horse Nine",
+      "match_key": "wild horse nine",
+      "start": "2026-11-11T12:20:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307729.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6283189.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6314434",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "La Bola Negra",
+      "match_key": "la bola negra",
+      "start": "2026-11-11T14:45:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6314434.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6314379.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6263825",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Taipei Story",
+      "match_key": "taipei story",
+      "start": "2026-11-11T18:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6263825.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6242174.jpg",
+      "tags": [
+        "cert:18",
+        "intro",
+        "sold-out"
+      ]
+    },
+    {
+      "id": "cinema-museum:12527",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Gentlemen Among Themselves (Die fidele Herrenpartie) (1929)",
+      "match_key": "gentlemen among themselves die fidele herrenpartie",
+      "start": "2026-11-11T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£8 – £18",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/gentlemen-among-themselves-die-fidele-herrenpartie-1929/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/07/Gentlemen-among-themselves-poster.jpg",
+      "tags": [
+        "series:Kennington Bioscope",
+        "live-music"
+      ]
+    },
+    {
+      "id": "garden-cinema:6307731",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wild Horse Nine",
+      "match_key": "wild horse nine",
+      "start": "2026-11-11T20:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307731.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6283189.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6314438",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "La Bola Negra",
+      "match_key": "la bola negra",
+      "start": "2026-11-12T12:25:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6314438.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6314379.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6270662",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Raise the Red Lantern",
+      "match_key": "raise the red lantern",
+      "start": "2026-11-12T14:15:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6270662.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6270568.jpg",
+      "tags": [
+        "cert:PG"
+      ]
+    },
+    {
+      "id": "garden-cinema:6307773",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "The Devils - director's cut",
+      "match_key": "devils directors cut",
+      "start": "2026-11-12T14:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307773.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6308768.jpg",
+      "tags": [
+        "cert:18"
+      ]
+    },
+    {
+      "id": "garden-cinema:6307775",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wild Horse Nine",
+      "match_key": "wild horse nine",
+      "start": "2026-11-12T15:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307775.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6283189.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6314436",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "La Bola Negra",
+      "match_key": "la bola negra",
+      "start": "2026-11-12T17:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6314436.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6314379.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6271889",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Taipei Story",
+      "match_key": "taipei story",
+      "start": "2026-11-12T18:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6271889.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6242174.jpg",
+      "tags": [
+        "cert:18",
+        "sold-out"
+      ]
+    },
+    {
+      "id": "cinema-museum:12004",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Italy Through its Cinema: C’eravamo tanto amati (1974)",
+      "match_key": "ceravamo tanto amati",
+      "start": "2026-11-12T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/italy-through-its-cinema-ceravamo-tanto-amati-1974/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/04/We-all-loved-each-other-so-much-Poster.jpg",
+      "tags": [
+        "series:Ghost Light Cinema"
+      ]
+    },
+    {
+      "id": "garden-cinema:6307777",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Wild Horse Nine",
+      "match_key": "wild horse nine",
+      "start": "2026-11-12T20:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307777.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6283189.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6263738",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Hill of No Return",
+      "match_key": "hill of no return",
+      "start": "2026-11-13T20:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6263738.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6241961.jpg",
+      "tags": [
+        "cert:18",
+        "intro"
+      ]
+    },
+    {
+      "id": "cinema-museum:12505",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Silent Laughter Weekend",
+      "match_key": "silent laughter weekend",
+      "start": "2026-11-14T00:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£8 – £35",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/silent-weekend-2026/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/07/king-of-the-circus-1.jpg",
+      "tags": [
+        "series:Kennington Bioscope",
+        "live-music"
+      ]
+    },
+    {
+      "id": "garden-cinema:5982293",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "The Pirates! In an Adventure with Scientists!",
+      "match_key": "pirates in an adventure with scientists",
+      "start": "2026-11-14T11:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5982293.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/5980588.jpg",
+      "tags": [
+        "cert:PG"
+      ]
+    },
+    {
+      "id": "garden-cinema:5982301",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "The Pirates! In an Adventure with Scientists!",
+      "match_key": "pirates in an adventure with scientists",
+      "start": "2026-11-15T11:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5982301.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/5980588.jpg",
+      "tags": [
+        "cert:PG"
+      ]
+    },
+    {
+      "id": "garden-cinema:6263861",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "What Time Is It There?",
+      "match_key": "what time is it there",
+      "start": "2026-11-15T15:45:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6263861.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6242626.jpg",
+      "tags": [
+        "cert:18"
+      ]
+    },
+    {
+      "id": "garden-cinema:6267133",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Flight of the Red Balloon",
+      "match_key": "flight of the red balloon",
+      "start": "2026-11-16T18:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6267133.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6266643.jpg",
+      "tags": [
+        "cert:PG"
+      ]
+    },
+    {
+      "id": "cinema-museum:14415",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Chris Lewis presents: Jerry Lewis’s Home Movies, plus Q&A",
+      "match_key": "jerry lewiss home movies plus q and a",
+      "start": "2026-11-16T19:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/chris-lewis-presents-jerry-lewiss-home-movies-plus-qa/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/09/16-November-Poster.png",
+      "tags": [
+        "series:I’ll Say She Is!"
+      ]
+    },
+    {
+      "id": "garden-cinema:6223543",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "In-Edit Cine-Documental: La Marsellesa de los borrachos",
+      "match_key": "la marsellesa de los borrachos",
+      "start": "2026-11-16T20:20:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6223543.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6223929.jpg",
+      "tags": [
+        "cert:PG"
+      ]
+    },
+    {
+      "id": "cinema-museum:14430",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Chris Lewis presents: The Nutty Professor (1963)",
+      "match_key": "nutty professor",
+      "start": "2026-11-17T19:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/chris-lewis-presents-the-nutty-professor-1963/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/09/The-Nutty-Professor-Poster.png",
+      "tags": [
+        "series:I’ll Say She Is!"
+      ]
+    },
+    {
+      "id": "garden-cinema:6263906",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Dangerous Youth",
+      "match_key": "dangerous youth",
+      "start": "2026-11-18T18:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6263906.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6267956.jpg",
+      "tags": [
+        "cert:18",
+        "intro"
+      ]
+    },
+    {
+      "id": "cinema-museum:12805",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "On Dangerous Ground (1951)",
+      "match_key": "on dangerous ground",
+      "start": "2026-11-18T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/on-dangerous-ground-1951/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/08/On_Dangerous_Ground-poster-scaled.jpg",
+      "tags": [
+        "series:Kennington Noir"
+      ]
+    },
+    {
+      "id": "cinema-museum:12933",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Horror for a Cause – Save the Cinema Museum – Night of the Creeps (1986)",
+      "match_key": "horror for a cause save the cinema museum night of the creeps",
+      "start": "2026-11-19T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£11.55 – £27.80",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/horror-for-a-cause-save-the-cinema-museum-night-of-the-creeps-1986/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/08/Night-of-the-Creeps-poster.jpg",
+      "tags": [
+        "series:Ghost Light Cinema"
+      ]
+    },
+    {
+      "id": "garden-cinema:6445900",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "You Can See Everything",
+      "match_key": "you can see everything",
+      "start": "2026-11-20T14:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6445900.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
+      "tags": [
+        "cert:Rating TBC"
+      ]
+    },
+    {
+      "id": "garden-cinema:6445902",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "You Can See Everything",
+      "match_key": "you can see everything",
+      "start": "2026-11-20T20:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6445902.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
+      "tags": [
+        "cert:Rating TBC"
+      ]
+    },
+    {
+      "id": "garden-cinema:6041454",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Matilda (30th Anniversary)",
+      "match_key": "matilda",
+      "start": "2026-11-21T11:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6041454.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/861845.jpg",
+      "tags": [
+        "cert:PG"
+      ]
+    },
+    {
+      "id": "garden-cinema:6267005",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "The Time to Live and the Time to Die",
+      "match_key": "time to live and the time to die",
+      "start": "2026-11-21T14:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6267005.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6267947.jpg",
+      "tags": [
+        "cert:PG"
+      ]
+    },
+    {
+      "id": "garden-cinema:6445906",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "You Can See Everything",
+      "match_key": "you can see everything",
+      "start": "2026-11-21T16:50:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6445906.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
+      "tags": [
+        "cert:Rating TBC"
+      ]
+    },
+    {
+      "id": "garden-cinema:6451780",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "You Can See Everything",
+      "match_key": "you can see everything",
+      "start": "2026-11-21T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6451780.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
+      "tags": [
+        "cert:Rating TBC"
+      ]
+    },
+    {
+      "id": "garden-cinema:6041456",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Matilda (30th Anniversary)",
+      "match_key": "matilda",
+      "start": "2026-11-22T11:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6041456.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/861845.jpg",
+      "tags": [
+        "cert:PG"
+      ]
+    },
+    {
+      "id": "garden-cinema:6445910",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "You Can See Everything",
+      "match_key": "you can see everything",
+      "start": "2026-11-22T12:15:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6445910.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
+      "tags": [
+        "cert:Rating TBC"
+      ]
+    },
+    {
+      "id": "garden-cinema:6445914",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "You Can See Everything",
+      "match_key": "you can see everything",
+      "start": "2026-11-22T18:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6445914.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
+      "tags": [
+        "cert:Rating TBC"
+      ]
+    },
+    {
+      "id": "garden-cinema:6451781",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "You Can See Everything",
+      "match_key": "you can see everything",
+      "start": "2026-11-23T14:35:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6451781.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
+      "tags": [
+        "cert:Rating TBC"
+      ]
+    },
+    {
+      "id": "garden-cinema:6445916",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "You Can See Everything",
+      "match_key": "you can see everything",
+      "start": "2026-11-23T17:10:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6445916.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
+      "tags": [
+        "cert:Rating TBC"
+      ]
+    },
+    {
+      "id": "garden-cinema:6263917",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Grandma and Her Ghosts",
+      "match_key": "grandma and her ghosts",
+      "start": "2026-11-23T18:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6263917.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6242440.jpg",
+      "tags": [
+        "cert:18",
+        "intro"
+      ]
+    },
+    {
+      "id": "cinema-museum:14575",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Ali Plumb’s Quiz Night",
+      "match_key": "ali plumbs quiz night",
+      "start": "2026-11-23T19:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/ali-plumbs-quiz-night/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/10/Ali-Plumb-2.jpg",
+      "tags": []
+    },
+    {
+      "id": "garden-cinema:6445918",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "You Can See Everything",
+      "match_key": "you can see everything",
+      "start": "2026-11-24T12:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6445918.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
+      "tags": [
+        "cert:Rating TBC",
+        "hard-of-hearing"
+      ]
+    },
+    {
+      "id": "garden-cinema:6445933",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "You Can See Everything",
+      "match_key": "you can see everything",
+      "start": "2026-11-24T19:45:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6445933.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
+      "tags": [
+        "cert:Rating TBC"
+      ]
+    },
+    {
+      "id": "garden-cinema:6451782",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "You Can See Everything",
+      "match_key": "you can see everything",
+      "start": "2026-11-25T14:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6451782.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
+      "tags": [
+        "cert:Rating TBC"
+      ]
+    },
+    {
+      "id": "garden-cinema:6445935",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "You Can See Everything",
+      "match_key": "you can see everything",
+      "start": "2026-11-25T17:15:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6445935.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
+      "tags": [
+        "cert:Rating TBC"
+      ]
+    },
+    {
+      "id": "garden-cinema:6263687",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Strawman",
+      "match_key": "strawman",
+      "start": "2026-11-25T18:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6263687.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6241810.jpg",
+      "tags": [
+        "cert:18",
+        "intro"
+      ]
+    },
+    {
+      "id": "garden-cinema:6445946",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "You Can See Everything",
+      "match_key": "you can see everything",
+      "start": "2026-11-26T13:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6445946.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
+      "tags": [
+        "cert:Rating TBC"
+      ]
+    },
+    {
+      "id": "garden-cinema:6445948",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "You Can See Everything",
+      "match_key": "you can see everything",
+      "start": "2026-11-26T19:45:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6445948.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
+      "tags": [
+        "cert:Rating TBC"
+      ]
+    },
+    {
+      "id": "garden-cinema:6263728",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Banana Paradise",
+      "match_key": "banana paradise",
+      "start": "2026-11-27T18:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6263728.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6266524.jpg",
+      "tags": [
+        "cert:18"
+      ]
+    },
+    {
+      "id": "cinema-museum:14562",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Ann Vickers (1933) with film historian Kim Luperi, author of Pre-Code Essentials",
+      "match_key": "ann vickers with film historian kim luperi author of pre code essentials",
+      "start": "2026-11-27T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/ann-vickers-1933-with-film-historian-kim-luperi-author-of-pre-code-essentials/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/10/ann-vickers-poster.jpg",
+      "tags": [
+        "series:Women and Cocaine"
+      ]
+    },
+    {
+      "id": "garden-cinema:6459302",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "To Hold a Mountan + Q&A (preview)",
+      "match_key": "to hold a mountan",
+      "start": "2026-11-27T20:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6459302.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6459498.jpg",
+      "tags": [
+        "cert:12A",
+        "q-and-a"
+      ]
+    },
+    {
+      "id": "garden-cinema:6035568",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Snow White and the Seven Dwarfs",
+      "match_key": "snow white and the seven dwarfs",
+      "start": "2026-11-28T11:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6035568.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6034800.jpg",
+      "tags": [
+        "cert:U"
+      ]
+    },
+    {
+      "id": "garden-cinema:6035573",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Snow White and the Seven Dwarfs",
+      "match_key": "snow white and the seven dwarfs",
+      "start": "2026-11-29T11:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6035573.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6034800.jpg",
+      "tags": [
+        "cert:U"
+      ]
+    },
+    {
+      "id": "cinema-museum:14607",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Programmers of Tomorrow: Film Festival All-Dayer",
+      "match_key": "programmers of tomorrow film festival all dayer",
+      "start": "2026-11-29T12:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£9 – £15",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/programmers-of-tomorrow-film-festival-all-dayer/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/10/PoT-All-Dayer_provisional-flyer.jpg",
+      "tags": [
+        "series:Cinema of Tomorrow"
+      ]
+    },
+    {
+      "id": "garden-cinema:6267148",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Flight of the Red Balloon",
+      "match_key": "flight of the red balloon",
+      "start": "2026-11-30T17:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6267148.TcsSection_971",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6266643.jpg",
+      "tags": [
+        "cert:PG"
+      ]
+    },
+    {
+      "id": "cinema-museum:11909",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Julien Donkey-Boy (1999) on 35mm",
+      "match_key": "julien donkey boy",
+      "start": "2026-12-02T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/julien-donkey-boy-1999/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/04/Julien_donkey_boy_poster.png",
+      "tags": [
+        "35mm"
+      ]
+    },
+    {
+      "id": "garden-cinema:6263768",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "The Dull Ice Flower [UK Premiere]",
+      "match_key": "dull ice flower",
+      "start": "2026-12-05T16:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6263768.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6242012.jpg",
+      "tags": [
+        "cert:18",
+        "intro",
+        "sold-out"
+      ]
+    },
+    {
+      "id": "cinema-museum:13065",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "80 Years of Martin and Lewis: Artists and Models (1955)",
+      "match_key": "80 years of martin and lewis artists and models",
+      "start": "2026-12-06T14:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/80-years-of-martin-and-lewis-artists-and-models-1955/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/09/Artists-and-Models-poster.png",
+      "tags": [
+        "series:I’ll Say She Is!"
+      ]
+    },
+    {
+      "id": "garden-cinema:6263750",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Hill of No Return",
+      "match_key": "hill of no return",
+      "start": "2026-12-06T16:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6263750.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6241961.jpg",
+      "tags": [
+        "cert:18"
+      ]
+    },
+    {
+      "id": "garden-cinema:6401410",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Millennium Mambo",
+      "match_key": "millennium mambo",
+      "start": "2026-12-08T20:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6401410.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/2405357.jpg",
+      "tags": [
+        "cert:18"
+      ]
+    },
+    {
+      "id": "cinema-museum:12531",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Early Colour Live!",
+      "match_key": "early colour live",
+      "start": "2026-12-09T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£8",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/early-colour-live/",
+      "image_url": null,
+      "tags": [
+        "series:Kennington Bioscope",
+        "live-music"
+      ]
+    },
+    {
+      "id": "cinema-museum:12010",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Italy Through its Cinema: A Special Day (1977)",
+      "match_key": "special day",
+      "start": "2026-12-10T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/italy-through-its-cinema-a-special-day-1977/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/04/A-Special-Day-Poster.jpg",
+      "tags": [
+        "series:Ghost Light Cinema"
+      ]
+    },
+    {
+      "id": "cinema-museum:12844",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Dracula (1973) and They Have Changed Their Face (1971), introduced by Kim Newman",
+      "match_key": "dracula and they have changed their face introduced by kim newman",
+      "start": "2026-12-11T19:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£8",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/dracula-1973-and-they-have-changed-their-face-1971-introduced-by-kim-newman/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/08/They-Have-Changed-Their-Face-poster.jpg",
+      "tags": [
+        "series:The Gothique Film Society"
+      ]
+    },
+    {
+      "id": "garden-cinema:6457176",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Julien Donkey-Boy + Discussion with Harmony Korine",
+      "match_key": "julien donkey boy",
+      "start": "2026-12-11T20:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6457176.TcsSection_638",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6457170.png",
+      "tags": [
+        "cert:15",
+        "q-and-a"
+      ]
+    },
+    {
+      "id": "cinema-museum:12262",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "All About my Mother (1999) on 35mm",
+      "match_key": "all about my mother",
+      "start": "2026-12-12T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/law-of-desire-1987-on-35mm/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/05/All-about-my-mother-poster.jpg",
+      "tags": [
+        "35mm"
+      ]
+    },
+    {
+      "id": "cinema-museum:14243",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "The Smallest Shows on Earth",
+      "match_key": "smallest shows on earth",
+      "start": "2026-12-14T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/the-smallest-shows-on-earth/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/09/The-Smallest-Show-on-Earth-poster.jpg",
+      "tags": []
+    },
+    {
+      "id": "cinema-museum:12812",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Thunder Road (1958) on 35mm",
+      "match_key": "thunder ro",
+      "start": "2026-12-16T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/thunder-road-1958-on-35mm/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/08/Thunder_road-poster.jpg",
+      "tags": [
+        "series:Kennington Noir",
+        "35mm"
+      ]
+    },
+    {
+      "id": "cinema-museum:13076",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "80 Years of Martin and Lewis: Hollywood or Bust (1956)",
+      "match_key": "80 years of martin and lewis hollywood or bust",
+      "start": "2026-12-17T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/80-years-of-martin-and-lewis-hollywood-or-bust-1956/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/09/Hollywood-or-Bust-poster.png",
+      "tags": [
+        "series:I’ll Say She Is!"
+      ]
+    },
+    {
+      "id": "cinema-museum:12270",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Women on the Verge of a Nervous Breakdown (1988) on 35mm",
+      "match_key": "women on the verge of a nervous breakdown",
+      "start": "2026-12-19T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/women-on-the-verge-of-a-nervous-breakdown-1988-on-35mm/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/05/Women-on-the-Verge-of-a-Nervous-Breakdown-poster.jpg",
+      "tags": [
+        "35mm"
+      ]
+    },
+    {
+      "id": "garden-cinema:6467033",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Arthur Christmas",
+      "match_key": "arthur christmas",
+      "start": "2026-12-26T14:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6467033.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/1313447.jpg",
+      "tags": [
+        "cert:U"
+      ]
+    },
+    {
+      "id": "garden-cinema:6467036",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Arthur Christmas",
+      "match_key": "arthur christmas",
+      "start": "2026-12-27T11:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6467036.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/1313447.jpg",
+      "tags": [
+        "cert:U"
+      ]
+    },
+    {
+      "id": "garden-cinema:6467056",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "Arthur Christmas",
+      "match_key": "arthur christmas",
+      "start": "2026-12-28T13:40:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6467056.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/1313447.jpg",
+      "tags": [
+        "cert:U"
+      ]
+    },
+    {
+      "id": "garden-cinema:6467067",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "The Railway Children (1970)",
+      "match_key": "railway children",
+      "start": "2027-01-09T11:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6467067.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6413407.jpg",
+      "tags": [
+        "cert:U"
+      ]
+    },
+    {
+      "id": "cinema-museum:12599",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "The Blinking Buzzards – 9 January",
+      "match_key": "blinking buzzards 9 january",
+      "start": "2027-01-09T16:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£5",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/the-blinking-buzzards-9-january/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2025/11/Buster-Keaton-235x300.jpg",
+      "tags": [
+        "series:The UK Buster Keaton Society"
+      ]
+    },
+    {
+      "id": "garden-cinema:6467078",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "title": "The Railway Children (1970)",
+      "match_key": "railway children",
+      "start": "2027-01-10T11:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6467078.TcsSection_3060731",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6413407.jpg",
+      "tags": [
+        "cert:U"
+      ]
+    },
+    {
+      "id": "cinema-museum:12045",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Italy Through its Cinema: Cinema Paradiso (1988)",
+      "match_key": "cinema paradiso",
+      "start": "2027-01-14T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/italy-through-its-cinema-cinema-paradiso-1988/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/04/Cinema-Paradiso-Poster.jpg",
+      "tags": [
+        "series:Ghost Light Cinema"
+      ]
+    },
+    {
+      "id": "cinema-museum:12278",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "The Good, the Bad and the Ugly (1966) on 35mm",
+      "match_key": "good the bad and the ugly",
+      "start": "2027-01-23T14:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/the-good-the-bad-and-the-ugly-1966-on-35mm/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/05/The-Good-The-Bad-and-the-Ugly-poster.jpg",
+      "tags": [
+        "35mm"
+      ]
+    },
+    {
+      "id": "cinema-museum:12852",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Zombies of Mora Tau (1957) and The Vampire (1957)",
+      "match_key": "zombies of mora tau and the vampire",
+      "start": "2027-01-29T19:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£8",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/zombies-of-mora-tau-1957-and-the-vampire-1957/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/08/The-Vampire-1957-poster.jpg",
+      "tags": [
+        "series:The Gothique Film Society"
+      ]
+    },
+    {
+      "id": "cinema-museum:12289",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "El Topo (1970) on 35mm",
+      "match_key": "el topo",
+      "start": "2027-01-30T14:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/el-topo-1970-on-35mm/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/05/El-Topo-poster.jpg",
+      "tags": [
+        "35mm"
+      ]
+    },
+    {
+      "id": "cinema-museum:12298",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Trouble Every Day (2001) on 35mm",
+      "match_key": "trouble every day",
+      "start": "2027-02-06T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/trouble-every-day-2001-on-35mm/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/05/Trouble_every_day_poster.jpg",
+      "tags": [
+        "35mm"
+      ]
+    },
+    {
+      "id": "cinema-museum:12858",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Creature with the Atom Brain (1955) and I Married a Monster from Outer Space (1958)",
+      "match_key": "creature with the atom brain and i married a monster from outer space",
+      "start": "2027-02-19T19:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£8",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/creature-with-the-atom-brain-1955-and-i-married-a-monster-from-outer-space-1958/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/08/I-Married-a-Monster-from-Outer-Space-poster.jpg",
+      "tags": [
+        "series:The Gothique Film Society"
+      ]
+    },
+    {
+      "id": "cinema-museum:14520",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Macabre (1958)",
+      "match_key": "macabre",
+      "start": "2027-02-24T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/macabre-1958/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/10/Macabre-1958-Poster.jpg",
+      "tags": [
+        "series:Rochester Kino Cinema Club"
+      ]
+    },
+    {
+      "id": "cinema-museum:12306",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "In My Skin (2002) on 35mm",
+      "match_key": "in my skin",
+      "start": "2027-02-26T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/in-my-skin-2002-on-35mm/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/05/In-My-Skin-poster.jpg",
+      "tags": [
+        "35mm"
+      ]
+    },
+    {
+      "id": "cinema-museum:12327",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "The Hours (2002) on 35mm",
+      "match_key": "hours",
+      "start": "2027-03-05T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/the-hours-2002-on-35mm/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2025/07/The-Hours-poster-rZ3mz5.jpg",
+      "tags": [
+        "35mm"
+      ]
+    },
+    {
+      "id": "cinema-museum:12868",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "The Werewolf (1956) and The Giant Claw (1957)",
+      "match_key": "werewolf and the giant claw",
+      "start": "2027-03-12T19:00:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£8",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/the-werewolf-1956-and-the-giant-claw-1957/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/08/The_werewolf-1956-poster.jpg",
+      "tags": [
+        "series:The Gothique Film Society"
+      ]
+    },
+    {
+      "id": "cinema-museum:12363",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Moulin Rouge! (2001) on 35mm",
+      "match_key": "moulin rouge",
+      "start": "2027-03-19T19:30:00+00:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/moulin-rouge-2001-on-35mm/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/05/moulin-rouge-2001-poster.jpeg",
+      "tags": [
+        "35mm"
+      ]
+    },
+    {
+      "id": "cinema-museum:14527",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "She Devils on Wheels (1968)",
+      "match_key": "she devils on wheels",
+      "start": "2027-03-31T19:30:00+01:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/she-devils-on-wheels-1968/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/10/She-Devils-on-Wheels-1968-Poster.jpg",
+      "tags": [
+        "series:Rochester Kino Cinema Club"
+      ]
+    },
+    {
+      "id": "cinema-museum:12340",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Goodfellas (1990) on 35mm",
+      "match_key": "goodfellas",
+      "start": "2027-04-02T19:30:00+01:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/goodfellas-1990-on-35mm/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/05/Goodfellas-poster-scaled.jpg",
+      "tags": [
+        "35mm"
+      ]
+    },
+    {
+      "id": "cinema-museum:12577",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "The Blinking Buzzards – 10 April",
+      "match_key": "blinking buzzards 10 april",
+      "start": "2027-04-10T16:00:00+01:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£5",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/the-blinking-buzzards-6-march/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2025/11/Buster-Keaton-235x300.jpg",
+      "tags": [
+        "series:The UK Buster Keaton Society"
+      ]
+    },
+    {
+      "id": "cinema-museum:12347",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "The Age of Innocence (1993) on 35mm",
+      "match_key": "age of innocence",
+      "start": "2027-04-16T19:30:00+01:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/the-age-of-innocence-1993-on-35mm/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/05/The-Age-of-Innocence-poster.jpg",
+      "tags": [
+        "35mm"
+      ]
+    },
+    {
+      "id": "cinema-museum:12352",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Gozu (2003) on 35mm",
+      "match_key": "gozu",
+      "start": "2027-05-07T19:30:00+01:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/gozu-2003-on-35mm/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/05/Gozu_Poster.jpg",
+      "tags": [
+        "35mm"
+      ]
+    },
+    {
+      "id": "cinema-museum:12357",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "Audition (1999) on 35mm",
+      "match_key": "audition",
+      "start": "2027-05-28T19:30:00+01:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£10",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/audition-1999-on-35mm/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/05/Audition-poster.jpg",
+      "tags": [
+        "35mm"
+      ]
+    },
+    {
+      "id": "cinema-museum:12582",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "The Blinking Buzzards – 10 July",
+      "match_key": "blinking buzzards 10 july",
+      "start": "2027-07-10T16:00:00+01:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£5",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/the-blinking-buzzards-5-june/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2025/11/Buster-Keaton-235x300.jpg",
+      "tags": [
+        "series:The UK Buster Keaton Society"
+      ]
+    },
+    {
+      "id": "cinema-museum:12587",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "title": "The Blinking Buzzards – 9 October",
+      "match_key": "blinking buzzards 9 october",
+      "start": "2027-10-09T16:00:00+01:00",
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "£5",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/the-blinking-buzzards-4-december/",
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2025/11/Buster-Keaton-235x300.jpg",
+      "tags": [
+        "series:The UK Buster Keaton Society"
+      ]
+    }
+  ]
+}
