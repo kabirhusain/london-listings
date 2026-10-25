@@ -30,3 +30,7 @@ env/
 .idea/
 .vscode/
 .DS_Store
+
+# Browser-saved pages for the saved-page reader (kept local; only extracted listings are published)
+/manual/pages/*
+!/manual/pages/20261025_README.txt

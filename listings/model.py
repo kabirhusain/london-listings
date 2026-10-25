@@ -24,7 +24,7 @@ class Showing:
     title: str
     start: str  # ISO 8601 with Europe/London offset, e.g. 2026-10-24T18:10:00+01:00
     runtime_minutes: int | None
-    booking_url: str | None
+    booking_url: str | None  # checkout / seat picker where the venue has one
     image_url: str | None
     tags: list[str] = field(default_factory=list)
     lineup: list[str] = field(default_factory=list)  # performers, headliner first; empty for films
@@ -37,6 +37,10 @@ class Showing:
     # Raw synopsis from the source. Not written per showing: the collector turns
     # these into one cleaned blurb per title in the top-level "blurbs" map.
     description: str | None = None
+    # The venue's public page for the event or production (blurb, dates, link to
+    # buy), as opposed to booking_url. Null when booking_url already is that page
+    # or there's no reliable source. Never a checkout or seat-picker URL.
+    info_url: str | None = None
 
     def to_dict(self) -> dict:
         d = asdict(self)
@@ -46,7 +50,7 @@ class Showing:
 
 _FIELD_ORDER = (
     "id", "venue", "category", "kind", "title", "match_key", "start", "end", "doors", "runtime_minutes",
-    "lineup", "genre", "price", "booking_url", "image_url", "tags",
+    "lineup", "genre", "price", "booking_url", "info_url", "image_url", "tags",
 )
 
 
@@ -115,6 +119,8 @@ LISTINGS_SCHEMA = {
                     "start": {"type": "string", "pattern": _ISO_LONDON},
                     "runtime_minutes": {"type": ["integer", "null"], "minimum": 1},
                     "booking_url": {"type": ["string", "null"], "pattern": "^https?://"},
+                    # Optional: listings written before it existed still validate.
+                    "info_url": {"type": ["string", "null"], "pattern": "^https?://"},
                     "image_url": {"type": ["string", "null"], "pattern": "^https?://"},
                     "tags": {"type": "array", "items": {"type": "string"}, "uniqueItems": True},
                 },

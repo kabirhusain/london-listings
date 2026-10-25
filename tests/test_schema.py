@@ -32,7 +32,7 @@ def test_film_and_gig_are_valid():
 def test_every_field_is_present_in_output_order():
     assert list(GIG) == [
         "id", "venue", "category", "kind", "title", "match_key", "start", "end", "doors", "runtime_minutes",
-        "lineup", "genre", "price", "booking_url", "image_url", "tags",
+        "lineup", "genre", "price", "booking_url", "info_url", "image_url", "tags",
     ]
 
 
@@ -185,3 +185,26 @@ def test_one_blurb_per_title_best_wins_and_previous_kept():
     out = pick_blurbs(showings, candidates, previous={"film:other film": "Kept from yesterday.", "film:gone": "x"})
     assert out == {"film:wild horse nine": "A much better, longer description of the film that reads well.",
                    "film:other film": "Kept from yesterday."}
+
+
+def test_info_url_is_optional_and_validated():
+    validate_listings(_doc(dict(GIG, info_url="https://www.example.com/whats-on/show")))
+    validate_listings(_doc(dict(GIG, info_url=None)))
+    old = {k: v for k, v in GIG.items() if k != "info_url"}       # written before info_url existed
+    validate_listings(_doc(old))
+    for bad in ("www.example.com/show", "/whats-on/show", "", 42):
+        with pytest.raises(ValidationError):
+            validate_listings(_doc(dict(GIG, info_url=bad)))
+
+
+def test_info_url_sits_next_to_booking_url_which_is_unchanged():
+    keys = list(GIG)
+    assert keys.index("info_url") == keys.index("booking_url") + 1
+    assert GIG["booking_url"] == "https://example.com/b" and GIG["info_url"] is None
+
+
+def test_upgrade_keeps_info_url_missing_as_null():
+    from listings.model import upgrade_showing
+    old = {k: v for k, v in GIG.items() if k != "info_url"}
+    assert upgrade_showing(old)["info_url"] is None
+    assert upgrade_showing(dict(GIG, info_url="https://x.org/e"))["info_url"] == "https://x.org/e"
