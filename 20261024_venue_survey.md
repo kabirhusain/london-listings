@@ -144,3 +144,37 @@ Not added:
 - Old Vic and Almeida: added as run entries (kind="run": first/last dates, no times) from their own sites; performance times are only on Incapsula-protected Tessitura sites.
 - National Theatre: CloudFront blocks our requests (403, even robots.txt); its ticketing site is behind Incapsula; no allowed structured source for run dates. Use a manual run file.
 - Young Vic: Cloudflare challenge on youngvic.org; tickets.youngvic.org is a Spektrix front end that isn't challenged (API address not yet found).
+
+## info_url survey (Prompt 4 phase 2, 2026-10-25)
+
+"Per production" = all performances of a film/show share the URL. "null" = booking_url
+already is the public event page, so info_url stays null.
+
+| Platform / venue | Where info_url comes from | Example | Granularity |
+|---|---|---|---|
+| Savoy (Rio, Lexi, Phoenix) | `URL` field already in the embedded Events JSON | riocinema.org.uk/Rio.dll/WhatsOn?f=2910719 | per production |
+| Clusterflick: Curzon Soho/Bloomsbury, Bertha DocHouse | film `url` in Clusterflick data | curzon.com/films/big-girls-dont-cry/HO00007471/?siteId=BLO1 | per production |
+| Clusterflick: Ciné Lumière | film `url` | institut-francais.org.uk/cinema/a-good-little-soldier/ | per production |
+| Clusterflick: Close-Up | film `url` | closeupfilmcentre.com/film_programmes/2026/.../all-white-in-barking | per production |
+| Clusterflick: Regent Street | film `url` | regentstreetcinema.com/movie/42nd-street | per production |
+| Clusterflick: Rich Mix films | film `url` (Eventbrite event page; booking is checkout) | eventbrite.com/e/...-2003769106337 | per production |
+| Clusterflick: BFI Southbank | `url` == booking (article page, not a checkout) | whatson.bfi.org.uk/...article_id=... | null |
+| Prince Charles | film link on the scraped page | princecharlescinema.com/film/31617175/... | per production |
+| Garden | film link on the scraped homepage | thegardencinema.co.uk/film/all-about-the-money-qa/ | per production |
+| Genesis | `event/<id>` link on the scraped homepage | genesiscinema.co.uk/event/112569 | per production |
+| Castle | `/programme/<id>/<slug>/` tile link on the scraped calendar | thecastlecinema.com/programme/113504/wildwood/ | per production |
+| Electric | film `link` in data.json (booking is `/tickets/<id>`) | electriccinema.co.uk/film/you-can-see-everything/ | per production |
+| Barbican Cinema | event link from the day listings already fetched (matched by instance id) | barbican.org.uk/whats-on/2026/event/... | per production |
+| The Nickel | booking_url is `/screening/<id>`, the info page | thenickel.co.uk/screening/780 | null |
+| Hampstead | production page already fetched | hampsteadtheatre.com/production/dogstar/ | per production |
+| Sadler's Wells | show page already fetched | sadlerswells.com/whats-on/culture-club-2026/ | per production |
+| Hackney Empire | event links on the category pages already fetched (matched by title) | hackneyempire.co.uk/events/henning-wehn-acid-wehn | per production |
+| Union Chapel | event link on the listing already fetched | unionchapel.org.uk/whats-on/ezra-furman-solo | per event |
+| Lexington | `event.php?id=` link on the listing | thelexington.co.uk/event.php?id=3889 | per event |
+| Troubadour | Wix event `slug` | troubadourlondon.com/event-details/<slug> | per event |
+| Cecil Sharp House | EFDSS RSS feed (1 request) matched on Spektrix `attribute_CMSID` | efdss.org/whats-on/15993-... | per production |
+| Spektrix: Park, Yard | `webUrl` in the API (Park 9/36, Yard 6/8) | parktheatre.co.uk/events/the-weddings/ | per production |
+| Spektrix: other theatres, ICA, Barbican Centre, Rich Mix music | no URL in the API; would need the venue's what's-on page (1 request per venue) matched by title: Bush 100%, Unicorn 90%, Orange Tree 87%, Stratford East 83%, Southwark 77%, Park 75%, Lyric 50%, Royal Court 40%, BAC 38%, Kiln 28%, Soho 26%, ICA 16%, Barbican 1%, Donmar/Arcola/Yard 0% | bushtheatre.co.uk/event/insane-asylum-seekers-2026/ | per production |
+| PizzaExpress, 606, Cafe Oto, Green Note, Vortex, Cinema Museum, Almeida, Old Vic | booking_url is already the event page | | null |
+| DICE (MOTH, St Pancras Old Church) | booking_url is the DICE event page (info + buy, not a checkout) | dice.fm/event/... | null |
+| Songkick (Kings Place, Ronnie Scott's, Bush Hall, Folklore, Slaughtered Lamb) | booking_url is the Songkick concert page | songkick.com/concerts/... | null |
