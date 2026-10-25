@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-25T08:52:51+00:00",
+  "generated_at": "2026-10-25T09:42:59+00:00",
   "sources": [
     {
       "venue": "garden-cinema",
       "source": "Server-rendered homepage (https://www.thegardencinema.co.uk/)",
       "status": "ok",
-      "fetched_at": "2026-10-25T08:52:51+00:00",
+      "fetched_at": "2026-10-25T09:42:59+00:00",
       "showings": 159
     },
     {
       "venue": "cinema-museum",
       "source": "The Events Calendar REST API (https://cinemamuseum.org.uk/wp-json/tribe/events/v1/events)",
       "status": "ok",
-      "fetched_at": "2026-10-25T08:52:51+00:00",
+      "fetched_at": "2026-10-25T09:42:59+00:00",
       "showings": 47
     }
   ],
