@@ -2,3 +2,6 @@
 # line (see `python -m listings list-venues`). Add a venue here when status.json
 # shows it failing on GitHub but `python -m listings collect --venue <slug>`
 # works locally.
+# 2026-10-25: Cloudflare challenge (403) from GitHub's servers, fine from home.
+garden-cinema
+cinema-museum
