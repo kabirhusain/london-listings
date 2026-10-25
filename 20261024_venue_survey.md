@@ -141,6 +141,6 @@ the venues' pages, and reusing those keys was blocked by the permission system.
 | Sadler's Wells (Angel + Lilian Baylis Studio) | sadlers_wells | show pages on sadlerswells.com (ticketing site is Incapsula-protected) |
 
 Not added:
-- Old Vic and Almeida: their websites only give run dates; performance times are on Incapsula-protected Tessitura sites.
-- National Theatre: CloudFront blocks our requests (403, even robots.txt); its ticketing site is behind Incapsula.
+- Old Vic and Almeida: added as run entries (kind="run": first/last dates, no times) from their own sites; performance times are only on Incapsula-protected Tessitura sites.
+- National Theatre: CloudFront blocks our requests (403, even robots.txt); its ticketing site is behind Incapsula; no allowed structured source for run dates. Use a manual run file.
 - Young Vic: Cloudflare challenge on youngvic.org; tickets.youngvic.org is a Spektrix front end that isn't challenged (API address not yet found).

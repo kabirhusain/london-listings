@@ -16,8 +16,8 @@ with a few conveniences for typing by hand:
 - `start` may omit the offset ("2026-11-14T19:30"); it's taken as London time.
 - `doors` may be a full datetime or just "19:00" (same day as start).
 - `id`, `venue`, `category`, `lineup`, `tags`... are filled in if missing.
-- Showings whose start has passed are ignored, so a file can be left in place
-  and topped up each month.
+- Showings whose start has passed are ignored (for "kind": "run" entries, once
+  their "end" date has passed), so a file can be left in place and topped up.
 Files whose names start with "_", contain "example", or don't end in .json are ignored.
 """
 
@@ -30,7 +30,7 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
 
-from listings.model import LONDON, london_iso, upgrade_showing, validate_listings
+from listings.model import LONDON, is_upcoming, london_iso, upgrade_showing, validate_listings
 
 DEFAULT_DIR = Path(__file__).resolve().parent.parent / "manual"
 
@@ -83,7 +83,7 @@ def _load_file(path: Path, known_venues: dict, now: datetime) -> ManualVenue:
             showing = _normalise(raw, slug, name, default_category)
         except Exception as e:
             raise ValueError(f"showing #{i + 1} ({raw.get('title', '?')!r}): {e}") from e
-        if datetime.fromisoformat(showing["start"]) < now:
+        if not is_upcoming(showing, now):
             venue.skipped_past += 1
             continue
         venue.showings.append(showing)
@@ -118,7 +118,10 @@ def _normalise(raw: dict, slug: str, name: str, default_category: str) -> dict:
 
 
 def _london(value: str) -> datetime:
-    dt = datetime.fromisoformat(value.strip().replace("Z", "+00:00"))
+    value = value.strip()
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):  # a date on its own (e.g. a run's start)
+        value += "T00:00"
+    dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
     return dt if dt.tzinfo else dt.replace(tzinfo=LONDON)
 
 

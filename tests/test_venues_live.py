@@ -30,7 +30,7 @@ MIN_SHOWINGS = {
     "soho-theatre": 150, "battersea-arts-centre": 20, "orange-tree-theatre": 60, "park-theatre": 150,
     "hackney-empire": 30, "gate-theatre": 0, "unicorn-theatre": 100, "lyric-hammersmith": 60, "stratford-east": 20,
     "southwark-playhouse": 100, "the-yard-theatre": 30, "barbican-centre": 100, "hampstead-theatre": 50,
-    "sadlers-wells": 10,
+    "sadlers-wells": 10, "almeida-theatre": 1, "old-vic": 1,
 }
 # Venues whose source gives film runtimes; a drop means a field moved.
 RUNTIME_EXPECTED = {
@@ -58,9 +58,11 @@ def test_venue_live_output_matches_schema(slug):
     assert {s["category"] for s in showings} <= {"film", "music", "theatre", "comedy", "dance"}
 
     now = datetime.now(LONDON)
-    starts = [datetime.fromisoformat(s["start"]) for s in showings]
-    assert min(starts) >= now - timedelta(minutes=1)
-    assert max(starts) <= now + timedelta(days=730)
+    starts = [datetime.fromisoformat(s["start"]) for s in showings if s["kind"] == "performance"]
+    if starts:
+        assert min(starts) >= now - timedelta(minutes=1)
+    assert all(s["end"] >= now.date().isoformat() for s in showings if s["kind"] == "run")
+    assert all(datetime.fromisoformat(s["start"]) <= now + timedelta(days=730) for s in showings)
 
     # Most films should have a runtime; a sudden drop means a field moved.
     films = [s for s in showings if s["category"] == "film"]

@@ -31,7 +31,7 @@ def test_film_and_gig_are_valid():
 
 def test_every_field_is_present_in_output_order():
     assert list(GIG) == [
-        "id", "venue", "category", "title", "match_key", "start", "doors", "runtime_minutes",
+        "id", "venue", "category", "kind", "title", "match_key", "start", "end", "doors", "runtime_minutes",
         "lineup", "genre", "price", "booking_url", "image_url", "tags",
     ]
 
@@ -52,7 +52,7 @@ def test_bad_values_are_rejected(field, value):
         validate_listings(_doc(bad))
 
 
-@pytest.mark.parametrize("field", ["category", "lineup", "doors", "price", "genre", "match_key"])
+@pytest.mark.parametrize("field", ["category", "lineup", "doors", "price", "genre", "match_key", "kind", "end"])
 def test_new_fields_are_required(field):
     bad = copy.deepcopy(GIG)
     del bad[field]
@@ -73,7 +73,7 @@ def test_doors_after_start_is_rejected():
 
 
 def test_upgrade_fills_old_schema_showing():
-    old = {k: v for k, v in FILM.items() if k not in ("category", "lineup", "doors", "price", "genre", "match_key")}
+    old = {k: v for k, v in FILM.items() if k not in ("category", "lineup", "doors", "price", "genre", "match_key", "kind", "end")}
     assert upgrade_showing(old) == FILM
 
 
@@ -102,3 +102,53 @@ def test_match_key_keeps_distinct_titles_apart(a, b):
 @pytest.mark.parametrize("category", ["theatre", "comedy", "dance"])
 def test_new_categories_are_valid(category):
     validate_listings(_doc(dict(GIG, category=category)))
+
+
+RUN = Showing(
+    id="v:3", venue="Venue", category="theatre", kind="run", title="A Play",
+    start="2026-11-10T00:00:00+00:00", end="2027-01-09", runtime_minutes=None,
+    booking_url=None, image_url=None,
+).to_dict()
+
+
+def test_run_is_valid():
+    validate_listings(_doc(RUN))
+
+
+@pytest.mark.parametrize("bad", [
+    {"end": None},                      # runs need an end date
+    {"end": "2026-11-01"},              # end before start
+    {"end": "9 Jan 2027"},              # YYYY-MM-DD only
+    {"kind": "season"},
+])
+def test_bad_runs_are_rejected(bad):
+    with pytest.raises(ValidationError):
+        validate_listings(_doc(dict(RUN, **bad)))
+
+
+def test_performance_cannot_have_end():
+    with pytest.raises(ValidationError):
+        validate_listings(_doc(dict(FILM, end="2026-12-01")))
+
+
+def test_run_is_upcoming_until_its_end_date():
+    from datetime import datetime
+    from listings.model import LONDON, is_upcoming
+    started = dict(RUN, start="2026-09-08T00:00:00+01:00", end="2026-10-31")
+    assert is_upcoming(started, datetime(2026, 10, 25, 12, tzinfo=LONDON))
+    assert not is_upcoming(started, datetime(2026, 11, 1, 12, tzinfo=LONDON))
+
+
+@pytest.mark.parametrize("text, expected", [
+    ("Tue 10 Nov – Wed 23 Dec 2026", ("2026-11-10", "2026-12-23")),
+    ("10 Nov 2026–09 Jan 2027", ("2026-11-10", "2027-01-09")),
+    ("01–31 Oct 2026", ("2026-10-01", "2026-10-31")),
+    ("19 Dec 2026", ("2026-12-19", "2026-12-19")),
+    ("Sat 21 Nov - Sat 17 Apr 2027", ("2026-11-21", "2027-04-17")),
+    ("Jun - Jul 2027", None),
+    ("Early 2028", None),
+])
+def test_parse_date_range(text, expected):
+    from listings.text import parse_date_range
+    got = parse_date_range(text)
+    assert (tuple(d.isoformat() for d in got) if got else None) == expected

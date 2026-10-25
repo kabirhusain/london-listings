@@ -108,3 +108,16 @@ def test_failed_venue_does_not_carry_over_old_manual_entries(tmp_path, venues):
     ]}
     doc, errors = cli.collect(None, client=object(), previous=previous, manual_dir=tmp_path)
     assert [s["title"] for s in doc["showings"]] == []
+
+
+def test_manual_run_entry_kept_until_end(tmp_path):
+    _write(tmp_path, "nt.json", {"venue": "National Theatre", "category": "theatre", "showings": [
+        {"title": "Running Now", "kind": "run", "start": (NOW - timedelta(days=30)).strftime("%Y-%m-%d"),
+         "end": (NOW + timedelta(days=30)).strftime("%Y-%m-%d")},
+        {"title": "Finished", "kind": "run", "start": (NOW - timedelta(days=60)).strftime("%Y-%m-%d"),
+         "end": (NOW - timedelta(days=1)).strftime("%Y-%m-%d")},
+    ]})
+    venues, errors = load_manual(tmp_path)
+    assert errors == []
+    assert [s["title"] for s in venues[0].showings] == ["Running Now"]
+    assert venues[0].skipped_past == 1

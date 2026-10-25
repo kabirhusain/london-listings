@@ -32,6 +32,8 @@ class Showing:
     price: str | None = None  # free text, e.g. "From £16"
     genre: str | None = None
     match_key: str = ""  # normalised title for grouping the same film across venues; filled in if empty
+    kind: str = "performance"  # "performance", or "run" (a production's run with dates but no times)
+    end: str | None = None  # runs only: last date, YYYY-MM-DD
 
     def to_dict(self) -> dict:
         d = asdict(self)
@@ -40,7 +42,7 @@ class Showing:
 
 
 _FIELD_ORDER = (
-    "id", "venue", "category", "title", "match_key", "start", "doors", "runtime_minutes",
+    "id", "venue", "category", "kind", "title", "match_key", "start", "end", "doors", "runtime_minutes",
     "lineup", "genre", "price", "booking_url", "image_url", "tags",
 )
 
@@ -50,7 +52,8 @@ def upgrade_showing(d: dict) -> dict:
 
     Before these fields existed, every venue was a cinema, so category is "film".
     """
-    defaults = {"category": "film", "lineup": [], "doors": None, "price": None, "genre": None}
+    defaults = {"category": "film", "lineup": [], "doors": None, "price": None, "genre": None,
+                "kind": "performance", "end": None}
     out = {k: d.get(k, defaults.get(k)) for k in _FIELD_ORDER}
     out["match_key"] = out.get("match_key") or match_key(out["title"])
     return out
@@ -81,7 +84,7 @@ LISTINGS_SCHEMA = {
                 "type": "object",
                 "additionalProperties": False,
                 "required": [
-                    "id", "venue", "category", "title", "match_key", "start", "doors",
+                    "id", "venue", "category", "kind", "title", "match_key", "start", "end", "doors",
                     "runtime_minutes", "lineup", "genre", "price",
                     "booking_url", "image_url", "tags",
                 ],
@@ -89,6 +92,8 @@ LISTINGS_SCHEMA = {
                     "id": {"type": "string", "minLength": 1},
                     "venue": {"type": "string", "minLength": 1},
                     "category": {"enum": list(CATEGORIES)},
+                    "kind": {"enum": ["performance", "run"]},
+                    "end": {"type": ["string", "null"], "pattern": r"^\d{4}-\d{2}-\d{2}$"},
                     "lineup": {
                         "type": "array",
                         "items": {"type": "string", "minLength": 1},
@@ -104,9 +109,15 @@ LISTINGS_SCHEMA = {
                     "image_url": {"type": ["string", "null"], "pattern": "^https?://"},
                     "tags": {"type": "array", "items": {"type": "string"}, "uniqueItems": True},
                 },
-                # Films have no lineup.
-                "if": {"properties": {"category": {"const": "film"}}},
-                "then": {"properties": {"lineup": {"maxItems": 0}}},
+                "allOf": [
+                    # Films have no lineup.
+                    {"if": {"properties": {"category": {"const": "film"}}},
+                     "then": {"properties": {"lineup": {"maxItems": 0}}}},
+                    # Runs have an end date; performances don't.
+                    {"if": {"properties": {"kind": {"const": "run"}}},
+                     "then": {"properties": {"end": {"type": "string"}}},
+                     "else": {"properties": {"end": {"type": "null"}}}},
+                ],
             },
         },
     },
@@ -122,3 +133,12 @@ def validate_listings(doc: dict) -> None:
     for s in doc["showings"]:
         if s["doors"] and datetime.fromisoformat(s["doors"]) > datetime.fromisoformat(s["start"]):
             raise jsonschema.ValidationError(f"{s['id']}: doors is after start")
+        if s["end"] and s["end"] < s["start"][:10]:
+            raise jsonschema.ValidationError(f"{s['id']}: end is before start")
+
+
+def is_upcoming(s: dict, now: datetime) -> bool:
+    """Performances: not started yet. Runs: not finished yet (end date today or later)."""
+    if s.get("kind") == "run" and s.get("end"):
+        return s["end"] >= now.astimezone(LONDON).date().isoformat()
+    return datetime.fromisoformat(s["start"]) >= now

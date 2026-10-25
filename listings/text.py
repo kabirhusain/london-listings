@@ -170,3 +170,53 @@ def match_key(title: str) -> str:
     t = re.sub(r"[^a-z0-9]+", " ", t).strip()
     t = re.sub(r"^(?:the|a|an)\s+", "", t)
     return t or tidy_title(title).lower()
+
+
+_D = r"(?:(?:mon|tue|wed|thu|fri|sat|sun)[a-z]*\.?,?\s+)?"  # optional weekday
+_RANGE = re.compile(
+    rf"{_D}(?P<d1>\d{{1,2}})(?:st|nd|rd|th)?(?:\s+(?P<m1>[a-z]{{3,9}})\.?)?(?:\s+(?P<y1>\d{{4}}))?"
+    rf"\s*(?:[–—-]|to|until)\s*"
+    rf"{_D}(?P<d2>\d{{1,2}})(?:st|nd|rd|th)?\s+(?P<m2>[a-z]{{3,9}})\.?\s+(?P<y2>\d{{4}})",
+    re.I,
+)
+_SINGLE = re.compile(rf"{_D}(?P<d>\d{{1,2}})(?:st|nd|rd|th)?\s+(?P<m>[a-z]{{3,9}})\.?\s+(?P<y>\d{{4}})", re.I)
+
+
+def _month(name: str) -> int | None:
+    from datetime import datetime
+
+    for fmt, value in (("%B", name), ("%b", name[:3])):
+        try:
+            return datetime.strptime(value, fmt).month
+        except ValueError:
+            continue
+    return None
+
+
+def parse_date_range(text: str):
+    """Day-precise date range from text, e.g. "Tue 10 Nov – Wed 23 Dec 2026",
+    "10 Nov 2026–09 Jan 2027", "01–31 Oct 2026", "19 Dec 2026".
+    Returns (first, last) dates, or None (including for vague text like "Jun - Jul 2027")."""
+    from datetime import date
+
+    m = _RANGE.search(text)
+    if m:
+        d1, d2 = int(m.group("d1")), int(m.group("d2"))
+        m2, y2 = _month(m.group("m2")), int(m.group("y2"))
+        m1 = _month(m.group("m1")) if m.group("m1") else m2
+        if not (m1 and m2):
+            return None
+        # "Sat 21 Nov - Sat 17 Apr 2026": the first date is in the previous year.
+        y1 = int(m.group("y1")) if m.group("y1") else (y2 if (m1, d1) <= (m2, d2) else y2 - 1)
+        try:
+            return date(y1, m1, d1), date(y2, m2, d2)
+        except ValueError:
+            return None
+    m = _SINGLE.search(text)
+    if m and _month(m.group("m")):
+        try:
+            d = date(int(m.group("y")), _month(m.group("m")), int(m.group("d")))
+            return d, d
+        except ValueError:
+            return None
+    return None

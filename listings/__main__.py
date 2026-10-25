@@ -19,7 +19,7 @@ import requests
 
 from listings.http import USER_AGENT, PoliteClient
 from listings.manual import DEFAULT_DIR as MANUAL_DIR, load_manual
-from listings.model import london_iso, upgrade_showing, validate_listings
+from listings.model import is_upcoming, london_iso, upgrade_showing, validate_listings
 from listings.venues import all_venues
 
 log = logging.getLogger("listings")
@@ -64,7 +64,7 @@ def collect(
             carried = [
                 upgrade_showing(s) for s in fallback.get("showings", [])
                 if s["id"].startswith(f"{slug}:") and ":manual-" not in s["id"]  # manual ones are reloaded below
-                and datetime.fromisoformat(s["start"]) >= now
+                and is_upcoming(s, now)
             ]
             sources.append({
                 "venue": slug,
