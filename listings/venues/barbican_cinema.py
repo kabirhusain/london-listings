@@ -261,6 +261,7 @@ def _to_showing(inst: dict, event: dict, info: _WebInfo | None, sold_out: bool) 
         runtime_minutes=info.runtime_minutes if info else None,
         booking_url=BOOKING_URL.format(n=_instance_number(inst["id"])),
         image_url=info.image_url if info else None,
+        info_url=info.page_url if info else None,
         tags=list(dict.fromkeys(tags)),
         description=(info.description if info else None) or event.get("htmlDescription"),
     )

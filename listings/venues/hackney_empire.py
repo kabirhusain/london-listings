@@ -41,10 +41,15 @@ class HackneyEmpire(SpektrixVenue):
 
     def __init__(self):
         self._site_categories: dict[str, str | None] = {}
+        self._site_links: dict[str, str] = {}
 
     def fetch(self, client: PoliteClient):
         self._site_categories = self._load_site_categories(client)
         return super().fetch(client)
+
+    def info_url(self, event):
+        from listings.sources.spektrix import match_title_to_url
+        return match_title_to_url(event["name"], self._site_links)
 
     def category(self, event, instance):
         if super().category(event, instance) is None:  # shared non-show filter
@@ -72,8 +77,10 @@ class HackneyEmpire(SpektrixVenue):
                     soup = BeautifulSoup(client.get(url).text, "html.parser")
                 except FetchError:
                     break
-                for title in _event_titles(soup):
+                for title, href in _event_titles(soup):
                     found.setdefault(match_key(title), category)  # first (highest-priority) category wins
+                    if href:
+                        self._site_links.setdefault(match_key(title), urljoin(url, href))
                 nxt = soup.find("a", string=re.compile(r"^\s*Next\.?\s*$"))
                 if not nxt or not nxt.get("href"):
                     break
@@ -81,9 +88,15 @@ class HackneyEmpire(SpektrixVenue):
         return found
 
 
-def _event_titles(soup: BeautifulSoup) -> list[str]:
-    """Titles from a category page: each event card has an h3.c-media__title."""
-    return [h.get_text(" ", strip=True) for h in soup.select("h3.c-media__title") if h.get_text(strip=True)]
+def _event_titles(soup: BeautifulSoup) -> list[tuple[str, str | None]]:
+    """(title, event page link) from a category page's event cards."""
+    out = []
+    for card in soup.select(".c-media--event"):
+        h = card.select_one("h3.c-media__title")
+        a = card.select_one('a[href*="/events/"]')
+        if h and h.get_text(strip=True):
+            out.append((h.get_text(" ", strip=True), a["href"] if a else None))
+    return out
 
 
 VENUE = HackneyEmpire()

@@ -11,6 +11,7 @@ class BushTheatre(SpektrixVenue):
     slug = "bush-theatre"
     name = "Bush Theatre"
     api_base = "https://tickets.bushtheatre.co.uk/bushtheatre"
+    info_page = "https://www.bushtheatre.co.uk/whats-on/"
     default_category = None
     rules = (
         ('attribute_WebsiteCategorisation', r'^Production$', 'theatre'),

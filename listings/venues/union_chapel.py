@@ -98,6 +98,7 @@ class UnionChapel(Venue):
                 runtime_minutes=None,
                 lineup=guess_lineup(title) if category == "music" else [],
                 booking_url=booking,
+                info_url=link["href"].strip(),
                 image_url=img.group(1) if img else None,
                 tags=tags,
                 description=description,

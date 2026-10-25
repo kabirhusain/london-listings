@@ -61,6 +61,7 @@ class ElectricCinema(Venue):
                 start=london_iso(start),
                 runtime_minutes=None,
                 booking_url=urljoin(SITE, link) if link else SITE,
+                info_url=urljoin(SITE, film["link"]) if film.get("link") else None,
                 image_url=urljoin(SITE, film["image"]) if film.get("image") else None,
                 tags=tags,
                 description=re.sub(r"^Certificate:[^\n]*\n+", "", film.get("short_synopsis") or ""),

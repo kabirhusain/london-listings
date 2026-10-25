@@ -126,6 +126,7 @@ def showings_from_clusterflick(
                 start=start_iso,
                 runtime_minutes=runtime,
                 booking_url=perf.get("bookingUrl") or film.get("url"),
+                info_url=film.get("url") or None,  # production page; dropped centrally if it equals booking_url
                 image_url=None,  # Clusterflick doesn't publish venue images
                 tags=_dedupe(film_tags + _performance_tags(perf)),
             )

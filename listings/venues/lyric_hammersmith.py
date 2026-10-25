@@ -12,6 +12,7 @@ class LyricHammersmith(SpektrixVenue):
     slug = "lyric-hammersmith"
     name = "Lyric Hammersmith"
     api_base = "https://tickets.lyric.co.uk/lyrichammersmith"
+    info_page = "https://lyric.co.uk/whats-on/"
     default_category = None
     rules = (
         ('attribute_Programme', r'YPBOC', None),

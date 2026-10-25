@@ -11,6 +11,7 @@ class StratfordEast(SpektrixVenue):
     slug = "stratford-east"
     name = "Theatre Royal Stratford East"
     api_base = "https://tickets.stratfordeast.com/stratfordeast"
+    info_page = "https://www.stratfordeast.com/whats-on"
     default_category = None
     rules = (
         ('attribute_WebsiteChannel', r'^Production$', 'theatre'),

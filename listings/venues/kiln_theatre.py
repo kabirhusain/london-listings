@@ -11,6 +11,7 @@ class KilnTheatre(SpektrixVenue):
     slug = "kiln-theatre"
     name = "Kiln Theatre"
     api_base = "https://tickets.kilntheatre.com/tricycle"
+    info_page = "https://kilntheatre.com/whats-on/"
     default_category = None
     rules = (
         ('attribute_Type', r'^Cinema$', 'film'),

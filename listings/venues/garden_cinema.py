@@ -87,6 +87,7 @@ class GardenCinema(Venue):
                         start=london_iso(start),
                         runtime_minutes=None,
                         booking_url=a.get("href") or link.get("href"),
+                        info_url=link.get("href"),
                         image_url=image,
                         tags=tags,
                         description=description,

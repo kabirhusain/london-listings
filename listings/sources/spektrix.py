@@ -17,7 +17,7 @@ from datetime import date, datetime, timedelta, timezone
 
 from listings.http import PoliteClient
 from listings.model import LONDON, Showing, london_iso
-from listings.text import guess_lineup, tidy_title
+from listings.text import guess_lineup, match_key, tidy_title
 from listings.venues.base import Venue
 
 # Spektrix test events that venues forget to hide, e.g. "Test Event - £0.01", "Georgia's Test Screen".
@@ -74,6 +74,42 @@ def parse_doors(text: str | None, start: datetime) -> str | None:
     return london_iso(doors)
 
 
+def load_title_links(client: PoliteClient, page_url: str, link_pattern: str) -> dict[str, str]:
+    """{match_key(link text): absolute URL} for event links on a listing page. Errors -> {}."""
+    from urllib.parse import urljoin, urlsplit
+
+    from bs4 import BeautifulSoup
+
+    from listings.http import FetchError
+
+    try:
+        resp = client.get(page_url)
+    except FetchError:
+        return {}
+    host = urlsplit(resp.url).netloc.removeprefix("www.")
+    links: dict[str, str] = {}
+    for a in BeautifulSoup(resp.text, "html.parser").find_all("a", href=True):
+        href = urljoin(resp.url, a["href"]).split("#")[0]
+        text = a.get_text(" ", strip=True)
+        if (urlsplit(href).netloc.removeprefix("www.") == host and re.search(link_pattern, href)
+                and len(text) > 2 and text.lower() not in ("book now", "more info", "find out more", "details", "read more")):
+            links.setdefault(match_key(text), href)
+    return links
+
+
+def match_title_to_url(title: str, links: dict[str, str]) -> str | None:
+    """Exact normalised-title match, else a single unambiguous containment match."""
+    if not links:
+        return None
+    key = match_key(title)
+    if key in links:
+        return links[key]
+    if len(key) < 6:
+        return None
+    hits = {url for k, url in links.items() if len(k) >= 6 and (key in k or k in key)}
+    return hits.pop() if len(hits) == 1 else None
+
+
 class SpektrixVenue(Venue):
     """A venue whose listings come straight from its Spektrix API."""
 
@@ -90,6 +126,12 @@ class SpektrixVenue(Venue):
     allow_empty: bool = False
     #: Ignore performances further ahead than this (placeholders such as 2099-12-31).
     horizon_days: int = 730
+    #: The venue's what's-on page. Spektrix rarely has a web URL per event, so
+    #: info_url comes from links on this page, matched by title (one request).
+    info_page: str | None = None
+    info_link_pattern: str = r"/(?:whats-on|events?|productions?|shows?|films?|performances?)/[^/?#]+"
+
+    _info_links: dict = {}
 
     @property
     def source_description(self) -> str:
@@ -122,12 +164,19 @@ class SpektrixVenue(Venue):
             return {"lineup": guess_lineup(event["name"])}
         return {}
 
+    def info_url(self, event: dict) -> str | None:
+        """The event's public page: Spektrix webUrl if set, else a title match on info_page."""
+        if event.get("webUrl"):
+            return event["webUrl"]
+        return match_title_to_url(event["name"], self._info_links)
+
     def booking_url(self, instance: dict) -> str:
         return f"{self.api_base}/website/ChooseSeats.aspx?EventInstanceId={instance_number(instance['id'])}"
 
     # -- shared logic -------------------------------------------------------
 
     def fetch(self, client: PoliteClient) -> list[Showing]:
+        self._info_links = load_title_links(client, self.info_page, self.info_link_pattern) if self.info_page else {}
         events, instances = fetch_spektrix(client, self.api_base, datetime.now(LONDON).date())
         showings = []
         for inst in instances:
@@ -153,6 +202,7 @@ class SpektrixVenue(Venue):
                 title=tidy_title(event["name"]),
                 start=london_iso(start),
                 booking_url=self.booking_url(inst),
+                info_url=self.info_url(event),
                 description=event.get("htmlDescription") or event.get("description"),
                 **fields,
             ))

@@ -11,6 +11,7 @@ class DonmarWarehouse(SpektrixVenue):
     slug = "donmar-warehouse"
     name = "Donmar Warehouse"
     api_base = "https://tickets.donmarwarehouse.com/donmarwarehouse"
+    info_page = "https://www.donmarwarehouse.com/whats-on/"
     default_category = None
     rules = (
         ('attribute_Website', r'^Performance$', 'theatre'),

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass, field
+import re
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
@@ -150,6 +151,26 @@ def validate_listings(doc: dict) -> None:
             raise jsonschema.ValidationError(f"{s['id']}: doors is after start")
         if s["end"] and s["end"] < s["start"][:10]:
             raise jsonschema.ValidationError(f"{s['id']}: end is before start")
+
+
+_CHECKOUT = re.compile(
+    r"choose-?seats|/ticketing/seats|/seats/|/checkout|/basket|/cart\b|booknow|tselectitems|perfcode=|"
+    r"/booking\?|/tickets/\d+|//my\.[a-z0-9-]+\.[a-z.]+/\d+/\d+|eventinstanceid=",
+    re.I,
+)
+
+
+def is_checkout_url(url: str | None) -> bool:
+    """True for seat pickers / checkouts, which must never be an info_url."""
+    return bool(url and _CHECKOUT.search(url))
+
+
+def clean_info_url(s: dict) -> dict:
+    """info_url rules: never a checkout; null when it just repeats booking_url."""
+    info = s.get("info_url")
+    if info and (is_checkout_url(info) or info.rstrip("/") == (s.get("booking_url") or "").rstrip("/")):
+        s["info_url"] = None
+    return s
 
 
 def blurb_key(s: dict) -> str:

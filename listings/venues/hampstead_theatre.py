@@ -72,6 +72,7 @@ class HampsteadTheatre(Venue):
                         start=london_iso(start),
                         runtime_minutes=None,
                         booking_url=link["href"] if link else url,
+                        info_url=url,
                         image_url=og_image["content"] if og_image else None,
                         description=page_description(soup),
                         tags=list(dict.fromkeys(tags)),

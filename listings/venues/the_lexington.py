@@ -69,6 +69,7 @@ class TheLexington(Venue):
                 runtime_minutes=None,
                 lineup=[] if club else guess_lineup(re.sub(r"\s+-\s+Day \w+.*$", "", title)),
                 booking_url=(tickets["href"].strip() if tickets else urljoin(resp.url, more["href"]) if more else None),
+                info_url=urljoin(resp.url, more["href"]) if more else None,
                 image_url=urljoin(resp.url, img["src"]) if img else None,
                 tags=["club-night"] if club else [],
             )

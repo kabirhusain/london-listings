@@ -13,6 +13,7 @@ class SohoTheatre(SpektrixVenue):
     slug = "soho-theatre"
     name = "Soho Theatre"
     api_base = "https://tickets.sohotheatre.com/sohotheatre"
+    info_page = "https://sohotheatre.com/whats-on/"
     default_category = None
     rules = (
         ('attribute_Venue', r'Walthamstow|Soho Player|Glasgow|Glee Club', None),

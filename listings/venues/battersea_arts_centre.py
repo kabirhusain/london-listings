@@ -11,6 +11,7 @@ class BatterseaArtsCentre(SpektrixVenue):
     slug = "battersea-arts-centre"
     name = "Battersea Arts Centre"
     api_base = "https://tickets.bac.org.uk/bac"
+    info_page = "https://bac.org.uk/whats-on/"
     default_category = None
     rules = (
         ('name', r'artist talk|\btalk\b', None),

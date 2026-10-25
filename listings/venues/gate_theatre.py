@@ -11,6 +11,7 @@ class GateTheatre(SpektrixVenue):
     slug = "gate-theatre"
     name = "Gate Theatre"
     api_base = "https://tickets.gatetheatre.co.uk/gate"
+    info_page = "https://www.gatetheatre.co.uk/whats-on/"
     default_category = 'theatre'
     rules = ()
     allow_empty = True

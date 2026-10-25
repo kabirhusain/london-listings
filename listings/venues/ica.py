@@ -15,6 +15,7 @@ class ICA(SpektrixVenue):
     slug = "ica"
     name = "ICA"
     api_base = "https://buy.ica.art/ica"
+    info_page = "https://www.ica.art/films"
 
     def category(self, event, instance):
         if event.get("attribute_Category") == "Films" or event.get("attribute_TAAArtform") == "Film":

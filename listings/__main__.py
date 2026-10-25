@@ -19,7 +19,7 @@ import requests
 
 from listings.http import USER_AGENT, PoliteClient
 from listings.manual import DEFAULT_DIR as MANUAL_DIR, load_manual
-from listings.model import blurb_key, is_upcoming, london_iso, upgrade_showing, validate_listings
+from listings.model import blurb_key, clean_info_url, is_upcoming, london_iso, upgrade_showing, validate_listings
 from listings.text import blurb_score, make_blurb, match_key
 from listings.venues import all_venues
 
@@ -166,7 +166,7 @@ def merge(showings: list[dict]) -> list[dict]:
     happen if a source lists one performance twice under different ids).
     """
     seen_ids, seen_keys, out = set(), set(), []
-    for s in map(upgrade_showing, showings):  # also fills match_key on carried-over/manual entries
+    for s in (clean_info_url(upgrade_showing(x)) for x in showings):  # also fills match_key on carried-over/manual entries
         key = (s["venue"], s["match_key"], s["start"])
         if s["id"] in seen_ids or key in seen_keys:
             continue

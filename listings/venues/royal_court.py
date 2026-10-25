@@ -11,6 +11,7 @@ class RoyalCourt(SpektrixVenue):
     slug = "royal-court"
     name = "Royal Court Theatre"
     api_base = "https://tickets.royalcourttheatre.com/royalcourt"
+    info_page = "https://royalcourttheatre.com/whats-on/"
     default_category = 'theatre'
     rules = (
         ('attribute_TicketVenue2', r'^(?!Royal Court).', None),

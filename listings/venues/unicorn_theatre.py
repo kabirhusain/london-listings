@@ -11,6 +11,7 @@ class UnicornTheatre(SpektrixVenue):
     slug = "unicorn-theatre"
     name = "Unicorn Theatre"
     api_base = "https://tickets.unicorntheatre.com/unicorntheatre"
+    info_page = "https://www.unicorntheatre.com/whats-on"
     default_category = 'theatre'
     rules = ()
 

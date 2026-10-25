@@ -83,6 +83,7 @@ class SadlersWells(Venue):
                     runtime_minutes=None,
                     price=(f"From £{float(price_m.group(1)):g}" if price_m and float(price_m.group(1)) > 0 else None),
                     booking_url=book["data-booking-url"] if book else url,
+                    info_url=url,
                     image_url=(og_image["content"] if og_image and "logo" not in og_image["content"].lower() else None),
                     description=page_description(soup),
                     tags=tags,

@@ -70,6 +70,7 @@ class TheTroubadour(Venue):
                 runtime_minutes=None,
                 lineup=guess_lineup(title),
                 booking_url=external or f"{SITE}/event-details/{ev['slug']}",
+                info_url=f"{SITE}/event-details/{ev['slug']}",
                 image_url=(ev.get("mainImage") or {}).get("url") or None,
                 tags=["sold-out"] if sold_out else [],
                 description=ev.get("description"),

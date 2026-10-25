@@ -12,6 +12,7 @@ class OrangeTreeTheatre(SpektrixVenue):
     slug = "orange-tree-theatre"
     name = "Orange Tree Theatre"
     api_base = "https://tickets.orangetreetheatre.co.uk/orangetree"
+    info_page = "https://orangetreetheatre.co.uk/whats-on/"
     default_category = None
     rules = (
         ('name', r'on screen|seminar', None),

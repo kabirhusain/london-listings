@@ -24,6 +24,12 @@ class CecilSharpHouse(SpektrixVenue):
     name = "Cecil Sharp House"
     api_base = "https://sales.efdss.org/efdss"
 
+    def info_url(self, event):
+        # EFDSS's site resolves /whats-on/<id> to the event page, and the Spektrix
+        # events carry that id in attribute_CMSID (checked: 16024 -> Elanor Moss).
+        cms = (event.get("attribute_CMSID") or "").strip()
+        return f"https://www.efdss.org/whats-on/{cms}" if cms.isdigit() else None
+
     def category(self, event, instance):
         name = event["name"]
         if _NOT_A_GIG.search(name):

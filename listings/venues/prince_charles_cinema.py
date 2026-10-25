@@ -125,6 +125,7 @@ def _parse_performance(li: Tag, day: date, title, film_url, image_url, runtime) 
         start=london_iso(start),
         runtime_minutes=runtime,
         booking_url=booking_url or film_url,
+        info_url=film_url,
         image_url=image_url,
         tags=list(dict.fromkeys(tags)),
     )

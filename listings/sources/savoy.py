@@ -92,6 +92,7 @@ class SavoyVenue(Venue):
                     start=london_iso(start),
                     runtime_minutes=event.get("RunningTime") or None,
                     booking_url=urljoin(resp.url, perf["URL"]) if perf.get("URL") else event.get("URL"),
+                    info_url=event.get("URL") or None,  # the film's own What's On page
                     image_url=event.get("ImageURL") or None,
                     genre=(event.get("Genre") or None),
                     description=event.get("Synopsis"),

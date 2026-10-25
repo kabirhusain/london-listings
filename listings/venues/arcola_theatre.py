@@ -14,6 +14,7 @@ class ArcolaTheatre(SpektrixVenue):
     slug = "arcola-theatre"
     name = "Arcola Theatre"
     api_base = "https://boxoffice.arcolatheatre.com/arcolatheatre"
+    info_page = "https://www.arcolatheatre.com/whats-on/"
     default_category = None
     rules = (
         ('name', r'\bAYT\b', None),

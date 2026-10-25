@@ -11,6 +11,7 @@ class TheYardTheatre(SpektrixVenue):
     slug = "the-yard-theatre"
     name = "The Yard Theatre"
     api_base = "https://tickets.theyardtheatre.co.uk/theyard"
+    info_page = "https://theyardtheatre.co.uk/whats-on/"
     default_category = 'theatre'
     rules = ()
 

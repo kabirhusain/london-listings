@@ -12,6 +12,7 @@ class ParkTheatre(SpektrixVenue):
     slug = "park-theatre"
     name = "Park Theatre"
     api_base = "https://tickets.parktheatre.co.uk/parktheatre"
+    info_page = "https://parktheatre.co.uk/whats-on/"
     default_category = None
     rules = (
         ('attribute_Venue', r'Elsewhere|Online', None),

@@ -42,6 +42,8 @@ class CastleCinema(Venue):
             if name_el is None:
                 continue
             title = tidy_title(name_el.get_text(" ", strip=True))
+            prog_link = tile.select_one('a[href*="/programme/"]')
+            info_url = urljoin(SITE, prog_link["href"]) if prog_link else None
             sub = tile.select_one(".tile-subname")
             description = sub.get_text(" ", strip=True) if sub else None
             poster = tile.select_one("img.film-poster")
@@ -68,6 +70,7 @@ class CastleCinema(Venue):
                     start=london_iso(start),
                     runtime_minutes=None,
                     booking_url=urljoin(SITE, btn.get("href", "")),
+                    info_url=info_url,
                     image_url=urljoin(SITE, image) if image else None,
                     tags=list(dict.fromkeys(tags)),
                     description=description,

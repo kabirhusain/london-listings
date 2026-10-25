@@ -74,6 +74,7 @@ class GenesisCinema(Venue):
                         start=london_iso(start),
                         runtime_minutes=int(runtime.group(1)) if runtime else None,
                         booking_url=a["href"],
+                        info_url=urljoin(URL, link["href"]) if link.get("href") else None,
                         image_url=urljoin(URL, img["src"]) if img and img.get("src") else None,
                         tags=list(dict.fromkeys(tags)),
                         description=synopsis.get_text(" ", strip=True) if synopsis else None,
