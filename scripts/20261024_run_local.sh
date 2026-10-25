@@ -4,7 +4,7 @@
 # this data for those venues (see --local in .github/workflows/publish-listings.yml).
 #
 # Venues to run here are listed, one slug per line, in local/20261024_venues.txt.
-# Scheduled by scripts/20261024_london-listings-local.timer (see the README).
+# Scheduled by scripts/20261024_install_timer.sh (see the README).
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
