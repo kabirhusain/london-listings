@@ -72,6 +72,7 @@ class TheTroubadour(Venue):
                 booking_url=external or f"{SITE}/event-details/{ev['slug']}",
                 image_url=(ev.get("mainImage") or {}).get("url") or None,
                 tags=["sold-out"] if sold_out else [],
+                description=ev.get("description"),
             ))
         if not showings:
             raise ValueError("no upcoming events in the Troubadour's Wix data")

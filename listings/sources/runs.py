@@ -11,7 +11,7 @@ from listings.model import LONDON, Showing, london_iso
 
 def run_showing(venue_slug: str, venue_name: str, *, title: str, first: date, last: date,
                 url: str, category: str = "theatre", image_url: str | None = None,
-                tags: list[str] | None = None) -> Showing:
+                tags: list[str] | None = None, description: str | None = None) -> Showing:
     key = re.sub(r"[^a-z0-9]+", "-", url.rstrip("/").rsplit("/", 1)[-1].lower()).strip("-")
     return Showing(
         id=f"{venue_slug}:run:{key}",
@@ -25,4 +25,5 @@ def run_showing(venue_slug: str, venue_name: str, *, title: str, first: date, la
         booking_url=url,
         image_url=image_url,
         tags=["run", *(tags or [])],
+        description=description,
     )

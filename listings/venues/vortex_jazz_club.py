@@ -41,6 +41,7 @@ class VortexJazzClub(TribeEventsVenue):
             "doors": london_iso(doors) if start != doors else None,
             "lineup": _lineup(event["description"]),
             "genre": "Jazz",
+            "description": event["description"].split("About:", 1)[-1] if "About" in event["description"] else event["description"],
         }
 
 

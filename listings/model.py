@@ -34,6 +34,9 @@ class Showing:
     match_key: str = ""  # normalised title for grouping the same film across venues; filled in if empty
     kind: str = "performance"  # "performance", or "run" (a production's run with dates but no times)
     end: str | None = None  # runs only: last date, YYYY-MM-DD
+    # Raw synopsis from the source. Not written per showing: the collector turns
+    # these into one cleaned blurb per title in the top-level "blurbs" map.
+    description: str | None = None
 
     def to_dict(self) -> dict:
         d = asdict(self)
@@ -78,6 +81,12 @@ LISTINGS_SCHEMA = {
         "generated_at": {"type": "string", "pattern": _ISO_LONDON},
         # Extra provenance fields (where the data came from, licence credit).
         "sources": {"type": "array", "items": {"type": "object"}},
+        # One short description per title: key "<category>:<match_key>".
+        "blurbs": {
+            "type": "object",
+            "propertyNames": {"pattern": "^(film|music|theatre|comedy|dance):.+$"},
+            "additionalProperties": {"type": "string", "minLength": 1, "maxLength": 300},
+        },
         "showings": {
             "type": "array",
             "items": {
@@ -135,6 +144,11 @@ def validate_listings(doc: dict) -> None:
             raise jsonschema.ValidationError(f"{s['id']}: doors is after start")
         if s["end"] and s["end"] < s["start"][:10]:
             raise jsonschema.ValidationError(f"{s['id']}: end is before start")
+
+
+def blurb_key(s: dict) -> str:
+    """Key into the top-level "blurbs" map for a showing."""
+    return f"{s['category']}:{s['match_key']}"
 
 
 def is_upcoming(s: dict, now: datetime) -> bool:

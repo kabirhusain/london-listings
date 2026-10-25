@@ -61,6 +61,7 @@ class PizzaExpressLiveSoho(Venue):
                     booking_url=f"https://www.pizzaexpresslive.com/whats-on/{e['slug']}",
                     image_url=e.get("imageUri") or None,
                     tags=["sold-out"] if e.get("seatAvailable") == 0 else [],
+                    description=e.get("description") or None,
                 )
             nxt = (data.get("hydra:view") or {}).get("hydra:next")
             if not nxt:

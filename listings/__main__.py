@@ -19,7 +19,8 @@ import requests
 
 from listings.http import USER_AGENT, PoliteClient
 from listings.manual import DEFAULT_DIR as MANUAL_DIR, load_manual
-from listings.model import is_upcoming, london_iso, upgrade_showing, validate_listings
+from listings.model import blurb_key, is_upcoming, london_iso, upgrade_showing, validate_listings
+from listings.text import blurb_score, make_blurb, match_key
 from listings.venues import all_venues
 
 log = logging.getLogger("listings")
@@ -50,10 +51,24 @@ def collect(
     now_iso = london_iso(now)
 
     showings, sources, errors = [], [], []
+    blurb_candidates: dict[str, list[str]] = {}
     for slug in venue_slugs or sorted(venues):
         venue = venues[slug]
         try:
-            venue_showings = [s.to_dict() for s in venue.fetch(client)]
+            fetched = venue.fetch(client)
+            venue_showings = [s.to_dict() for s in fetched]
+            # A description a venue uses for several different titles is site
+            # boilerplate (e.g. a generic og:description), not a blurb.
+            titles_per_text: dict[str, set[str]] = {}
+            venue_blurbs = []
+            for obj, d in zip(fetched, venue_showings):
+                text = make_blurb(obj.description)
+                if text and not _mostly_title(text, d["title"]):
+                    titles_per_text.setdefault(text, set()).add(blurb_key(d))
+                    venue_blurbs.append((blurb_key(d), text))
+            for key, text in venue_blurbs:
+                if len(titles_per_text[text]) <= 2:
+                    blurb_candidates.setdefault(key, []).append(text)
             # Check this venue on its own, so one bad record fails only its venue.
             validate_listings({"generated_at": london_iso(now), "showings": venue_showings})
         except Exception as e:  # one broken venue mustn't sink the rest
@@ -103,13 +118,33 @@ def collect(
                 "skipped_past": mv.skipped_past,
             })
 
+    merged = merge(showings)
     doc = {
         "generated_at": now_iso,
         "sources": sources,
-        "showings": merge(showings),
+        "blurbs": pick_blurbs(merged, blurb_candidates, previous.get("blurbs", {})),
+        "showings": merged,
     }
     validate_listings(doc)
     return doc, errors
+
+
+def _mostly_title(text: str, title: str) -> bool:
+    """True for "descriptions" that just repeat the title (e.g. "Swan Lake - Sadler's Wells Theatre")."""
+    words = set(match_key(text).split())
+    return bool(words) and len(words & set(match_key(title).split())) / len(words) >= 0.5
+
+
+def pick_blurbs(showings: list[dict], candidates: dict[str, list[str]], previous: dict[str, str]) -> dict[str, str]:
+    """One blurb per title that has showings: the best-scoring candidate from
+    today's run, else yesterday's blurb (e.g. if that venue failed today)."""
+    out = {}
+    for key in sorted({blurb_key(s) for s in showings}):
+        if candidates.get(key):
+            out[key] = max(candidates[key], key=blurb_score)
+        elif key in previous:
+            out[key] = previous[key]
+    return out
 
 
 def _freshest_fallback(slug: str, docs: list[dict]) -> tuple[dict, dict]:

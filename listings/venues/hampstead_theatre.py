@@ -23,7 +23,7 @@ from bs4 import BeautifulSoup
 
 from listings.http import PoliteClient
 from listings.model import LONDON, Showing, london_iso
-from listings.text import tidy_title
+from listings.text import page_description, tidy_title
 from listings.venues.base import Venue
 
 SITE = "https://www.hampsteadtheatre.com"
@@ -73,6 +73,7 @@ class HampsteadTheatre(Venue):
                         runtime_minutes=None,
                         booking_url=link["href"] if link else url,
                         image_url=og_image["content"] if og_image else None,
+                        description=page_description(soup),
                         tags=list(dict.fromkeys(tags)),
                     )
         if not showings:

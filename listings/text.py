@@ -136,9 +136,13 @@ _EXTRA_SUFFIX = re.compile(r"\s+\+\s+.*$")
 _ANNIVERSARY = re.compile(r"\s*[-–:(\[]?\s*\d{1,3}(?:st|nd|rd|th)\s+anniversary(?:\s+[a-z ]+)?[)\]]?\s*$", re.I)
 _FORMAT_WORDS = (
     r"2d|3d|4k|imax|35 ?mm|16 ?mm|70 ?mm|restor(?:ed|ation)|remaster(?:ed)?|re-?release|dubbed|subtitled|"
-    r"uk version|(?:uk|world|london|european) premiere|digital|dcp|sing-?a-?long|hoh|ad|bsl|relaxed"
+    r"uk version|(?:uk|world|london|european) premiere|digital|dcp|sing[- ]?a?[- ]?long|hoh|ad|bsl|relaxed"
 )
-_FORMAT_SUFFIX = re.compile(rf"\s*(?:[-–]\s*|on\s+|in\s+)?[(\[]?\s*(?:{_FORMAT_WORDS})(?:\s+(?:{_FORMAT_WORDS}))*\s*[)\]]?\s*$", re.I)
+# A format word must be a whole word set off by a space, dash or bracket ("Shaun of the Dead" keeps its "ad").
+_FORMAT_SUFFIX = re.compile(
+    rf"(?:\s+(?:on|in)\s+|\s*[-–]\s*|\s*[(\[]\s*|\s+)(?:{_FORMAT_WORDS})\b(?:\s+(?:{_FORMAT_WORDS})\b)*\s*[)\]]?\s*$",
+    re.I,
+)
 _BRACKETED = re.compile(r"\s*\[[^\]]*\]|\s*\((?:19|20)\d\d\)|\s*\((?:u|pg|12a?|15|18)\*?\)", re.I)
 
 
@@ -219,4 +223,84 @@ def parse_date_range(text: str):
             return d, d
         except ValueError:
             return None
+    return None
+
+
+# --- blurbs ---------------------------------------------------------------------
+
+BLURB_MAX = 280
+_BOILERPLATE = re.compile(
+    r"£|\btickets?\b|\bbook(?:ing)?\b|please note|doors?\b|\bbar\b|running time|certificate|"
+    r"\bdir(?:ected by|\.)\s|\bstarring\b|\bcast\b|https?://|www\.|\bfaqs?\b|house rules|age restriction|"
+    r"\bmembers?\b|concessions?|wheelchair|captioned|audio[- ]described|subtitled screening|"
+    r"^\s*(?:about|line-?up)\s*:?\s*$",
+    re.I,
+)
+_SCREENING_NOTE = re.compile(
+    r"\bq ?& ?a\b|followed by|introduced by|introduction (?:by|from)|this screening|the screening on|"
+    r"screening on (?:mon|tues|wednes|thurs|fri|satur|sun)day|will be joined by|in person|pre-recorded",
+    re.I,
+)
+_SENTENCE_END = re.compile(r"(?<=[.!?…])[\"'”’)]?\s+(?=[A-Z0-9\"“‘(])")
+
+
+def make_blurb(raw: str | None) -> str | None:
+    """A couple of clean lines from a venue's description: HTML and housekeeping
+    (prices, booking info, credits) removed, cut at a sentence end to <= BLURB_MAX chars."""
+    if not raw:
+        return None
+    t = re.sub(r"<(?:br|/p|/div|/li|/h\d)[^>]*>", "\n", raw, flags=re.I)
+    t = html.unescape(re.sub(r"<[^>]+>", " ", t)).replace("\xa0", " ")
+    t = re.sub(r"\[/?embed\].*?(?:\[/embed\]|$)", " ", t, flags=re.I)
+    lines = []
+    for line in re.split(r"\n+", t):
+        line = re.sub(r"\s+", " ", line).strip(" -–•*|")
+        if len(line) < 25 or _BOILERPLATE.search(line):
+            continue
+        letters = [c for c in line if c.isalpha()]
+        if letters and sum(c.isupper() for c in letters) / len(letters) > 0.6:
+            continue  # SHOUTY headings
+        lines.append(line)
+    text = " ".join(lines).strip()
+    if re.search(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}", text):
+        return None  # generated "<Artist> at <Venue> at 2026-11-18T19:00" text, not a description
+    # Drop a leading "TITLE:" / date prefix ("25th October 2026. MALIN PETTERSEN: ...").
+    text = re.sub(r"^\d{1,2}(?:st|nd|rd|th)?\s+\w+\s+\d{4}\.\s*", "", text)
+    text = re.sub(r"^[A-Z][A-Z0-9 '&!.,-]{2,60}:\s+", "", text)
+    sentences = _SENTENCE_END.split(text)
+    if len(sentences) > 1 and text.rstrip().endswith(("…", "...")):
+        sentences = sentences[:-1]  # the source cut the last sentence off
+    # Sentences about this particular screening rather than the film/show.
+    sentences = [x for x in sentences if not _SCREENING_NOTE.search(x)]
+    text = " ".join(sentences)
+    if len(text) < 40 or len(text.split()) < 8:
+        return None
+    out = ""
+    for sentence in sentences:
+        candidate = f"{out} {sentence}".strip()
+        if len(candidate) > BLURB_MAX:
+            break
+        out = candidate
+    if not out:  # first sentence alone is too long: cut at a word boundary
+        out = text[: BLURB_MAX - 1].rsplit(" ", 1)[0].rstrip(",;:—–- ") + "…"
+    return out
+
+
+def blurb_score(text: str) -> float:
+    """Higher is better: sentence-like, 80-280 chars, few capitals."""
+    score = min(len(text), BLURB_MAX) / BLURB_MAX
+    if text.endswith((".", "!", "?", "”", '"')):
+        score += 0.5
+    if len(text) < 80:
+        score -= 0.5
+    caps = sum(c.isupper() for c in text) / max(1, sum(c.isalpha() for c in text))
+    return score - caps
+
+
+def page_description(soup) -> str | None:
+    """A page's own summary: og:description, else meta description."""
+    for attrs in ({"property": "og:description"}, {"name": "description"}, {"name": "twitter:description"}):
+        tag = soup.find("meta", attrs=attrs)
+        if tag and tag.get("content", "").strip():
+            return tag["content"].strip()
     return None

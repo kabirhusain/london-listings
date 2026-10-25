@@ -62,6 +62,7 @@ class _WebInfo:
     page_url: str | None
     image_url: str | None
     runtime_minutes: int | None
+    description: str | None = None
 
 
 class BarbicanCinema(Venue):
@@ -204,7 +205,9 @@ def parse_day_listing(html: str) -> tuple[dict[str, _WebInfo], dict[str, list[tu
         runtime = None
         for tag in card.select(".cinema-listing-card__tag"):
             runtime = runtime or _parse_runtime(tag.get_text(" ", strip=True))
+        blurb_p = card.select_one(".cinema-listing-card__content p")
         info = _WebInfo(
+            description=blurb_p.get_text(" ", strip=True) if blurb_p else None,
             title=link.get_text(strip=True),
             page_url=urljoin(SITE, link["href"]) if link.get("href") else None,
             image_url=urljoin(SITE, img["src"]) if img and img.get("src") else None,
@@ -259,6 +262,7 @@ def _to_showing(inst: dict, event: dict, info: _WebInfo | None, sold_out: bool) 
         booking_url=BOOKING_URL.format(n=_instance_number(inst["id"])),
         image_url=info.image_url if info else None,
         tags=list(dict.fromkeys(tags)),
+        description=(info.description if info else None) or event.get("htmlDescription"),
     )
 
 

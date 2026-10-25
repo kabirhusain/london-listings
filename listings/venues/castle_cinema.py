@@ -42,6 +42,8 @@ class CastleCinema(Venue):
             if name_el is None:
                 continue
             title = tidy_title(name_el.get_text(" ", strip=True))
+            sub = tile.select_one(".tile-subname")
+            description = sub.get_text(" ", strip=True) if sub else None
             poster = tile.select_one("img.film-poster")
             image = poster.get("src") if poster else None
             if image and "default-poster" in image:
@@ -68,6 +70,7 @@ class CastleCinema(Venue):
                     booking_url=urljoin(SITE, btn.get("href", "")),
                     image_url=urljoin(SITE, image) if image else None,
                     tags=list(dict.fromkeys(tags)),
+                    description=description,
                 )
         if not showings:
             raise ValueError("no performances parsed from the Castle calendar")

@@ -50,6 +50,11 @@ class GardenCinema(Venue):
             if rating:
                 rating.extract()
             title = tidy_title(link.get_text(" ", strip=True))
+            synopsis = film.select_one(".films-list__by-title__synopsis")
+            if synopsis:
+                for more in synopsis.find_all("a"):
+                    more.extract()  # "Read More"
+            description = synopsis.get_text(" ", strip=True) if synopsis else None  # may end "…" (cut off)
             img = film.select_one("img.films-list__by-title__film-thumb")
             image = img.get("src") if img and img.get("src") else None
             for day in film.select(".screening-panel__day"):
@@ -84,6 +89,7 @@ class GardenCinema(Venue):
                         booking_url=a.get("href") or link.get("href"),
                         image_url=image,
                         tags=tags,
+                        description=description,
                     )
         if not showings:
             raise ValueError("no screenings parsed from the Garden Cinema homepage")

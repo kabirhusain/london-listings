@@ -111,6 +111,7 @@ class JsonLdEventsVenue(Venue):
                 booking_url=url.split("?utm_")[0],
                 image_url=image,
                 tags=["sold-out"] if "SoldOut" in json.dumps(ev.get("offers") or {}) else [],
+                description=ev.get("description") if isinstance(ev.get("description"), str) else None,
             )
             showings[showing.id] = showing
         if not showings:

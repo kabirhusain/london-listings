@@ -66,6 +66,8 @@ def parse_whats_on(html: str, today: date) -> list[Showing]:
         film_url = title_link.get("href")
         img = event.select_one("div.film_img img")
         image_url = img.get("src") if img else None
+        blurb_el = event.select_one("div.jacro-formatted-text")
+        description = str(blurb_el) if blurb_el else None
         if image_url and "jacro-plugin/images/default" in image_url:
             image_url = None
         runtime = None
@@ -85,6 +87,8 @@ def parse_whats_on(html: str, today: date) -> list[Showing]:
                     current_date = _parse_heading(child.get_text(strip=True), today)
                 elif child.name == "li" and current_date is not None:
                     showing = _parse_performance(child, current_date, title, film_url, image_url, runtime)
+                    if showing:
+                        showing.description = description
                     if showing and datetime.fromisoformat(showing.start) >= now:
                         showings[showing.id] = showing
     return sorted(showings.values(), key=lambda s: (s.start, s.title))

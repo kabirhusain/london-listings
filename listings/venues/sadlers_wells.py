@@ -25,7 +25,7 @@ from bs4 import BeautifulSoup
 
 from listings.http import PoliteClient
 from listings.model import LONDON, Showing, london_iso
-from listings.text import date_without_year, parse_clock, tidy_title
+from listings.text import page_description, date_without_year, parse_clock, tidy_title
 from listings.venues.base import Venue
 
 SITE = "https://www.sadlerswells.com"
@@ -84,6 +84,7 @@ class SadlersWells(Venue):
                     price=(f"From £{float(price_m.group(1)):g}" if price_m and float(price_m.group(1)) > 0 else None),
                     booking_url=book["data-booking-url"] if book else url,
                     image_url=(og_image["content"] if og_image and "logo" not in og_image["content"].lower() else None),
+                    description=page_description(soup),
                     tags=tags,
                 )
         if not showings:

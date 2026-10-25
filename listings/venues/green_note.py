@@ -72,6 +72,7 @@ class GreenNote(Venue):
                 booking_url=link or None,
                 image_url=img.group(1) if img else None,
                 tags=tags,
+                description=item.findtext(_CONTENT) or desc,
             )
         if not showings:
             raise ValueError("no shows parsed from Green Note's RSS feed")

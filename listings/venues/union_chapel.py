@@ -25,7 +25,7 @@ from bs4 import BeautifulSoup
 
 from listings.http import FetchError, PoliteClient
 from listings.model import LONDON, Showing, london_iso
-from listings.text import find_doors_and_start, guess_lineup, tidy_title
+from listings.text import find_doors_and_start, guess_lineup, page_description, tidy_title
 from listings.venues.base import Venue
 
 URL = "https://unionchapel.org.uk/whats-on"
@@ -61,9 +61,12 @@ class UnionChapel(Venue):
             booking = (book["href"] if book else link["href"]).strip()
 
             doors_t = start_t = None
+            description = None
             try:
                 page = client.get(link["href"], max_age=DETAIL_MAX_AGE).text
-                text = BeautifulSoup(page, "html.parser").get_text(" ", strip=True)
+                page_soup = BeautifulSoup(page, "html.parser")
+                description = page_description(page_soup)
+                text = page_soup.get_text(" ", strip=True)
                 doors_t, start_t = find_doors_and_start(text)
             except FetchError:
                 pass
@@ -97,6 +100,7 @@ class UnionChapel(Venue):
                 booking_url=booking,
                 image_url=img.group(1) if img else None,
                 tags=tags,
+                description=description,
             )
         if not showings:
             raise ValueError("no events parsed from Union Chapel's what's-on page")

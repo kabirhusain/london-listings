@@ -7,6 +7,7 @@ cinemas; Vista behind it). We read that file and keep cinema 603, Portobello.
 
 from __future__ import annotations
 
+import re
 from datetime import datetime
 from urllib.parse import urljoin
 
@@ -62,6 +63,7 @@ class ElectricCinema(Venue):
                 booking_url=urljoin(SITE, link) if link else SITE,
                 image_url=urljoin(SITE, film["image"]) if film.get("image") else None,
                 tags=tags,
+                description=re.sub(r"^Certificate:[^\n]*\n+", "", film.get("short_synopsis") or ""),
             ))
         if not showings:
             raise ValueError("no upcoming Portobello screenings in data.json")

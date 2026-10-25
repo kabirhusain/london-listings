@@ -59,6 +59,7 @@ class TheNickel(Venue):
             if re.search(r"sold out", text, re.I):
                 tags.append("sold-out")
             img = a.select_one("img")
+            synopsis = a.select_one("div.whitespace-pre-wrap")
             key = a["href"].rstrip("/").rsplit("/", 1)[-1]
             showings[key] = Showing(
                 id=f"{self.slug}:{key}",
@@ -71,6 +72,7 @@ class TheNickel(Venue):
                 booking_url=urljoin(SITE, a["href"]),
                 image_url=img.get("src") if img else None,
                 tags=tags,
+                description=str(synopsis) if synopsis else None,
             )
         if not showings:
             raise ValueError("no screenings parsed from The Nickel homepage")

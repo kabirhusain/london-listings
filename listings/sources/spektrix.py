@@ -153,6 +153,7 @@ class SpektrixVenue(Venue):
                 title=tidy_title(event["name"]),
                 start=london_iso(start),
                 booking_url=self.booking_url(inst),
+                description=event.get("htmlDescription") or event.get("description"),
                 **fields,
             ))
         if not showings and not self.allow_empty:

@@ -59,6 +59,7 @@ class TribeEventsVenue(Venue):
                 "image_url": ev["image_url"],
                 "price": ev["price"],
                 "tags": [],
+                "description": ev.get("excerpt") or ev["description"],
             }
             fields.update(self.details(ev, category))
             start = fields.pop("start", ev["start"])
@@ -92,6 +93,7 @@ class TribeEventsVenue(Venue):
                     "price": html.unescape(e.get("cost") or "").strip() or None,
                     "categories": [c["name"] for c in e.get("categories", [])],
                     "description": _strip_html(e.get("description") or ""),
+                    "excerpt": _strip_html(e.get("excerpt") or ""),
                     "raw": e,
                 })
             url = data.get("next_rest_url")

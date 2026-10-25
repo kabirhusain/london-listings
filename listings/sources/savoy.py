@@ -94,6 +94,7 @@ class SavoyVenue(Venue):
                     booking_url=urljoin(resp.url, perf["URL"]) if perf.get("URL") else event.get("URL"),
                     image_url=event.get("ImageURL") or None,
                     genre=(event.get("Genre") or None),
+                    description=event.get("Synopsis"),
                     tags=list(dict.fromkeys(tags)),
                 ))
         if not showings:

@@ -17,7 +17,7 @@ from bs4 import BeautifulSoup
 from listings.http import PoliteClient
 from listings.model import LONDON
 from listings.sources.runs import run_showing
-from listings.text import parse_date_range, tidy_title
+from listings.text import page_description, parse_date_range, tidy_title
 from listings.venues.base import Venue
 
 SITE = "https://www.oldvictheatre.com"
@@ -47,6 +47,7 @@ class OldVic(Venue):
             showings.append(run_showing(
                 self.slug, self.name, title=title, first=dates[0], last=dates[1], url=url,
                 image_url=og_image["content"] if og_image else None,
+                description=page_description(soup),
             ))
         if not showings:
             raise ValueError("no current or upcoming runs parsed from oldvictheatre.com")

@@ -50,6 +50,10 @@ class GenesisCinema(Venue):
                 img = film.select_one("img[src*='customFilmImages'], img.object-contain")
                 rating = film.select_one("img[src*='/ratings/']")
                 runtime = re.search(r"Running time:\s*(\d+)\s*mins", film.get_text(" ", strip=True))
+                synopsis = film.select_one("p.py-3")
+                if synopsis:
+                    for more in synopsis.find_all("a"):
+                        more.extract()
                 for a in film.select("a.perfButton[href*='perfCode']"):
                     perf = _PERF.search(a["href"]).group(1)
                     t = re.search(r"\b(\d{1,2}:\d{2})\b", a.get_text(" ", strip=True))
@@ -72,6 +76,7 @@ class GenesisCinema(Venue):
                         booking_url=a["href"],
                         image_url=urljoin(URL, img["src"]) if img and img.get("src") else None,
                         tags=list(dict.fromkeys(tags)),
+                        description=synopsis.get_text(" ", strip=True) if synopsis else None,
                     )
         if not showings:
             raise ValueError("no performances parsed from the Genesis homepage")

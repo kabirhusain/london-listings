@@ -89,6 +89,19 @@ def test_match_key_groups_variants(a, b):
     assert match_key(a) == match_key(b)
 
 
+@pytest.mark.parametrize("title, key", [
+    ("Shaun of the Dead", "shaun of the dead"),
+    ("The Rocky Horror Picture Show Sing Along", "rocky horror picture show"),
+    ("Road House", "road house"),
+    ("Full Steam Ahead", "full steam ahead"),
+    ("Possible Love (AD)", "possible love"),
+    ("Wild Horse Nine - 35mm", "wild horse nine"),
+])
+def test_match_key_strips_whole_format_words_only(title, key):
+    from listings.text import match_key
+    assert match_key(title) == key
+
+
 @pytest.mark.parametrize("a, b", [
     ("Dune: Part Two", "Dune"),
     ("2001: A Space Odyssey", "A Space Odyssey"),
@@ -152,3 +165,23 @@ def test_parse_date_range(text, expected):
     from listings.text import parse_date_range
     got = parse_date_range(text)
     assert (tuple(d.isoformat() for d in got) if got else None) == expected
+
+
+def test_make_blurb_cleans_and_trims():
+    from listings.text import BLURB_MAX, make_blurb
+    raw = ("<p><strong>ALL NIGHTER: HOUSE RULES</strong><br/>Please note: the bar closes at 2am.<br/>"
+           "A drifter arrives in a small town and nothing is the same again. " * 6 + "<br/>Tickets £12</p>")
+    b = make_blurb(raw)
+    assert b and len(b) <= BLURB_MAX and b.endswith(".")
+    assert "£" not in b and "bar closes" not in b and "HOUSE RULES" not in b
+    assert make_blurb("Reverend Baron at Bush Hall at 2026-11-18T19:00:00+0000") is None
+    assert make_blurb("Short.") is None
+
+
+def test_one_blurb_per_title_best_wins_and_previous_kept():
+    from listings.__main__ import pick_blurbs
+    showings = [dict(FILM, match_key="wild horse nine"), dict(FILM, id="v:9", match_key="other film")]
+    candidates = {"film:wild horse nine": ["Short one.", "A much better, longer description of the film that reads well."]}
+    out = pick_blurbs(showings, candidates, previous={"film:other film": "Kept from yesterday.", "film:gone": "x"})
+    assert out == {"film:wild horse nine": "A much better, longer description of the film that reads well.",
+                   "film:other film": "Kept from yesterday."}
