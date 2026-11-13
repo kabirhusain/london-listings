@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-11-10T19:34:36+00:00",
+  "generated_at": "2026-11-13T05:33:27+00:00",
   "sources": [
     {
       "venue": "garden-cinema",
       "source": "Server-rendered homepage (https://www.thegardencinema.co.uk/)",
       "status": "ok",
-      "fetched_at": "2026-11-10T19:34:36+00:00",
-      "showings": 161
+      "fetched_at": "2026-11-13T05:33:27+00:00",
+      "showings": 168
     },
     {
       "venue": "cinema-museum",
       "source": "The Events Calendar REST API (https://cinemamuseum.org.uk/wp-json/tribe/events/v1/events)",
       "status": "ok",
-      "fetched_at": "2026-11-10T19:34:36+00:00",
-      "showings": 47
+      "fetched_at": "2026-11-13T05:33:27+00:00",
+      "showings": 46
     }
   ],
   "blurbs": {
@@ -27,7 +27,6 @@
     "film:arthur christmas": "How can Santa deliver billions of presents to the whole world in just one night? With an army of one million combat-style Field Elves and a vast, state-of-the-art control centre under the ice of the North Pole!",
     "film:audition": "Takashi Miike’s Audition follows a widower who orchestrates a staged casting process to meet a potential partner. The film centers on his fascination with the soft-spoken Asami, whose true nature gradually comes into question.",
     "film:basketcase": "There’s a guy, he’s got a basket. Fore and more general boding permeate, social difficulties and problems with the neighbours ensue. The degradation and danger of Pre-Guilanni New York encapsulated in a wicker container. Cult low-rent trash comedy horror with a peculiar charm.",
-    "film:ceravamo tanto amati": "Over decades, three friends reunite and drift apart, their lives shaped by love, politics, and disillusionment in postwar Italy.",
     "film:changeling": "The Changeling is included in our Haunted Christmas selection as a tribute to the director, the late Peter Medak.",
     "film:christmas ghost stories of john bowen": "As the nights draw in we invite you to a screening of the BBC’s celebrated A Ghost Story for Christmas films from the 1970s, written by acclaimed playwright and novelist John Bowen. The Treasure of Abbot Thomas (Lawrence Gordon Clark, 1974).",
     "film:chronicles of narnia the lion the witch and the wardrobe": "Based on the first of the classic series of novels by CS Lewis, this fantasy adventure film follows four siblings: Peter, Susan, Edmund, and Lucy.",
@@ -42,15 +41,17 @@
     "film:fatherland": "Fatherland centres on the relationship between the Nobel Prize-winning writer Thomas Mann (Hanns Zischler) and his daughter Erika (Sandra Hüller) - actress, writer and rally driver.",
     "film:fjord": "A Norwegian woman (Renate Reinsve) and her devout Romanian husband (Sebastian Stan) relocate with their five children to a remote coastal town.",
     "film:flight of the red balloon": "Filmmaker in Focus: Mark Lee Ping-bing. Flight of the Red Balloon is Hou Hsiao-hsien’s first feature filmed outside Asia.",
-    "film:gentlemen among themselves die fidele herrenpartie": "A comedy in which Lydia Potechina (Brunhilde) warns husband Hermann Picha (Peter) that this is the last stag party he’s going to go to, so he and his friends plan to make quite a night of it.",
+    "film:ghost town": "In a Japanese coastal town still haunted by the 2011 tsunami, a taxi becomes a moving confession booth.",
     "film:gozu": "Moving between yakuza thriller, surrealist comedy and body horror, Gozu transforms the familiar codes of the gangster film into a delirious exploration of loyalty, identity and desire.",
     "film:horror for a cause save the cinema museum night of the creeps": "Get ready for a spooky movie night to help keep The Cinema Museum alive with the cult classic Night of the Creeps!",
     "film:in my skin": "In My Skin marked the striking debut of Marina de Van. The film follows Esther, a woman whose recovery from injury turns into a troubling fixation on her own flesh, where sensation and suffering become dangerously intertwined.",
+    "film:josephine": "Writer-director Beth de Araújo’s second feature is a deeply personal story, rooted in the filmmaker's own childhood experience of interrupting a sexual assault in Golden Gate Park with her father.",
     "film:julien donkey boy": "Harmony Korine’s Julien Donkey-Boy follows a schizophrenic young man adrift within a deeply dysfunctional family. Its use of grainy, digital video textures and elliptical, fragmented imagery blends abrasive immediacy with moments of unexpected tenderness.",
     "film:la bola negra": "La Bola Negra tells the story of three men whose lives are intimately connected through desire, pain and inheritance, across three different eras – 1932, 1937, and 2017.",
     "film:la marsellesa de los borrachos": "A film crew travels through the roads and villages of northern Spain, retracing the clandestine journey of the Italian ethnomusicology group Cantacronache.",
     "film:macabre": "On the 50th anniversary of the his death, a screening of the directorial debut of William Castle. A maniac attempts to drive a doctor over the edge by announcing that he has buried the physician’s daughter alive.",
     "film:man who fell to earth": "Thomas Jerome Newton, a mysterious and complex personality, appears in New York. Despite his curiously frail physical presence, the strength of his intellect and scientific knowledge appear to transcend contemporary human experience.",
+    "film:minotaur": "Russia, 2022. Amidst the comfortable trappings of affluence and domesticity, corporate executive Gleb (Dmitriy Mazurov) finds himself under siege on all fronts. At home, he is haunted by suspicions that his increasingly distant wife Galina (Iris Lebedeva) is unfaithful.",
     "film:miracle on 34th street": "A little girl discovers dreams do come true if you really believe. Six-year-old Susan (Mara Wilson) has doubts about childhood's most enduring miracle - Santa Claus.",
     "film:muppet christmas carol": "Michael Caine joins Kermit the Frog, Miss Piggy, and all the hilarious Muppets in this merry, musical version of the Charles Dickens’ classic tale.",
     "film:naza": "Shot at night on the rooftops of Tel Aviv, the film reveals in detail the systems behind Israel’s calculated mass killing of Palestinian civilians in Gaza.…",
@@ -59,7 +60,6 @@
     "film:onwards and sideways": "Tony Evans is deputy head of a primary school. Emma Kent is a musician and composer, and single mother of two daughters. Neither knows the other. until a startling encounter changes the course of their lives.",
     "film:phantom of the paradise": "Faust, The Phantom of the Opera, The Picture of Dorian Grey are Frankensteined together by completely sane genius De Palma. Doo Wop, Surf, a grotesque based on Phil Spector, a Prison break, Glam rock and a pact with the Devil, this film really has it all.",
     "film:pinocchio subbed": "CinemaItaliaUK in partnership with the Italian Cultural Institute present Matteo Garrone's Pinocchio. In this live-action adaptation of the beloved fairytale, old woodcarver Geppetto creates a wooden puppet, Pinocchio, who magically comes to life.",
-    "film:possible love": "Possible Love follows the intertwined relationship of two married couples facing different paths and hidden desires.",
     "film:programmers of tomorrow film festival all dayer": "The Cinema of Tomorrow presents an all-day film festival in which 3 people/collectives will screen films in public for the 1st time on the Cinema Museum big screen, and the audience gets 3 shows for the price of 1!!",
     "film:railway children": "Adapted from the classic children’s novel by Edith Nesbit, The Railway Children is set in 1904, when three children from London move to the countryside after their father is falsely imprisoned.",
     "film:she devils on wheels": "An all-female motorcycle gang hold motorcycle races, as well as terrorize the residents of a small Florida town, and clash with an all-male rival gang of hot-riders.",
@@ -72,7 +72,9 @@
     "film:sword in the stone": "The legend of King Arthur gets the Disney treatment in this lively animated adventure. Only someone with honor and decency can pull the sword out of a massive stone.",
     "film:taipei story": "Taipei Story is presented in memory of the late Tony Rayns, a longtime friend and champion of Edward Yang’s work, who voted this film for his Sight and Sound Greatest Films of All Time ballot three times in 2002, 2012 and 2022.",
     "film:time to live and the time to die": "Filmmaker in Focus: Mark Lee Ping-bing. Inspired by filmmaker Hsiao-hsien Hou’s own childhood, this drama centers on Ah-Ha-Gu, a boy who comes of age during a tumultuous time in his family’s history.",
+    "film:to hold a mountain": "In the remote highlands of Montenegro’s Sinjajevina plateau, Gara and her thirteen-year-old daughter Nada return to their ancestral pastures every summer, where they herd animals, gather herbs and live in symbiosis with the mountain they call 'Mother.",
     "film:trouble every day": "An American couple, played by Vincent Gallo and Tricia Vessey, go to Paris, ostensibly for their honeymoon; but in fact the husband has come to Paris to hunt down a neuroscientist and his wife, played by Béatrice Dalle, whom he once knew and is obsessed with.",
+    "film:water mining and the cost of extraction": "Brazil’s Mostra do Filme Marginal opens its second London edition at The Cinema Museum with the theme “Cinema and Environmental Emergency: Images of a Possible Future”.",
     "film:werewolf and the giant claw": "Tonight’s films bring to an end our ‘season within a season’ tribute to legendary producer Sam Katzman, who made hundreds of low budget films and serials from the 30s right up to the 60s.",
     "film:wicker": "On the outskirts of a village by the sea, lives a Fisherwoman; smelly, single, and perpetually ridiculed. One day, fed up with her stuffy, small-minded neighbours, she commissions herself a husband to be made from wicker.",
     "film:wild horse nine": "Shortly before the 1973 Chilean coup, CIA agents Chris and Lee are dispatched from Santiago to Easter Island by their bureau chief, MJ.",
@@ -81,517 +83,6 @@
     "film:zombies of mora tau and the vampire": "Zombies of Mora Tau opens our ‘season within a season’ look at the world of legendary producer Sam Katzman (1901-1973), whose speciality was low-budget genre films, and is joined by The Vampire, a stately Mexican film that predated Hammer’s Dracula by almost eight months."
   },
   "showings": [
-    {
-      "id": "garden-cinema:6314432",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "La Bola Negra",
-      "match_key": "la bola negra",
-      "start": "2026-11-10T20:10:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6314432.TcsSection_971",
-      "info_url": "https://www.thegardencinema.co.uk/film/la-bola-negra/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6314379.jpg",
-      "tags": [
-        "cert:15",
-        "sold-out"
-      ]
-    },
-    {
-      "id": "garden-cinema:6307724",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "Wild Horse Nine",
-      "match_key": "wild horse nine",
-      "start": "2026-11-10T20:40:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307724.TcsSection_638",
-      "info_url": "https://www.thegardencinema.co.uk/film/wild-horse-nine/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6283189.jpg",
-      "tags": [
-        "cert:15"
-      ]
-    },
-    {
-      "id": "garden-cinema:6307729",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "Wild Horse Nine",
-      "match_key": "wild horse nine",
-      "start": "2026-11-11T12:20:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307729.TcsSection_3060731",
-      "info_url": "https://www.thegardencinema.co.uk/film/wild-horse-nine/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6283189.jpg",
-      "tags": [
-        "cert:15"
-      ]
-    },
-    {
-      "id": "garden-cinema:6542395",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "Possible Love",
-      "match_key": "possible love",
-      "start": "2026-11-11T13:00:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6542395.TcsSection_638",
-      "info_url": "https://www.thegardencinema.co.uk/film/possible-love/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6270890.jpg",
-      "tags": [
-        "cert:12A"
-      ]
-    },
-    {
-      "id": "garden-cinema:6542385",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "Wicker",
-      "match_key": "wicker",
-      "start": "2026-11-11T13:45:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6542385.TcsSection_971",
-      "info_url": "https://www.thegardencinema.co.uk/film/wicker/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6325690.jpg",
-      "tags": [
-        "cert:15"
-      ]
-    },
-    {
-      "id": "garden-cinema:6314434",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "La Bola Negra",
-      "match_key": "la bola negra",
-      "start": "2026-11-11T14:45:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6314434.TcsSection_3060731",
-      "info_url": "https://www.thegardencinema.co.uk/film/la-bola-negra/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6314379.jpg",
-      "tags": [
-        "cert:15"
-      ]
-    },
-    {
-      "id": "garden-cinema:6542387",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "Naza",
-      "match_key": "naza",
-      "start": "2026-11-11T15:55:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6542387.TcsSection_971",
-      "info_url": "https://www.thegardencinema.co.uk/film/naza/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6325090.jpg",
-      "tags": [
-        "cert:15"
-      ]
-    },
-    {
-      "id": "garden-cinema:6542397",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "Fatherland",
-      "match_key": "fatherland",
-      "start": "2026-11-11T16:10:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6542397.TcsSection_638",
-      "info_url": "https://www.thegardencinema.co.uk/film/fatherland/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6266170.jpg",
-      "tags": [
-        "cert:12A"
-      ]
-    },
-    {
-      "id": "garden-cinema:6542389",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "Wicker",
-      "match_key": "wicker",
-      "start": "2026-11-11T17:45:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6542389.TcsSection_971",
-      "info_url": "https://www.thegardencinema.co.uk/film/wicker/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6325690.jpg",
-      "tags": [
-        "cert:15"
-      ]
-    },
-    {
-      "id": "garden-cinema:6263825",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "Taipei Story",
-      "match_key": "taipei story",
-      "start": "2026-11-11T18:00:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6263825.TcsSection_638",
-      "info_url": "https://www.thegardencinema.co.uk/film/taipei-story/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6242174.jpg",
-      "tags": [
-        "cert:18",
-        "intro",
-        "sold-out"
-      ]
-    },
-    {
-      "id": "cinema-museum:12527",
-      "venue": "The Cinema Museum",
-      "category": "film",
-      "kind": "performance",
-      "title": "Gentlemen Among Themselves (Die fidele Herrenpartie) (1929)",
-      "match_key": "gentlemen among themselves die fidele herrenpartie",
-      "start": "2026-11-11T19:30:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": "£8 – £18",
-      "booking_url": "https://cinemamuseum.org.uk/scheduled/gentlemen-among-themselves-die-fidele-herrenpartie-1929/",
-      "info_url": null,
-      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/07/Gentlemen-among-themselves-poster.jpg",
-      "tags": [
-        "series:Kennington Bioscope",
-        "live-music"
-      ]
-    },
-    {
-      "id": "garden-cinema:6496366",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "Raise the Red Lantern",
-      "match_key": "raise the red lantern",
-      "start": "2026-11-11T20:15:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6496366.TcsSection_971",
-      "info_url": "https://www.thegardencinema.co.uk/film/raise-the-red-lantern/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6270568.jpg",
-      "tags": [
-        "cert:PG",
-        "sold-out"
-      ]
-    },
-    {
-      "id": "garden-cinema:6511526",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "Onwards and Sideways",
-      "match_key": "onwards and sideways",
-      "start": "2026-11-11T20:30:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6511526.TcsSection_638",
-      "info_url": "https://www.thegardencinema.co.uk/film/onwards-and-sideways/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6511449.jpg",
-      "tags": [
-        "cert:15"
-      ]
-    },
-    {
-      "id": "garden-cinema:6307731",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "Wild Horse Nine",
-      "match_key": "wild horse nine",
-      "start": "2026-11-11T20:45:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307731.TcsSection_3060731",
-      "info_url": "https://www.thegardencinema.co.uk/film/wild-horse-nine/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6283189.jpg",
-      "tags": [
-        "cert:15"
-      ]
-    },
-    {
-      "id": "garden-cinema:6314438",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "La Bola Negra",
-      "match_key": "la bola negra",
-      "start": "2026-11-12T12:25:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6314438.TcsSection_638",
-      "info_url": "https://www.thegardencinema.co.uk/film/la-bola-negra/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6314379.jpg",
-      "tags": [
-        "cert:15"
-      ]
-    },
-    {
-      "id": "garden-cinema:6542391",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "Naza",
-      "match_key": "naza",
-      "start": "2026-11-12T12:45:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6542391.TcsSection_971",
-      "info_url": "https://www.thegardencinema.co.uk/film/naza/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6325090.jpg",
-      "tags": [
-        "cert:15"
-      ]
-    },
-    {
-      "id": "garden-cinema:6270662",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "Raise the Red Lantern",
-      "match_key": "raise the red lantern",
-      "start": "2026-11-12T14:15:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6270662.TcsSection_3060731",
-      "info_url": "https://www.thegardencinema.co.uk/film/raise-the-red-lantern/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6270568.jpg",
-      "tags": [
-        "cert:PG",
-        "sold-out"
-      ]
-    },
-    {
-      "id": "garden-cinema:6307773",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "The Devils - director's cut",
-      "match_key": "devils directors cut",
-      "start": "2026-11-12T14:30:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307773.TcsSection_971",
-      "info_url": "https://www.thegardencinema.co.uk/film/the-devils/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6308768.jpg",
-      "tags": [
-        "cert:18"
-      ]
-    },
-    {
-      "id": "garden-cinema:6307775",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "Wild Horse Nine",
-      "match_key": "wild horse nine",
-      "start": "2026-11-12T15:30:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307775.TcsSection_638",
-      "info_url": "https://www.thegardencinema.co.uk/film/wild-horse-nine/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6283189.jpg",
-      "tags": [
-        "cert:15"
-      ]
-    },
-    {
-      "id": "garden-cinema:6314436",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "La Bola Negra",
-      "match_key": "la bola negra",
-      "start": "2026-11-12T17:00:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6314436.TcsSection_971",
-      "info_url": "https://www.thegardencinema.co.uk/film/la-bola-negra/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6314379.jpg",
-      "tags": [
-        "cert:15"
-      ]
-    },
-    {
-      "id": "garden-cinema:6271889",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "Taipei Story",
-      "match_key": "taipei story",
-      "start": "2026-11-12T18:00:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6271889.TcsSection_638",
-      "info_url": "https://www.thegardencinema.co.uk/film/taipei-story/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6242174.jpg",
-      "tags": [
-        "cert:18",
-        "sold-out"
-      ]
-    },
-    {
-      "id": "cinema-museum:12004",
-      "venue": "The Cinema Museum",
-      "category": "film",
-      "kind": "performance",
-      "title": "Italy Through its Cinema: C’eravamo tanto amati (1974)",
-      "match_key": "ceravamo tanto amati",
-      "start": "2026-11-12T19:30:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": "£10",
-      "booking_url": "https://cinemamuseum.org.uk/scheduled/italy-through-its-cinema-ceravamo-tanto-amati-1974/",
-      "info_url": null,
-      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/04/We-all-loved-each-other-so-much-Poster.jpg",
-      "tags": [
-        "series:Ghost Light Cinema"
-      ]
-    },
-    {
-      "id": "garden-cinema:6307777",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "Wild Horse Nine",
-      "match_key": "wild horse nine",
-      "start": "2026-11-12T20:30:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6307777.TcsSection_638",
-      "info_url": "https://www.thegardencinema.co.uk/film/wild-horse-nine/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6283189.jpg",
-      "tags": [
-        "cert:15"
-      ]
-    },
-    {
-      "id": "garden-cinema:6542393",
-      "venue": "The Garden Cinema",
-      "category": "film",
-      "kind": "performance",
-      "title": "Fatherland",
-      "match_key": "fatherland",
-      "start": "2026-11-12T21:00:00+00:00",
-      "end": null,
-      "doors": null,
-      "runtime_minutes": null,
-      "lineup": [],
-      "genre": null,
-      "price": null,
-      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6542393.TcsSection_3060731",
-      "info_url": "https://www.thegardencinema.co.uk/film/fatherland/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6266170.jpg",
-      "tags": [
-        "cert:12A"
-      ]
-    },
     {
       "id": "garden-cinema:6551646",
       "venue": "The Garden Cinema",
@@ -618,7 +109,7 @@
       "venue": "The Garden Cinema",
       "category": "film",
       "kind": "performance",
-      "title": "The Man Who Fell to Earth",
+      "title": "The Man Who Fell to Earth - 50th anniversary",
       "match_key": "man who fell to earth",
       "start": "2026-11-13T13:00:00+00:00",
       "end": null,
@@ -629,7 +120,7 @@
       "price": null,
       "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6412607.TcsSection_971",
       "info_url": "https://www.thegardencinema.co.uk/film/the-man-who-fell-to-earth/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6490309.jpg",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6616968.jpg",
       "tags": [
         "cert:18"
       ]
@@ -652,7 +143,8 @@
       "info_url": "https://www.thegardencinema.co.uk/film/raise-the-red-lantern/",
       "image_url": "https://images.savoysystems.co.uk/GCL/6270568.jpg",
       "tags": [
-        "cert:PG"
+        "cert:PG",
+        "sold-out"
       ]
     },
     {
@@ -779,8 +271,7 @@
       "image_url": "https://images.savoysystems.co.uk/GCL/6241961.jpg",
       "tags": [
         "cert:18",
-        "intro",
-        "sold-out"
+        "intro"
       ]
     },
     {
@@ -1189,7 +680,7 @@
       "venue": "The Garden Cinema",
       "category": "film",
       "kind": "performance",
-      "title": "The Man Who Fell to Earth",
+      "title": "The Man Who Fell to Earth - 50th anniversary",
       "match_key": "man who fell to earth",
       "start": "2026-11-15T19:00:00+00:00",
       "end": null,
@@ -1200,7 +691,7 @@
       "price": null,
       "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6412609.TcsSection_971",
       "info_url": "https://www.thegardencinema.co.uk/film/the-man-who-fell-to-earth/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6490309.jpg",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6616968.jpg",
       "tags": [
         "cert:18"
       ]
@@ -1231,7 +722,7 @@
       "venue": "The Garden Cinema",
       "category": "film",
       "kind": "performance",
-      "title": "The Man Who Fell to Earth",
+      "title": "The Man Who Fell to Earth - 50th anniversary",
       "match_key": "man who fell to earth",
       "start": "2026-11-16T14:00:00+00:00",
       "end": null,
@@ -1242,7 +733,7 @@
       "price": null,
       "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6412611.TcsSection_971",
       "info_url": "https://www.thegardencinema.co.uk/film/the-man-who-fell-to-earth/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6490309.jpg",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6616968.jpg",
       "tags": [
         "cert:18"
       ]
@@ -1589,7 +1080,7 @@
       "venue": "The Garden Cinema",
       "category": "film",
       "kind": "performance",
-      "title": "The Man Who Fell to Earth",
+      "title": "The Man Who Fell to Earth - 50th anniversary",
       "match_key": "man who fell to earth",
       "start": "2026-11-17T19:45:00+00:00",
       "end": null,
@@ -1600,7 +1091,7 @@
       "price": null,
       "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6412657.TcsSection_971",
       "info_url": "https://www.thegardencinema.co.uk/film/the-man-who-fell-to-earth/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6490309.jpg",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6616968.jpg",
       "tags": [
         "cert:18"
       ]
@@ -1751,7 +1242,8 @@
       "info_url": "https://www.thegardencinema.co.uk/film/anatomy-of-a-murder/",
       "image_url": "https://images.savoysystems.co.uk/GCL/6490736.jpg",
       "tags": [
-        "cert:12A"
+        "cert:12A",
+        "sold-out"
       ]
     },
     {
@@ -1906,7 +1398,7 @@
       "venue": "The Garden Cinema",
       "category": "film",
       "kind": "performance",
-      "title": "The Man Who Fell to Earth",
+      "title": "The Man Who Fell to Earth - 50th anniversary",
       "match_key": "man who fell to earth",
       "start": "2026-11-19T17:15:00+00:00",
       "end": null,
@@ -1917,7 +1409,7 @@
       "price": null,
       "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6412613.TcsSection_638",
       "info_url": "https://www.thegardencinema.co.uk/film/the-man-who-fell-to-earth/",
-      "image_url": "https://images.savoysystems.co.uk/GCL/6490309.jpg",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6616968.jpg",
       "tags": [
         "cert:18"
       ]
@@ -1986,6 +1478,27 @@
       ]
     },
     {
+      "id": "garden-cinema:6617344",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "You Can See Everything",
+      "match_key": "you can see everything",
+      "start": "2026-11-20T10:30:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6617344.TcsSection_3060731",
+      "info_url": "https://www.thegardencinema.co.uk/film/you-can-see-everything/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
       "id": "garden-cinema:6445900",
       "venue": "The Garden Cinema",
       "category": "film",
@@ -2003,7 +1516,7 @@
       "info_url": "https://www.thegardencinema.co.uk/film/you-can-see-everything/",
       "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
       "tags": [
-        "cert:Rating TBC"
+        "cert:15"
       ]
     },
     {
@@ -2066,7 +1579,7 @@
       "info_url": "https://www.thegardencinema.co.uk/film/you-can-see-everything/",
       "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
       "tags": [
-        "cert:Rating TBC",
+        "cert:15",
         "sold-out"
       ]
     },
@@ -2152,7 +1665,7 @@
       "info_url": "https://www.thegardencinema.co.uk/film/you-can-see-everything/",
       "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
       "tags": [
-        "cert:Rating TBC"
+        "cert:15"
       ]
     },
     {
@@ -2238,7 +1751,7 @@
       "info_url": "https://www.thegardencinema.co.uk/film/you-can-see-everything/",
       "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
       "tags": [
-        "cert:Rating TBC"
+        "cert:15"
       ]
     },
     {
@@ -2259,7 +1772,7 @@
       "info_url": "https://www.thegardencinema.co.uk/film/you-can-see-everything/",
       "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
       "tags": [
-        "cert:Rating TBC"
+        "cert:15"
       ]
     },
     {
@@ -2301,7 +1814,7 @@
       "info_url": "https://www.thegardencinema.co.uk/film/you-can-see-everything/",
       "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
       "tags": [
-        "cert:Rating TBC"
+        "cert:15"
       ]
     },
     {
@@ -2344,7 +1857,7 @@
       "info_url": "https://www.thegardencinema.co.uk/film/you-can-see-everything/",
       "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
       "tags": [
-        "cert:Rating TBC"
+        "cert:15"
       ]
     },
     {
@@ -2386,7 +1899,7 @@
       "info_url": "https://www.thegardencinema.co.uk/film/you-can-see-everything/",
       "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
       "tags": [
-        "cert:Rating TBC"
+        "cert:15"
       ]
     },
     {
@@ -2407,7 +1920,7 @@
       "info_url": "https://www.thegardencinema.co.uk/film/you-can-see-everything/",
       "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
       "tags": [
-        "cert:Rating TBC"
+        "cert:15"
       ]
     },
     {
@@ -2511,7 +2024,7 @@
       "info_url": "https://www.thegardencinema.co.uk/film/you-can-see-everything/",
       "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
       "tags": [
-        "cert:Rating TBC",
+        "cert:15",
         "hard-of-hearing"
       ]
     },
@@ -2596,7 +2109,7 @@
       "info_url": "https://www.thegardencinema.co.uk/film/you-can-see-everything/",
       "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
       "tags": [
-        "cert:Rating TBC"
+        "cert:15"
       ]
     },
     {
@@ -2617,7 +2130,7 @@
       "info_url": "https://www.thegardencinema.co.uk/film/you-can-see-everything/",
       "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
       "tags": [
-        "cert:Rating TBC"
+        "cert:15"
       ]
     },
     {
@@ -2659,7 +2172,7 @@
       "info_url": "https://www.thegardencinema.co.uk/film/you-can-see-everything/",
       "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
       "tags": [
-        "cert:Rating TBC"
+        "cert:15"
       ]
     },
     {
@@ -2723,7 +2236,7 @@
       "info_url": "https://www.thegardencinema.co.uk/film/you-can-see-everything/",
       "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
       "tags": [
-        "cert:Rating TBC"
+        "cert:15"
       ]
     },
     {
@@ -2807,7 +2320,70 @@
       "info_url": "https://www.thegardencinema.co.uk/film/you-can-see-everything/",
       "image_url": "https://images.savoysystems.co.uk/GCL/6445799.jpg",
       "tags": [
-        "cert:Rating TBC"
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6446683",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Josephine",
+      "match_key": "josephine",
+      "start": "2026-11-27T13:00:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446683.TcsSection_971",
+      "info_url": "https://www.thegardencinema.co.uk/film/josephine/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446630.jpg",
+      "tags": [
+        "cert:18"
+      ]
+    },
+    {
+      "id": "garden-cinema:6446518",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Minotaur",
+      "match_key": "minotaur",
+      "start": "2026-11-27T14:30:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446518.TcsSection_3060731",
+      "info_url": "https://www.thegardencinema.co.uk/film/minotaur/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446624.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6446516",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Minotaur",
+      "match_key": "minotaur",
+      "start": "2026-11-27T17:10:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446516.TcsSection_638",
+      "info_url": "https://www.thegardencinema.co.uk/film/minotaur/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446624.jpg",
+      "tags": [
+        "cert:15"
       ]
     },
     {
@@ -2853,6 +2429,27 @@
       ]
     },
     {
+      "id": "garden-cinema:6459300",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Josephine",
+      "match_key": "josephine",
+      "start": "2026-11-27T20:50:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6459300.TcsSection_971",
+      "info_url": "https://www.thegardencinema.co.uk/film/josephine/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446630.jpg",
+      "tags": [
+        "cert:18"
+      ]
+    },
+    {
       "id": "garden-cinema:6035568",
       "venue": "The Garden Cinema",
       "category": "film",
@@ -2871,6 +2468,69 @@
       "image_url": "https://images.savoysystems.co.uk/GCL/6034800.jpg",
       "tags": [
         "cert:U"
+      ]
+    },
+    {
+      "id": "garden-cinema:6459345",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "To Hold a Mountain",
+      "match_key": "to hold a mountain",
+      "start": "2026-11-28T13:00:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6459345.TcsSection_971",
+      "info_url": "https://www.thegardencinema.co.uk/film/to-hold-a-mountain/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6394812.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6446520",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Minotaur",
+      "match_key": "minotaur",
+      "start": "2026-11-28T14:55:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446520.TcsSection_638",
+      "info_url": "https://www.thegardencinema.co.uk/film/minotaur/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446624.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6446522",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Minotaur",
+      "match_key": "minotaur",
+      "start": "2026-11-28T17:45:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446522.TcsSection_638",
+      "info_url": "https://www.thegardencinema.co.uk/film/minotaur/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446624.jpg",
+      "tags": [
+        "cert:15"
       ]
     },
     {
@@ -2916,6 +2576,27 @@
       ]
     },
     {
+      "id": "garden-cinema:6446687",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Josephine",
+      "match_key": "josephine",
+      "start": "2026-11-28T20:25:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446687.TcsSection_971",
+      "info_url": "https://www.thegardencinema.co.uk/film/josephine/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446630.jpg",
+      "tags": [
+        "cert:18"
+      ]
+    },
+    {
       "id": "garden-cinema:6035573",
       "venue": "The Garden Cinema",
       "category": "film",
@@ -2934,6 +2615,27 @@
       "image_url": "https://images.savoysystems.co.uk/GCL/6034800.jpg",
       "tags": [
         "cert:U"
+      ]
+    },
+    {
+      "id": "garden-cinema:6446524",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Minotaur",
+      "match_key": "minotaur",
+      "start": "2026-11-29T12:10:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446524.TcsSection_638",
+      "info_url": "https://www.thegardencinema.co.uk/film/minotaur/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446624.jpg",
+      "tags": [
+        "cert:15"
       ]
     },
     {
@@ -2958,6 +2660,90 @@
       ]
     },
     {
+      "id": "garden-cinema:6395113",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "To Hold a Mountain",
+      "match_key": "to hold a mountain",
+      "start": "2026-11-29T13:15:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6395113.TcsSection_971",
+      "info_url": "https://www.thegardencinema.co.uk/film/to-hold-a-mountain/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6394812.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6446689",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Josephine",
+      "match_key": "josephine",
+      "start": "2026-11-29T15:45:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446689.TcsSection_971",
+      "info_url": "https://www.thegardencinema.co.uk/film/josephine/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446630.jpg",
+      "tags": [
+        "cert:18"
+      ]
+    },
+    {
+      "id": "garden-cinema:6512768",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Minotaur",
+      "match_key": "minotaur",
+      "start": "2026-11-29T18:30:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6512768.TcsSection_971",
+      "info_url": "https://www.thegardencinema.co.uk/film/minotaur/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446624.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6446528",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Minotaur",
+      "match_key": "minotaur",
+      "start": "2026-11-30T14:25:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446528.TcsSection_971",
+      "info_url": "https://www.thegardencinema.co.uk/film/minotaur/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446624.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
       "id": "garden-cinema:6457384",
       "venue": "The Garden Cinema",
       "category": "film",
@@ -2976,6 +2762,27 @@
       "image_url": "https://images.savoysystems.co.uk/GCL/6511062.jpg",
       "tags": [
         "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6395115",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "To Hold a Mountain",
+      "match_key": "to hold a mountain",
+      "start": "2026-11-30T15:30:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6395115.TcsSection_3060731",
+      "info_url": "https://www.thegardencinema.co.uk/film/to-hold-a-mountain/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6394812.jpg",
+      "tags": [
+        "cert:12A"
       ]
     },
     {
@@ -3019,6 +2826,172 @@
       "tags": []
     },
     {
+      "id": "garden-cinema:6446530",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Minotaur",
+      "match_key": "minotaur",
+      "start": "2026-11-30T19:55:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446530.TcsSection_971",
+      "info_url": "https://www.thegardencinema.co.uk/film/minotaur/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446624.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6446691",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Josephine",
+      "match_key": "josephine",
+      "start": "2026-11-30T20:20:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446691.TcsSection_638",
+      "info_url": "https://www.thegardencinema.co.uk/film/josephine/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446630.jpg",
+      "tags": [
+        "cert:18"
+      ]
+    },
+    {
+      "id": "garden-cinema:6446693",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Josephine",
+      "match_key": "josephine",
+      "start": "2026-12-01T13:00:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446693.TcsSection_971",
+      "info_url": "https://www.thegardencinema.co.uk/film/josephine/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446630.jpg",
+      "tags": [
+        "cert:18"
+      ]
+    },
+    {
+      "id": "garden-cinema:6446562",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Minotaur",
+      "match_key": "minotaur",
+      "start": "2026-12-01T14:50:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446562.TcsSection_3060731",
+      "info_url": "https://www.thegardencinema.co.uk/film/minotaur/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446624.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "cinema-museum:14777",
+      "venue": "The Cinema Museum",
+      "category": "film",
+      "kind": "performance",
+      "title": "The Marginal Film Festival – Opening Night: Water, Mining and the Cost of Extraction",
+      "match_key": "water mining and the cost of extraction",
+      "start": "2026-12-01T19:00:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": "Free – £12",
+      "booking_url": "https://cinemamuseum.org.uk/scheduled/the-marginal-film-festival-opening-night-water-mining-and-the-cost-of-extraction/",
+      "info_url": null,
+      "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/11/The-Marginal-Film-Festival-Opening-Night-poster.png",
+      "tags": []
+    },
+    {
+      "id": "garden-cinema:6446566",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Minotaur",
+      "match_key": "minotaur",
+      "start": "2026-12-02T14:50:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446566.TcsSection_3060731",
+      "info_url": "https://www.thegardencinema.co.uk/film/minotaur/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446624.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6395117",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "To Hold a Mountain",
+      "match_key": "to hold a mountain",
+      "start": "2026-12-02T15:15:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6395117.TcsSection_638",
+      "info_url": "https://www.thegardencinema.co.uk/film/to-hold-a-mountain/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6394812.jpg",
+      "tags": [
+        "cert:12A"
+      ]
+    },
+    {
+      "id": "garden-cinema:6446697",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Josephine",
+      "match_key": "josephine",
+      "start": "2026-12-02T17:15:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446697.TcsSection_971",
+      "info_url": "https://www.thegardencinema.co.uk/film/josephine/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446630.jpg",
+      "tags": [
+        "cert:18"
+      ]
+    },
+    {
       "id": "cinema-museum:11909",
       "venue": "The Cinema Museum",
       "category": "film",
@@ -3040,6 +3013,90 @@
       ]
     },
     {
+      "id": "garden-cinema:6446568",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Minotaur",
+      "match_key": "minotaur",
+      "start": "2026-12-02T19:45:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446568.TcsSection_971",
+      "info_url": "https://www.thegardencinema.co.uk/film/minotaur/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446624.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6446570",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Minotaur",
+      "match_key": "minotaur",
+      "start": "2026-12-03T12:15:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446570.TcsSection_971",
+      "info_url": "https://www.thegardencinema.co.uk/film/minotaur/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446624.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
+      "id": "garden-cinema:6446701",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Josephine",
+      "match_key": "josephine",
+      "start": "2026-12-03T15:15:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446701.TcsSection_971",
+      "info_url": "https://www.thegardencinema.co.uk/film/josephine/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446630.jpg",
+      "tags": [
+        "cert:18"
+      ]
+    },
+    {
+      "id": "garden-cinema:6512774",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Minotaur",
+      "match_key": "minotaur",
+      "start": "2026-12-03T17:45:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6512774.TcsSection_971",
+      "info_url": "https://www.thegardencinema.co.uk/film/minotaur/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446624.jpg",
+      "tags": [
+        "cert:15"
+      ]
+    },
+    {
       "id": "cinema-museum:14675",
       "venue": "The Cinema Museum",
       "category": "film",
@@ -3057,6 +3114,48 @@
       "info_url": null,
       "image_url": "https://cinemamuseum.org.uk/wp-content/uploads/2026/11/London-Orbital-poster.jpg",
       "tags": []
+    },
+    {
+      "id": "garden-cinema:6446699",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Josephine",
+      "match_key": "josephine",
+      "start": "2026-12-03T20:30:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6446699.TcsSection_3060731",
+      "info_url": "https://www.thegardencinema.co.uk/film/josephine/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6446630.jpg",
+      "tags": [
+        "cert:18"
+      ]
+    },
+    {
+      "id": "garden-cinema:6395119",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "To Hold a Mountain",
+      "match_key": "to hold a mountain",
+      "start": "2026-12-03T20:45:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6395119.TcsSection_638",
+      "info_url": "https://www.thegardencinema.co.uk/film/to-hold-a-mountain/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6394812.jpg",
+      "tags": [
+        "cert:12A"
+      ]
     },
     {
       "id": "garden-cinema:6457434",
@@ -3421,6 +3520,28 @@
       "image_url": "https://images.savoysystems.co.uk/GCL/6412461.jpg",
       "tags": [
         "cert:PG"
+      ]
+    },
+    {
+      "id": "garden-cinema:6614934",
+      "venue": "The Garden Cinema",
+      "category": "film",
+      "kind": "performance",
+      "title": "Ghost Town + Q&A",
+      "match_key": "ghost town",
+      "start": "2026-12-13T14:30:00+00:00",
+      "end": null,
+      "doors": null,
+      "runtime_minutes": null,
+      "lineup": [],
+      "genre": null,
+      "price": null,
+      "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_6614934.TcsSection_3060731",
+      "info_url": "https://www.thegardencinema.co.uk/film/ghost-town-qa/",
+      "image_url": "https://images.savoysystems.co.uk/GCL/6614834.jpg",
+      "tags": [
+        "cert:PG",
+        "q-and-a"
       ]
     },
     {
@@ -3807,7 +3928,7 @@
       "kind": "performance",
       "title": "Cleo (Snowtime)",
       "match_key": "cleo snowtime",
-      "start": "2026-12-30T14:30:00+00:00",
+      "start": "2026-12-30T14:00:00+00:00",
       "end": null,
       "doors": null,
       "runtime_minutes": null,
