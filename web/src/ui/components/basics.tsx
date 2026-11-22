@@ -83,12 +83,26 @@ export function ExtLink({ href, children, className }: { href: string; children:
 }
 
 /* ---- Poster (Poster.kt): generated art card, with the venue's image over it when there is one ---- */
-export function Poster({ url, seed, width, height }: { url: string | null; seed: string; width: number | string; height?: number | string }) {
+export function Poster({
+  url,
+  seed,
+  width,
+  height,
+  aspect,
+}: {
+  url: string | null
+  seed: string
+  width: number | string
+  height?: number | string
+  /** For a fluid width: the tile's aspect ratio (default 16 / 10, the gig detail's). */
+  aspect?: string
+}) {
   const art = posterArt(seed)
   const [failed, setFailed] = useState(false)
-  const w = typeof width === 'number' ? width : 168
-  const r = (x: number) => `${Math.round(w * x)}px`
-  const stroke = `${Math.max(2, Math.round(w * 0.07))}px solid ${art.fg}`
+  // Shape geometry is relative to the tile width: in px for fixed tiles, in container units for fluid ones.
+  const fixed = typeof width === 'number'
+  const r = (x: number) => (fixed ? `${Math.round((width as number) * x)}px` : `${(x * 100).toFixed(2)}cqw`)
+  const stroke = `${fixed ? `${Math.max(2, Math.round((width as number) * 0.07))}px` : 'max(2px, 7cqw)'} solid ${art.fg}`
   const shape: Record<string, CSSProperties> = {
     SUN: { left: r(0.18), top: r(0.66), width: r(0.64), height: r(0.64), borderRadius: '50%', background: art.fg },
     BAND: { left: 0, top: r(0.9), width: '100%', height: r(0.2), background: art.fg },
@@ -103,9 +117,9 @@ export function Poster({ url, seed, width, height }: { url: string | null; seed:
       className="poster"
       style={{
         width,
-        height: typeof width === 'number' ? (height ?? width * 1.5) : undefined,
-        // A full-width poster (the gig detail) is 16:10.
-        aspectRatio: typeof width === 'number' ? undefined : '16 / 10',
+        height: fixed ? (height ?? (width as number) * 1.5) : undefined,
+        aspectRatio: fixed ? undefined : (aspect ?? '16 / 10'),
+        containerType: fixed ? undefined : 'inline-size',
         background: art.bg,
       }}
     >

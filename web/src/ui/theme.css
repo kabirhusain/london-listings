@@ -436,3 +436,28 @@ a {
   .wide { grid-template-columns: 320px minmax(0, 1fr) 520px; }
 }
 .flip { transform: rotate(180deg); }
+
+/* ---- Poster wall (This week): one poster per title, by category, no times ---- */
+.wall { padding: 4px var(--gutter) 8px; }
+.wall-section { padding-top: 22px; }
+.wall-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 16px 12px; padding-top: 14px;
+}
+.wall-tile { display: flex; flex-direction: column; gap: 6px; text-decoration: none; color: var(--ink); min-width: 0; }
+.wall-tile .poster { outline: 1px solid var(--rule); outline-offset: -1px; transition: transform .12s ease-out; }
+.wall-tile:hover .poster, .wall-tile:focus-visible .poster { transform: translateY(-2px); outline: 2px solid var(--accent); outline-offset: 0; }
+.wall-tile[aria-current='true'] .poster { outline: 3px solid var(--accent); outline-offset: 0; }
+.wall-caption {
+  font: 700 15px/1.02 var(--cond); text-transform: uppercase; text-wrap: pretty;
+  overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;
+}
+@media (max-width: 480px) {
+  .wall-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px 10px; }
+  .wall-caption { font-size: 14px; }
+}
+@media (prefers-reduced-motion: reduce) { .wall-tile .poster { transition: none; } }
+.wide.no-side { grid-template-columns: 300px minmax(0, 1fr); grid-template-areas: 'top top' 'rail main'; }
+.wide.no-side .side { display: none; }
+@media (min-width: 900px) {
+  .wall-grid { grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); }
+}

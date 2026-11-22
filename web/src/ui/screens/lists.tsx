@@ -9,6 +9,7 @@ import { useApp } from '../context'
 import { ArrowIcon, NavLink } from '../components/basics'
 import { AlsoRunning, CompactShowingRow, DateHeader, ShowingRow, TimeBanded, TitleGroupEntry } from '../components/rows'
 import { FilteredEmpty, Freshness, LoadingState, MessageState, NoSignal } from '../components/states'
+import { PosterWall } from '../components/PosterWall'
 
 export interface TabView {
   /** The big display word in the header. */
@@ -48,6 +49,9 @@ export function useTabView(onEditFilters: () => void): TabView {
     () => (route.tab === 'upcoming' && !route.calendar ? Q.upcoming(showings, f, minute) : []),
     [showings, f, minute, route.tab, route.calendar],
   )
+  // ---- This week (poster wall) ----
+  const wall = useMemo(() => (route.tab === 'week' ? Q.week(showings, f, minute) : new Map()), [showings, f, minute, route.tab])
+  const needsLaterForWeek = !feed.complete && feed.window !== null && feed.window.to < addDays(today, 6)
   const selected = route.date ?? addDays(today, 1)
   const selectedDay = useMemo(
     () => (route.tab === 'upcoming' && route.calendar ? Q.day(showings, f, selected, minute) : null),
@@ -69,6 +73,30 @@ export function useTabView(onEditFilters: () => void): TabView {
             />
           ) : (
             groups.map((g) => <TitleGroupEntry key={g.key} group={g} />)
+          )}
+        </ListBody>
+      ),
+    }
+  }
+
+  if (route.tab === 'week') {
+    const tiles = [...wall.values()].flat()
+    return {
+      word: 'This week',
+      meta: [F.dateRange(today, addDays(today, 6)), ...(loadingMeta ?? [F.count(tiles.length, 'title')])],
+      sheetCount: tiles.reduce((n, t) => n + Math.max(t.group.count, 1), 0),
+      content: (
+        <ListBody>
+          {needsLaterForWeek ? (
+            <LoadingState />
+          ) : tiles.length === 0 ? (
+            <FilteredEmpty
+              unfilteredBody="There's nothing in the listings for the next seven days."
+              filteredBody="Nothing this week matches these filters."
+              onEdit={onEditFilters}
+            />
+          ) : (
+            <PosterWall wall={wall} />
           )}
         </ListBody>
       ),

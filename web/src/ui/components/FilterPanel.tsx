@@ -30,7 +30,8 @@ function FilterControls() {
 
   return (
     <>
-      {route.tab !== 'evening' && (
+      {/* This evening and the poster wall are always one entry per title, so there's nothing to arrange. */}
+      {route.tab !== 'evening' && route.tab !== 'week' && (
         <fieldset style={{ border: 0, margin: 0, padding: 0 }}>
           <legend className="t-legend muted filter-legend" style={{ float: 'left', width: '100%' }}>
             Arrange

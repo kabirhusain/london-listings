@@ -2,7 +2,7 @@
  * Everything on screen lives in the URL's query string, so any view can be shared as a link
  * and opened in a new tab. Query parameters only (no paths), so GitHub Pages needs no tricks.
  *
- *   ?tab=today|evening|upcoming   view=calendar & date=YYYY-MM-DD
+ *   ?tab=today|evening|week|upcoming   view=calendar & date=YYYY-MM-DD
  *   q=…                            search (present = search open)
  *   show=<id> & sel=<id>           detail, and the selected showtime when it differs
  *   page=credits
@@ -17,9 +17,14 @@ import { DEFAULT_FILTERS, filtersEqual, type Filters, type ListLayout } from '..
 import { CATEGORIES, TIMES_OF_DAY, type Category, type TimeOfDay } from '../domain/models'
 import { parseDate } from '../domain/time'
 
-export type Tab = 'today' | 'evening' | 'upcoming'
-export const TABS: Tab[] = ['today', 'evening', 'upcoming']
-export const TAB_LABEL: Record<Tab, string> = { today: 'Today', evening: 'This evening', upcoming: 'Next 14 days' }
+export type Tab = 'today' | 'evening' | 'week' | 'upcoming'
+export const TABS: Tab[] = ['today', 'evening', 'week', 'upcoming']
+export const TAB_LABEL: Record<Tab, string> = {
+  today: 'Today',
+  evening: 'This evening',
+  week: 'This week',
+  upcoming: 'Next 14 days',
+}
 
 export interface Route {
   tab: Tab

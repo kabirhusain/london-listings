@@ -228,6 +228,30 @@ describe('web-only', () => {
     ])
   })
 
+  it('builds the week poster wall: one tile per title, by category, nothing past or beyond the week', () => {
+    const wall = Q.week(
+      [
+        showing('gone', '2026-10-25T14:00:00+00:00', { matchKey: 'gone' }), // started today
+        showing('f1', '2026-10-25T20:00:00+00:00', { venue: 'ICA', matchKey: 'fjord' }),
+        showing('f2', '2026-10-27T20:00:00+00:00', { venue: 'Rio Cinema', matchKey: 'fjord' }),
+        showing('soon', '2026-10-25T19:00:00+00:00', { matchKey: 'naza' }),
+        showing('d6', '2026-10-31T19:00:00+00:00', { matchKey: 'last day' }), // today + 6
+        showing('d7', '2026-11-01T19:00:00+00:00', { matchKey: 'too late' }), // today + 7
+        showing('gig', '2026-10-26T20:00:00+00:00', { category: 'MUSIC', venue: 'Cafe Oto' }),
+        showing('play', '2026-09-01T00:00:00+01:00', { category: 'THEATRE', venue: 'Almeida', runEnd: '2026-10-27' }),
+      ],
+      DEFAULT_FILTERS,
+      now,
+    )
+    expect([...wall.keys()]).toEqual(['FILM', 'MUSIC', 'THEATRE'])
+    const films = wall.get('FILM')!
+    expect(films.map((t) => t.group.lead.matchKey)).toEqual(['naza', 'fjord', 'last day'])
+    expect(films[1].days).toEqual(['2026-10-25', '2026-10-27'])
+    expect(wall.get('THEATRE')![0].days).toEqual(['2026-10-25', '2026-10-26', '2026-10-27'])
+    // Filters apply.
+    expect([...Q.week([showing('gig', '2026-10-26T20:00:00+00:00', { category: 'MUSIC' })], makeFilters({ categories: new Set(['FILM']) }), now).keys()]).toEqual([])
+  })
+
   it('lists venues alphabetically, ignoring "The"', () => {
     const v = Q.venues([
       showing('a', '2026-10-25T19:00:00+00:00', { venue: 'The Nickel' }),

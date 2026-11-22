@@ -196,6 +196,40 @@ export function groupByTitle(timed: Showing[], runs: Showing[], now: number): Ti
   return [...groups.filter((g) => !g.allStarted), ...runGroups, ...groups.filter((g) => g.allStarted)]
 }
 
+/** One poster on the week's wall: a title, with the image to show and the days it's on. */
+export interface WallTile {
+  group: TitleGroup
+  image: string | null
+  /** Listing dates (within the week) it's on. Runs count every day of the run that falls in the week. */
+  days: string[]
+}
+
+/**
+ * The poster wall: every title still to come from now to the end of the [days]-day week
+ * (today included), one tile per title, grouped by category in CATEGORIES order. Within a
+ * category, soonest first; runs after timed titles. Filters apply, as on the other tabs.
+ */
+export function week(showings: Showing[], filters: Filters, now: number, days = 7): Map<Category, WallTile[]> {
+  const first = listingDateOf(now)
+  const last = addDays(first, days - 1)
+  const matching = showings.filter((s) => matches(filters, s))
+  const timed = matching.filter((s) => !s.isRun && s.listingDate >= first && s.listingDate <= last && s.start.ms > now)
+  const runs = matching.filter((s) => s.isRun && s.runEnd! >= first && s.listingDate <= last).sort(byTitle)
+  const out = new Map<Category, WallTile[]>()
+  for (const g of groupByTitle(timed, runs, now)) {
+    const shows = g.venues.flatMap((v) => v.showings)
+    const dates = g.lead.isRun
+      ? Array.from({ length: days }, (_, i) => addDays(first, i)).filter((d) => runsOn(g.lead, d))
+      : [...new Set(shows.map((s) => s.listingDate))].sort()
+    const tile: WallTile = { group: g, image: shows.find((s) => s.imageUrl)?.imageUrl ?? g.lead.imageUrl, days: dates }
+    const list = out.get(g.category)
+    if (list) list.push(tile)
+    else out.set(g.category, [tile])
+  }
+  const order = ['FILM', 'MUSIC', 'THEATRE', 'COMEDY', 'DANCE', 'OTHER'] as Category[]
+  return new Map(order.filter((c) => out.has(c)).map((c) => [c, out.get(c)!]))
+}
+
 /**
  * Searches everything still to come (filters don't apply): titles, venues and performers.
  * Every word of the query must match somewhere, ignoring case, accents and punctuation.

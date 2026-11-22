@@ -15,6 +15,7 @@ import { SearchResults, SearchScreen } from './screens/SearchScreen'
 function backLabelFor(r: Route): string {
   if (r.q !== null) return 'Search'
   if (r.tab === 'upcoming') return r.calendar ? 'Calendar' : 'Next 14 days'
+  if (r.tab === 'week') return 'This week'
   return r.tab === 'evening' ? 'This evening' : 'Today'
 }
 
@@ -171,8 +172,10 @@ function WideLayout() {
     return () => document.removeEventListener('keydown', onKey)
   }, [route.q, route.show])
 
+  // The poster wall takes the detail column's space too until a poster is picked.
+  const wallOnly = route.tab === 'week' && !route.show && !route.page && !searching
   return (
-    <div className="wide">
+    <div className={`wide ${wallOnly ? 'no-side' : ''}`}>
       <header className="wide-top">
         <NavLink to={{ tab: 'today', calendar: false, q: null, page: null }} className="t-wordmark">
           London Calling
@@ -232,7 +235,7 @@ function WideLayout() {
         )}
       </main>
 
-      <section className="side" aria-label="Details">
+      <section className="side" aria-label="Details" hidden={wallOnly}>
         {route.show ? (
           <DetailScreen key={route.show} />
         ) : (
