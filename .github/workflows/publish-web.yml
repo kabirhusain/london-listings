@@ -1,0 +1,83 @@
+name: Publish website
+
+# Rebuilds and redeploys the London Calling website (web/) around the listings
+# that are already published, without running the collector. A change to the
+# website shouldn't wait for, or trigger, a 15-20 minute scrape. The daily
+# "Publish listings" workflow also builds the website, so both always deploy a
+# complete site.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "web/**"
+      - "scripts/20261122_make_web_feed.py"
+      - "scripts/20261122_build_site.sh"
+      - "scripts/20261024_make_index.py"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read # configure-pages looks up the site URL
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Website tests
+        run: |
+          python -m pip install pytest
+          python -m pytest tests/test_web_feed.py
+          (cd web && npm ci --no-audit --no-fund && npm test)
+
+      - name: Get Pages URL
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Download the published listings
+        env:
+          BASE_URL: ${{ steps.pages.outputs.base_url }}
+        run: |
+          mkdir -p site
+          curl -fsSL "$BASE_URL/listings.json" -o site/listings.json
+          curl -fsSL "$BASE_URL/status.json" -o site/status.json
+
+      - name: Build site
+        run: scripts/20261122_build_site.sh site
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -34,3 +34,7 @@ env/
 # Browser-saved pages for the saved-page reader (kept local; only extracted listings are published)
 /manual/pages/*
 !/manual/pages/20261025_README.txt
+
+# Website (web/)
+web/node_modules/
+web/dist/

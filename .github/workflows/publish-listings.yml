@@ -61,9 +61,18 @@ jobs:
         if: steps.gate.outputs.run == 'true'
         run: pip install ".[dev]"
 
+      - uses: actions/setup-node@v4
+        if: steps.gate.outputs.run == 'true'
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
       - name: Offline tests
         if: steps.gate.outputs.run == 'true'
-        run: python -m pytest -m "not network"
+        run: |
+          python -m pytest -m "not network"
+          (cd web && npm ci --no-audit --no-fund && npm test)
 
       # Keeps cached event detail pages (e.g. Union Chapel start times) between runs.
       - name: Restore HTTP cache
@@ -92,8 +101,11 @@ jobs:
             -o site/listings.json --previous "$BASE_URL/listings.json" \
             --status site/status.json --previous-status "$BASE_URL/status.json" \
             "${local_args[@]}"
-          python scripts/20261024_make_index.py site
-          touch site/.nojekyll
+
+      # status.html, the website's data/soon.json + data/later.json, and the website itself.
+      - name: Build site
+        if: steps.gate.outputs.run == 'true'
+        run: scripts/20261122_build_site.sh site
 
       - uses: actions/upload-pages-artifact@v3
         if: steps.gate.outputs.run == 'true'

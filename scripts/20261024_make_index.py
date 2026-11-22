@@ -1,6 +1,8 @@
-"""Write a small index.html for the GitHub Pages site from status.json.
+"""Write the venue-health page, status.html, for the GitHub Pages site from status.json.
 
     python scripts/20261024_make_index.py site
+
+(It used to be index.html; the site root is now the London Calling website in web/.)
 """
 
 import html
@@ -32,7 +34,7 @@ table {{ border-collapse:collapse; width:100%; }} td, th {{ border-bottom:1px so
 .wrap {{ overflow-x:auto; }}
 </style></head><body>
 <h1>London cinema &amp; music listings</h1>
-<p><a href="listings.json">listings.json</a> ({len(listings['showings'])} showings) ·
+<p><a href="./">London Calling</a> · <a href="listings.json">listings.json</a> ({len(listings['showings'])} showings) ·
 <a href="status.json">status.json</a> · generated {html.escape(status['generated_at'][:16].replace('T', ' '))} (London)</p>
 <p class="muted">{s['ok']} venues ok, {s['stale']} stale (last good data reused), {s['failed']} failed, {s['manual']} manual only.</p>
 <div class="wrap"><table><thead><tr><th>Venue</th><th>Status</th><th>Listings</th><th>Last success</th><th>Error</th></tr></thead>
@@ -42,4 +44,4 @@ table {{ border-collapse:collapse; width:100%; }} td, th {{ border-bottom:1px so
 <p class="muted">Some data from <a href="https://clusterflick.com">Clusterflick</a> (CC BY 4.0), modified.</p>
 </body></html>
 """
-(site / "index.html").write_text(page)
+(site / "status.html").write_text(page)
