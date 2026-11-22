@@ -2,9 +2,12 @@
 
 Source (checked 2026-10-25): performance times are only on the ticketing site
 (my.oldvictheatre.com, Tessitura), which is behind Imperva Incapsula, so we
-don't use it. The theatre's own site lists productions on /productions/ (links
+don't use it. The theatre's own site lists productions on /stage/ (links
 to /stage/<slug>/), and each page has its run in .event-hero-right__dates,
 e.g. "10 Nov 2026–09 Jan 2027".
+
+2026-11-22: the listing moved from /productions/ (now a 404) to /stage/; the
+production pages didn't change.
 """
 
 from __future__ import annotations
@@ -30,7 +33,7 @@ class OldVic(Venue):
     source_description = f"Production pages on {SITE} (run dates only; ticketing site is bot-protected)"
 
     def fetch(self, client: PoliteClient):
-        listing = BeautifulSoup(client.get(f"{SITE}/productions/").text, "html.parser")
+        listing = BeautifulSoup(client.get(f"{SITE}/stage/").text, "html.parser")
         pages = sorted({a["href"] for a in listing.find_all("a", href=True)
                         if re.match(rf"{re.escape(SITE)}/stage/[a-z0-9-]+/?$", a["href"])})
         today = datetime.now(LONDON).date()
